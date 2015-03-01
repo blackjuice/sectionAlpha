@@ -33,6 +33,7 @@ What branches have you created?
 `* test`
 
 `  master`
+
 The asterisk indicates which branch you are on. master is your main branch, the one you never want to make any changes to until they have been tested in a branch. Now make some changes to README.md, and then check your status again:
 
 `git status`
