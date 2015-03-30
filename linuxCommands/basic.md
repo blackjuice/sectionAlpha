@@ -35,7 +35,7 @@ reboot: `sudo reboot`
 
 find file: `find ~/ -type f -name "filename"`
 
-## STANDARD IO
+## STANDARD I/O
 
 `compiler < input.file > output.file`
 
