@@ -35,6 +35,12 @@ reboot: `sudo reboot`
 
 find file: `find ~/ -type f -name "filename"`
 
+## STANDARD IO
+
+`compiler < input.file > output.file`
+
+to append the results: `compiler < input.file >> output.file`
+
 --------------------
 
 [funny side of linux](http://mylinuxbook.com/funny-side-of-linux-command-line)
