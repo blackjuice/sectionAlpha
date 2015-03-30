@@ -30,6 +30,11 @@ shutdown: `sudo shutdown -h now`
 
 reboot: `sudo reboot`
 
+
+## FIND
+
+find file: `find ~/ -type f -name "filename"`
+
 --------------------
 
 [funny side of linux](http://mylinuxbook.com/funny-side-of-linux-command-line)
