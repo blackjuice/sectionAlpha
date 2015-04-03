@@ -1,7 +1,3 @@
-## UN.COMPRESS
-
-extracting .tar balls: `tar xf archive.tar`
-
 ## SSH
 
 ssh access: `ssh user@host`
