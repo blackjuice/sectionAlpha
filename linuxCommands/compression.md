@@ -12,6 +12,6 @@ Extract the files to a different directory:
 
 `tar -zxvf archive_name.tar.gz -C /tmp/extract_here/`
 
-#### extracting general .tar balls
+## Extracting general .tar balls
 
 `tar xf archive.tar`
