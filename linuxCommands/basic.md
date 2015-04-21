@@ -1,3 +1,7 @@
+## restore your .bashrc:
+
+`cp /etc/skel/.bashrc ~/`
+
 ## SSH
 
 ssh access: `ssh user@host`
