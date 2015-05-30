@@ -1,3 +1,7 @@
+## updating .bashrc
+
+`. ~/.bashrc`
+
 ## restore your .bashrc:
 
 `cp /etc/skel/.bashrc ~/`
