@@ -1,0 +1,11 @@
+# stupid loop to get around ubuntu package mirror problems
+# apply: chmod 755 script
+
+for attempt in 1 2 3; do
+  if [ ! -z "`which git`" ]; then
+    break
+  fi
+  echo "Trying to install git, attempt $attempt"
+  sudo apt-get update -yq --fix-missing
+  sudo apt-get install -yq git
+done
