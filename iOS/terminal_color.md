@@ -9,3 +9,8 @@ Then add the following line to your .bashrc or .zshrc:
 ## Install and Use GNU Command Line Tools on Mac OS X [(source)](https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/)
 
 * visit the source above
+
+
+## Using zsh
+
+http://seanmmcdaniel.com/2011/09/zsh-on-os-x/
