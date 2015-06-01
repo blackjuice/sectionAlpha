@@ -1,25 +1,22 @@
-[(source)](http://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/)
+## source: http://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/
 
-create .bash_profile
-
+# create .bash_profile:
 `touch .bash_profile`
-
 `vi .bash_profile`
 
-insert:
-
+# insert:
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
-to reload the bash:
-
+# to reload the bash:
 `. .bash_profile`
 
 ## tips for the color:
-
-To change the colors in the PS1 prompt, change the text between the “\[033[” and the “m\]”. Nothing means reset to default; number means that color; number followed by “;1″ means the bright or bold version of that color.
+To change the colors in the PS1 prompt, change the text between the “\[033[” and the “m\]”.
+Nothing means reset to default; number means that color;
+number followed by “;1″ means the bright or bold version of that color.
 
 31 – red
 32 – green
