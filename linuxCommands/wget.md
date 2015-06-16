@@ -11,3 +11,6 @@
 --reject "* .foo*" : prevents downloading all files with .foo extension
 
 `wget -r --no-parent -nd --reject "*.html*" "http://link.com"`
+
+### Frequently used:
+`wget -r --no-parent --reject "*.html*" "http://link.com"`
