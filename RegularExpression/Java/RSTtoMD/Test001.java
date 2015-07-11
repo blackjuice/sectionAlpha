@@ -23,41 +23,51 @@ public class Test001 {
 
         for (int i = 0; i < args.length; i++) {
             In in = new In(args[i]);
-            // dividing line between one file to another
-            StdOut.println("\n----\n");
-            StdOut.println("<i>previous filename: " + args[i] + "</i>");
-            // store previous line
-            String curr_line        = in.readLine();
 
-            while (true) {
-                // reading next_line
-                String next_line    = in.readLine();
-                // if current line is null, end file and read next file
-                if (next_line == null) {
-                    curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
-                    curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
+            if (args[i].equals("database.rst")) {
+                StdOut.println("Databse here!!!");
+            }
 
-                    StdOut.println(curr_line + "\n");
-                    //StdOut.println("curr > " + curr_line + "\n"); // flag
-                    break;
+            else {
+                // dividing line between one file to another
+                StdOut.println("\n----\n");
+                StdOut.println("<i>previous filename: " + args[i] + "</i>");
+                // store previous line
+                String curr_line        = in.readLine();
+
+                while (true) {
+                    // reading next_line
+                    String next_line    = in.readLine();
+                    // if current line is null, end file and read next file
+                    if (next_line == null) {
+                        curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
+                        curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
+
+                        StdOut.println(curr_line + "\n");
+                        //StdOut.println("curr > " + curr_line + "\n"); // flag
+                        break;
+                    }
+
+                    // if === or ---- (creates anchor name)
+                    if ( next_line.matches(re_00)) {
+                        if ( next_line.matches("===+") )
+                            StdOut.println( "<a name=\"" + curr_line + "\"></a>" + curr_line + "\n" + next_line );
+                        else 
+                            StdOut.println( curr_line + "\n" + next_line );
+                    }
+
+                    else if (   !curr_line.matches(re_01) && 
+                                !curr_line.matches(re_02) && 
+                                !curr_line.matches(re_00) ) {
+
+                        curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
+                        curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
+
+                        StdOut.println(curr_line + "\n");
+                        //StdOut.println("flag > " + curr_line + "\n"); // flag
+                    }
+                    curr_line = next_line; // next_line becomes present_line
                 }
-
-                // if === or ---- (creates anchor name)
-                if ( next_line.matches(re_00)) {
-                    StdOut.println( "<a name=\"" + curr_line + "\"></a>" + curr_line + "\n" + next_line );
-                }
-
-                else if (   !curr_line.matches(re_01) && 
-                            !curr_line.matches(re_02) && 
-                            !curr_line.matches(re_00) ) {
-
-                    curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
-                    curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
-
-                    StdOut.println(curr_line + "\n");
-                    //StdOut.println("flag > " + curr_line + "\n"); // flag
-                }
-                curr_line = next_line; // next_line becomes present_line
             }
         }
         StdOut.println("\n----\n"); // end of all files
