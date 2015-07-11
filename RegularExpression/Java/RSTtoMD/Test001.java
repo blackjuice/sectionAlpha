@@ -48,11 +48,11 @@ public class Test001 {
                         // Main title is anchor
                         if ( next_line.matches("===+") )
                             StdOut.println( "<a name=\"" + curr_line + "\"></a>" + curr_line + "\n" + next_line + "\n" );
-                        else 
+                        else
                             StdOut.println( "\n" + curr_line + "\n" + next_line + "\n" );
                     }
 
-                    // if items
+                    // if list
                     else if (   !curr_line.matches(re_01) && 
                                 !curr_line.matches(re_02) && 
                                 !curr_line.matches(re_00) ) {
@@ -83,11 +83,10 @@ public class Test001 {
                         curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
 
                         StdOut.println(curr_line + "\n");
-                        //StdOut.println("curr > " + curr_line + "\n"); // flag
                         break;
                     }
 
-                    // if === or ---- (creates anchor name)
+                    // if === or ---- 
                     if ( next_line.matches(re_00)) {
                         if ( next_line.matches("===+") )
                             StdOut.println( "\n" + curr_line + "\n" + next_line + "\n" );
@@ -100,10 +99,7 @@ public class Test001 {
                         curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
                         curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
 
-                        //StdOut.println(curr_line + "\n");
-                        //StdOut.println("flag > " + curr_line + "\n"); // flag
                         if ( !curr_line.equals("") ) // if not a blank
-                            //StdOut.println( "* " + "[ "+ curr_line + " ](#" + curr_line + ")" );
                             StdOut.println(curr_line + "\n");
                     }
                     curr_line = next_line; // next_line becomes present_line
