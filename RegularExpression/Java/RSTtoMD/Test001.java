@@ -24,20 +24,58 @@ public class Test001 {
         for (int i = 0; i < args.length; i++) {
             In in = new In(args[i]);
 
+            // custom convertion for database
             if (args[i].equals("database.rst")) {
-                StdOut.println("Databse here!!!");
-            }
-
-            else {
                 // dividing line between one file to another
                 StdOut.println("\n----\n");
-                StdOut.println("<i>previous filename: " + args[i] + "</i>");
-                // store previous line
-                String curr_line        = in.readLine();
+                StdOut.println("<i>previous filename: " + "[ "+ args[i] + " ](#" + args[i] + ")" + "</i>");
+
+                String curr_line        = in.readLine(); // store current line
 
                 while (true) {
-                    // reading next_line
-                    String next_line    = in.readLine();
+                    String next_line    = in.readLine(); // reading next_line
+                    // if current line is null, print last line and end file and read next file
+                    if (next_line == null) {
+                        curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
+                        curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
+
+                        StdOut.println(curr_line + "\n");
+                        break;
+                    }
+
+                    // if === or ---- (creates anchor name)
+                    if ( next_line.matches(re_00)) {
+                        // Main title is anchor
+                        if ( next_line.matches("===+") )
+                            StdOut.println( "<a name=\"" + curr_line + "\"></a>" + curr_line + "\n" + next_line + "\n" );
+                        else 
+                            StdOut.println( "\n" + curr_line + "\n" + next_line + "\n" );
+                    }
+
+                    // if items
+                    else if (   !curr_line.matches(re_01) && 
+                                !curr_line.matches(re_02) && 
+                                !curr_line.matches(re_00) ) {
+
+                        curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
+                        curr_line       = curr_line.replaceAll("\\<", ":"); // replace link:
+
+                        if ( !curr_line.equals("") ) // if not a blank
+                            StdOut.println( "* " + "[ "+ curr_line + " ](#" + curr_line + ")" );
+                    }
+                    curr_line = next_line; // next_line becomes present_line
+                }
+            }
+
+            // default convertion
+            else {
+                StdOut.println("\n----\n");
+                StdOut.println("<i>previous filename: " + args[i] + "</i>");
+
+                String curr_line        = in.readLine(); // store current line
+
+                while (true) {
+                    String next_line    = in.readLine(); // reading next_line
                     // if current line is null, end file and read next file
                     if (next_line == null) {
                         curr_line       = curr_line.replaceAll(re_05, " "); // replace tabs
