@@ -21,31 +21,40 @@ public class Test001 {
             StdOut.println("\n----\n"); // dividing line between one file to another
             StdOut.println("<i>previous filename: " + args[i] + "</i>");
             // store previous line
-            String prev_line = in.readLine();
-            StdOut.println(prev_line); // printing Title
+            String curr_line = in.readLine();
+            //StdOut.println(curr_line); // printing Title
             while (true) {
                 // reading current line
-                String curr_line = in.readLine();
+                String next_line = in.readLine();
                 // if current line is null, end file and read next file
-                if (curr_line == null) break;
+                if (next_line == null) {
+                    curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
+                    //StdOut.println("curr > " + curr_line + "\n");
+                    StdOut.println(curr_line + "\n");
+                    break;
+                }
 
                 // if === or ----
-                if ( curr_line.matches(re_00)) {
-                    StdOut.println( curr_line );
-                    //StdOut.println("** " + curr_line);
+                if ( next_line.matches(re_00)) {
+                    //StdOut.println( next_line );
+                    StdOut.println( curr_line + "\n" + next_line );
+                    //StdOut.println("** " + next_line);
                 }
 
-                //else if (  prev_line.matches(re_00) ) {
-                //    StdOut.println("** " + prev_line);
+                //else if (  curr_line.matches(re_00) ) {
+                //    StdOut.println("** " + curr_line);
                 //}
                 // if != ..toctree:: or :maxdepth:
+                //else if ( !next_line.matches(re_01) && !next_line.matches(re_02) && !next_line.matches(re_00) ) {
                 else if ( !curr_line.matches(re_01) && !curr_line.matches(re_02) && !curr_line.matches(re_00) ) {
+                    //next_line = next_line.replaceAll("\t|   +", ""); // replace tabs
+                    //StdOut.println("curr > " + next_line + "\n");
                     curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
-                    StdOut.println("curr > " + curr_line + "\n");
-                    //StdOut.println(curr_line + "\n");
+                    //StdOut.println("curr > " + curr_line + "\n");
+                    StdOut.println(curr_line + "\n");
                 }
 
-                prev_line = curr_line;
+                curr_line = next_line;
             }
         }
 
