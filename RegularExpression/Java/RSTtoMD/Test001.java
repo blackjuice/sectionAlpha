@@ -1,8 +1,11 @@
 public class Test001 {
 
-    private static String re_00 = "===+|---+";         // === || ---
-    private static String re_01 = "(\\.\\.) [a-z]+::";     // .. toctree::
-    private static String re_02 = " +:[a-z]+: [1-9]+";            // :maxdepth:
+    private static String re_00 = "===+|---+|\\*\\*\\*+";              // === || ---
+    private static String re_01 = "(\\.\\.) \\w+::";      // .. toctree::
+//  private static String re_02 = " +:[a-z]+: [1-9]+";    // :maxdepth:
+    private static String re_02 = " +:\\w+:\\s\\w";            // :maxdepth:
+    private static String re_03 = "\\* \\w+|\\!|\\;|\\.|\\?";              // "* text"
+    private static String re_04 = "`|\\>`\\_"; // removing `info <www.link.com/>`_
     
 
     public static void main(String[] args) {
@@ -50,8 +53,13 @@ public class Test001 {
                     //next_line = next_line.replaceAll("\t|   +", ""); // replace tabs
                     //StdOut.println("curr > " + next_line + "\n");
                     curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
+                    curr_line = curr_line.replaceAll(re_04, ""); // replace tabs
                     //StdOut.println("curr > " + curr_line + "\n");
-                    StdOut.println(curr_line + "\n");
+                    if ( !curr_line.matches(re_03) ) {
+                        //curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
+                        //StdOut.println("* " + curr_line + "\n");
+                        StdOut.println(curr_line + "\n");
+                    }
                 }
 
                 curr_line = next_line;
