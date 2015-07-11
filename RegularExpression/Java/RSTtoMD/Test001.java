@@ -1,9 +1,20 @@
 /*
-    Checking arguments entry quantity
-    input:  javac-algs4 Test001.java && java-algs4 Test001 *.rst
-    code:
-            if (args.length > 0)
-                StdOut.println("flag**");
+    author: Lucas Sung Jun Hong (github user: blackjuice)
+
+    This program converts personal .rst files to a single .md file using regular expressions:
+    * converting link texts to .md readable format;
+    * anchoring titles;
+    * removing unnecessary tabs, spaces;
+
+    references:
+    * http://regexr.com
+    
+    Little personal reference:
+        Checking arguments entry quantity
+        input:  javac-algs4 Test001.java && java-algs4 Test001 *.rst
+        code:
+                if (args.length > 0)
+                    StdOut.println("flag**");
 */
 
 public class Test001 {
@@ -87,10 +98,8 @@ public class Test001 {
                     }
 
                     // if === or ---- 
-                    if ( next_line.matches(re_00)) {
-                        if ( next_line.matches("===+") )
-                            StdOut.println( "\n" + curr_line + "\n" + next_line + "\n" );
-                    }
+                    if ( next_line.matches(re_00))
+                        StdOut.println( "\n" + curr_line + "\n" + next_line + "\n" );
 
                     else if (   !curr_line.matches(re_01) && 
                                 !curr_line.matches(re_02) && 
