@@ -1,24 +1,14 @@
 
 ----
 
-<i>previous filename: ../../../../../Desktop/sphinx_projects/sectorSigma/source/deviantart.rst</i>
-DeviantArt
-==========
+<i>previous filename: ../../../../../Desktop/sphinx_projects/sectorSigma/source/facebook.rst</i>
+<a name="Facebook"></a>Facebook
+========
 
 
-**User**LSJH
+ home_sj
 
-
-
-**pd**[NANA][ICHI] art desu
-
-
-
-links
-*****
-
-
-* deviantart :http://lsjh.deviantart.com/
+  [NANA][ICHI] **F** ace
 
 
 ----

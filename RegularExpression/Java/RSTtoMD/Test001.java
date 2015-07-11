@@ -42,7 +42,9 @@ public class Test001 {
 
                 // if === or ----
                 if ( next_line.matches(re_00)) {
-                    StdOut.println( curr_line + "\n" + next_line );
+                    //StdOut.println( curr_line + "\n" + next_line );
+                    //StdOut.println( curr_line + "\n" + "flag > " + next_line );
+                    StdOut.println( "<a name=\"" + curr_line + "\"></a>" + curr_line + "\n" + next_line );
                 }
 
                 else if ( !curr_line.matches(re_01) && !curr_line.matches(re_02) && !curr_line.matches(re_00) ) {
