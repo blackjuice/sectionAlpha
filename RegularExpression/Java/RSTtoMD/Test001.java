@@ -6,6 +6,7 @@ public class Test001 {
     private static String re_02 = " +:\\w+:\\s\\w";            // :maxdepth:
     private static String re_03 = "\\* \\w+|\\!|\\;|\\.|\\?";              // "* text"
     private static String re_04 = "`|\\>`\\_"; // removing `info <www.link.com/>`_
+    private static String re_05 = "\t|   +|`|\\>`\\_"; // re_04 + tabs
     
 
     public static void main(String[] args) {
@@ -31,7 +32,9 @@ public class Test001 {
                 String next_line = in.readLine();
                 // if current line is null, end file and read next file
                 if (next_line == null) {
-                    curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
+                    //curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
+                    curr_line = curr_line.replaceAll(re_05, " "); // replace tabs
+                    curr_line = curr_line.replaceAll("\\<", ":"); // replace tabs
                     //StdOut.println("curr > " + curr_line + "\n");
                     StdOut.println(curr_line + "\n");
                     break;
@@ -52,14 +55,13 @@ public class Test001 {
                 else if ( !curr_line.matches(re_01) && !curr_line.matches(re_02) && !curr_line.matches(re_00) ) {
                     //next_line = next_line.replaceAll("\t|   +", ""); // replace tabs
                     //StdOut.println("curr > " + next_line + "\n");
-                    curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
-                    curr_line = curr_line.replaceAll(re_04, ""); // replace tabs
+                    //curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
+                    curr_line = curr_line.replaceAll(re_05, " "); // replace tabs
+                    curr_line = curr_line.replaceAll("\\<", ":"); // replace tabs
                     //StdOut.println("curr > " + curr_line + "\n");
-                    if ( !curr_line.matches(re_03) ) {
-                        //curr_line = curr_line.replaceAll("\t|   +", ""); // replace tabs
-                        //StdOut.println("* " + curr_line + "\n");
-                        StdOut.println(curr_line + "\n");
-                    }
+
+                    StdOut.println(curr_line + "\n");
+                    //StdOut.println("flag > " + curr_line + "\n");
                 }
 
                 curr_line = next_line;

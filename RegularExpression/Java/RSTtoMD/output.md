@@ -1,12 +1,24 @@
 
 ----
 
-<i>previous filename: ../../../../../Desktop/sphinx_projects/sectorSigma/source/cyanogenmod.rst</i>
-CyanogenMod
-===========
+<i>previous filename: ../../../../../Desktop/sphinx_projects/sectorSigma/source/deviantart.rst</i>
+DeviantArt
+==========
 
 
-[SAN HACHI] cyan **m** od
+**User**LSJH
+
+
+
+**pd**[NANA][ICHI] art desu
+
+
+
+links
+*****
+
+
+* deviantart :http://lsjh.deviantart.com/
 
 
 ----
