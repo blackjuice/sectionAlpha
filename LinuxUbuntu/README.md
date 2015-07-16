@@ -1,17 +1,10 @@
-##[How to Install/Dual Boot Ubuntu 13.04 and Windows 8](https://www.youtube.com/watch?v=PK7gWIkAY7s)
+# Installation guide
 
-##Ubuntu on Ultrabok/Vivobook
-* [ASUS VivoBook V300CA - Ubuntu 13.04 x64](http://ubuntuforums.org/showthread.php?t=2143119) - Quick report if Ubuntu on Ultrabook/Vivobook works.
+## Requirement for dual boot (Ubuntu + Windows)
 
-* [Ubuntu 14.04 Trusty Tahr + Ultrabook](http://www.dedoimedo.com/computers/ubuntu-trusty-tahr-laptop-ultrabook.html) - Choosing Ubuntu 14.04 Trusty Tahr is a good idea?
+### Installing the pieces!
 
-* [Getting Ubuntu 14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/)
-
-* [Dual boot: Windows 8 + Ubuntu 14.04](http://www.dedoimedo.com/computers/dual-boot-windows-8-ubuntu.html)
-
-##Installing the pieces!
-
-####Start!
+#### Starting point
 * _F6_ on **nomodeset**
 * Try Ubuntu
 * Open GParted on Ubuntu to check partition
@@ -19,12 +12,27 @@
 * For installation type, choose **Something else**
 * Go for **free space**
 
-####Create partition
+#### Partition
 
-* ~200 MB for **/boot**
-* ~40.000 MB for **/** - Logical for type
-* ~140.000 MB for **/home** - Logical for type
-* rest for **swap area** - Logical for type
+| Mount as | size | type | use as | comments |
+|:--------:|:----:|:----:|:------:|:--------:|
+| /boot | 200MB | Primary | Ext | boot |
+| / | 40GB | Logical | Ext4 | i.e. root |
+| swap | 2xRAM | Logical | swap | double of RAM |
+| /home | rest | Logical | Ext4 | file storage |
+
+## Ubuntu versions:
+
+* [How to Install/Dual Boot Ubuntu 13.04 and Windows 8](https://www.youtube.com/watch?v=PK7gWIkAY7s)
+
+## Guides at: Ubuntu on Ultrabok/Vivobook
+* [ASUS VivoBook V300CA - Ubuntu 13.04 x64](http://ubuntuforums.org/showthread.php?t=2143119) - Quick report if Ubuntu on Ultrabook/Vivobook works.
+
+* [Ubuntu 14.04 Trusty Tahr + Ultrabook](http://www.dedoimedo.com/computers/ubuntu-trusty-tahr-laptop-ultrabook.html) - Choosing Ubuntu 14.04 Trusty Tahr is a good idea?
+
+* [Getting Ubuntu 14.04 Trusty Tahr](http://releases.ubuntu.com/14.04/)
+
+* [Dual boot: Windows 8 + Ubuntu 14.04](http://www.dedoimedo.com/computers/dual-boot-windows-8-ubuntu.html)
 
 
 ##Possible issues
