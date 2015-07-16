@@ -5,6 +5,15 @@
 ## Netbook
 Package installed using [UNetbootin](http://unetbootin.sourceforge.net/)
 
+### Partition
+
+| Mount as | size | type | use as | comments |
+|:--------:|:----:|:----:|:------:|:--------:|
+| /boot | 250MB | Primary | Ext | boot |
+| / | 25GB | Logical | Ext4 | i.e. root |
+| /home | rest | Logical | Ext4 | file storage |
+| swap | 2xRAM | Logical | swap | double of RAM |
+
 ## Configuration
 
 * [Black screen, X-shaped cursor on boot:](http://crunchbang.org/forums/viewtopic.php?id=24461&p=3)
@@ -49,3 +58,14 @@ To visualize the current layout:
 Add line:
 
 ``fbxkb &``
+
+## Comments
+
+I gave up Lubuntu on my Netbook for the CrunchBang distro for some little annoying issues encountered during the Lubuntu use like:
+
+* not working "option" key;
+* couldn't find the hotkey changing options;
+* couldn't instal OpenBox;
+* ugly interface;
+
+All the reasons above has solutions, possibly, but it became highly incovenient
