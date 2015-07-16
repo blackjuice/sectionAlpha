@@ -6,6 +6,9 @@ Cheatsheet created using [MacDown](http://macdown.uranusjr.com).
 
 To link words like Wikipedia:
 
-``<a name="abcd"></a> The source here`` || ``[link text](#abcd)``
+	<a name="abcd"></a> The source here
+	[link text](#abcd)
 
+### Add image [(source)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+	![alt text][logo]
