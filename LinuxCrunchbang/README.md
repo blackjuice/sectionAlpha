@@ -1,6 +1,4 @@
-# [CrunchBang](http://crunchbang.org/)
-
-![screenshot](http://logonoid.com/images/crunchbang-logo.jpg)
+# ![screenshot](http://crunchbang.org/forums/img/avatars/33708.png?m=1375747940) [CrunchBang](http://crunchbang.org/)
 
 ## Netbook
 Package installed using [UNetbootin](http://unetbootin.sourceforge.net/)
