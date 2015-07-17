@@ -1,5 +1,5 @@
-Installation guide for linux [(source)](http://algs4.cs.princeton.edu/linux/)
-===========================================================================
+# Installation guide for linux [(source)](http://algs4.cs.princeton.edu/linux/)
+
 
 ## Update your Java
 
@@ -23,8 +23,6 @@ moving debuggers to packages and renaming it
 
 `mv checkstyle-algs4 findbugs-algs4 ~/your/home/directory/algs4/bin && mv checkstyle.xml checkstyle-5.5 && mv findbugs.xml findbugs-2.0.3`
 
---------
-
 ## Adding algs4/bin to your PATH environment variable
 
 `export PATH=.:/your/home/directory/algs4/bin:$PATH`
@@ -37,13 +35,11 @@ If the commands above doesn't work, try:
 
 `export CLASSPATH=.:$HOME/algs4/algs4.jar:$HOME/algs4/stdlib.jar`
 
-## updating .bashrc
+### updating .bashrc
 
 `. ~/.bashrc`
 
----------
-
-# issues encountered
+### issues encountered
 
 Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable) [(source)](http://ubuntuforums.org/showthread.php?t=1986288)
 
@@ -84,8 +80,6 @@ And install Oracle Java:
 exit root and check Java version to see if it's working:
 
 `java -version`
-
----------
 
 # Install introcs [(source)](http://introcs.cs.princeton.edu/java/linux/)
 
