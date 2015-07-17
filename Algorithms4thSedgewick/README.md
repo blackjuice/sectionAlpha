@@ -3,7 +3,7 @@ Installation guide for linux [(source)](http://algs4.cs.princeton.edu/linux/)
 
 ## Update your Java
 
-`sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update && sudo apt-get install oracle-java7-installer`
+check [this page](https://github.com/blackjuice/sectionAlpha/tree/master/Java) to guide yourself of downloading/updating your Java.
 
 # Install algs4 and debuggers package:
 
@@ -13,7 +13,7 @@ Installation guide for linux [(source)](http://algs4.cs.princeton.edu/linux/)
 
 moving to ~/bin/
 
-`mv javac-algs4 ~/your/home/directory/algs4/bin && mv java-algs4 ~/your/home/directory/algs4/bin`
+`mv javac-algs4 java-algs4 ~/your/home/directory/algs4/bin`
 
 ## debuggers package
 
@@ -21,7 +21,7 @@ moving to ~/bin/
 
 moving debuggers to packages and renaming it
 
-`mv checkstyle-algs4 ~/your/home/directory/algs4/bin && mv findbugs-algs4 ~/your/home/directory/algs4/bin && mv checkstyle.xml checkstyle-5.5 && mv findbugs.xml findbugs-2.0.3`
+`mv checkstyle-algs4 findbugs-algs4 ~/your/home/directory/algs4/bin && mv checkstyle.xml checkstyle-5.5 && mv findbugs.xml findbugs-2.0.3`
 
 --------
 
@@ -95,7 +95,7 @@ exit root and check Java version to see if it's working:
 
 Moving to bin:
 
-`mv javac-introcs ~/your/home/directory/introcs/bin && mv java-introcs ~/your/home/directory/introcs/bin`
+`mv javac-introcs java-introcs ~/your/home/directory/introcs/bin`
 
 ## debuggers package
 
@@ -103,7 +103,7 @@ Moving to bin:
 
 moving debuggers to packages and renaming it
 
-`mv checkstyle-introcs ~/your/home/directory/introcs/bin && mv findbugs-introcs ~/your/home/directory/introcs/bin && mv checkstyle.xml checkstyle-5.5 && mv checkstyle-5.5 ~/your/home/directory/introcs/bin && mv findbugs.xml findbugs-2.0.3 && mv findbugs-2.0.3 ~/your/home/directory/introcs/bin`
+`mv checkstyle-introcs findbugs-introcs ~/your/home/directory/introcs/bin && mv checkstyle.xml checkstyle-5.5 && mv findbugs.xml findbugs-2.0.3 && mv findbugs-2.0.3 checkstyle-5.5 ~/your/home/directory/introcs/bin`
 
 ## Add the directory ~/introcs/bin to your PATH environment variable
 
