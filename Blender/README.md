@@ -18,7 +18,7 @@
 
 ## Add background reference image
 
-Small *plus* sign at top right corner of the 3d view workspace
+    Small PLUS sign at top right corner of the 3d view workspace
 
 ## Switch to **edit mode** after .obj import
 
