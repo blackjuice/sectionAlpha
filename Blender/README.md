@@ -14,8 +14,12 @@
 
 ## Delete face connected to specific vertices
 
-    Hotkey: H
+    H
 
+## Make multiple Blender objects into one
+    
+    Ctrl + J
+    
 ## Add background reference image
 
     Small PLUS sign at top right corner of the 3d view workspace
