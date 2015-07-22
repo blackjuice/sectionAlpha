@@ -8,7 +8,7 @@
 * [Reference](#reference)
 * [Cheatsheet image](#cheatsheet)
 
-### <a name="reference"></a> Reference
+## <a name="reference"></a> Reference
 
 * Free models at [tf3dm.com](http://tf3dm.com/)
 
