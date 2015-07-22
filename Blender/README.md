@@ -19,7 +19,11 @@
 ## Add background reference image
 
     Small PLUS sign at top right corner of the 3d view workspace
+    
+## Change camera lens [(source)](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)
 
+    Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data.
+    
 ## Switch to **edit mode** after .obj import
 
 [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
