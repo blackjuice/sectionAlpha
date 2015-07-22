@@ -12,6 +12,10 @@
 
 * Free models at [tf3dm.com](http://tf3dm.com/)
 
+## Delete face connected to specific vertices
+
+    Hotkey: H
+
 ## Add background reference image
 
 Small *plus* sign at top right corner of the 3d view workspace
