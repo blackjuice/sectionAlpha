@@ -12,30 +12,16 @@
 
 * Free models at [tf3dm.com](http://tf3dm.com/)
 
-## Delete face connected to specific vertices
 
-    H
-
-## Make multiple Blender objects into one
-    
-    Ctrl + J
-    
-## Add background reference image
-
-    Small PLUS sign at top right corner of the 3d view workspace
-    
-## Change camera lens [(source)](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)
-
-    Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data.
-    
-## Switch to **edit mode** after .obj import
-
-[link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
-
-## Recenter point of an abject [(source)](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin)
-
-Press ``Shift + Ctrl + Alt + C`` and select **Origin to Geometry**.
-
+| hotkey | function | alternate | source |
+|:------:|:--------:|:---------:|:------:|
+|``H``        | Delete face connected to specific vertices    | alternate | source |
+|``Ctrl + J`` | Make multiple Blender objects into one        | alternate | source |
+| hotkey | Add background reference image                | Small PLUS sign at top right corner of the 3d view workspace | source |
+| hotkey | Change camera lens                            | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
+| hotkey | Switch to **edit mode** after .obj import | | [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
+|``Shift + Ctrl + Alt + C``| Recenter point of an abject | and select **Origin to Geometry**. | [link](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin) |
+| hotkey | function | alternate | source |
 
 
 
