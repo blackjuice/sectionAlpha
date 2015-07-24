@@ -32,6 +32,12 @@
 
 [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
 
+## Recenter point of an abject [(source)](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin)
+
+Press ``Shift + Ctrl + Alt + C`` and select **Origin to Geometry**.
+
+
+
 
 ## <a name="cheatsheet"></a>Cheatsheet
 
