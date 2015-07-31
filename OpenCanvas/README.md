@@ -1,3 +1,9 @@
+# OpenCanvas 6 (STEAM EDITION)
+
+## Favorite Brush setting
+
+![001](https://github.com/blackjuice/sectionAlpha/blob/master/OpenCanvas/favoriteSet001.JPG?raw=true)
+
 ## [Error](http://steamcommunity.com/app/301610/discussions/0/616188677585787405/)
 
 ![Access violation](http://i.imgur.com/inJGGbD.png)
