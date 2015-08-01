@@ -23,9 +23,10 @@
 | hotkey | Switch to **edit mode** after .obj import | | [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
 |``Shift + Ctrl + Alt + C``| Recenter point of an abject | and select **Origin to Geometry**. | [link](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin) |
 | ``Q`` | Delete multiple material | alternate | [click me](#deletemat) |
+| hotkey | PNG background transparency | alternate | [click me](#pngalpha) |
 | hotkey | function | alternate | source |
 
-## <a name="deletemat"></a>Can I delete all materials of all objects in a scene quickly?
+## <a name="deletemat"></a> Can I delete all materials of all objects in a scene quickly?
 
 Enable it in the ``User Preferences > Addons``, select all objects ``A``, hit ``Q`` over 3D View and chose **Remove Material Slots**:
 
@@ -39,6 +40,22 @@ Then use script:
         ob.active_material_index = 0
         for i in range(len(ob.material_slots)):
             bpy.ops.object.material_slot_remove({'object': ob})
+            
+## <a name="pngalpha"></a> Can Blender render pngs with the background transparent? [(source)](http://blender.stackexchange.com/questions/1303/can-blender-render-pngs-with-the-background-transparent)
+
+At **CYCLES**:
+
+* At ``Properties Editor > Render Context > Output Panel``, choose ``RGBA``;
+* At ``Properties Editor > Render Context > Film Panel``, check ``Transparent``.
+
+![cycles](http://i.stack.imgur.com/pi6Kw.png)
+
+At **Blender Render**:
+
+* At ``Properties Editor > Render Context > Output Panel``, choose ``RGBA``;
+* At ``Properties Editor > Render Context > Shading Panel/OpenGL Render``, choose ``Alpha Transparent type``.
+
+![cycles](http://i.stack.imgur.com/4LRZk.png)
 
 ## <a name="cheatsheet"></a>Cheatsheet
 
