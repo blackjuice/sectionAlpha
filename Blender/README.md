@@ -8,9 +8,10 @@
 * [Reference](#reference)
 * [Cheatsheet image](#cheatsheet)
 
-## <a name="reference"></a> Reference
+## <a name="reference"></a> Reference (free models)
 
-* Free models at [tf3dm.com](http://tf3dm.com/)
+* [tf3dm.com](http://tf3dm.com/)
+* [cgtrader](http://www.cgtrader.com/)
 
 ## Desperate times calls for help
 
