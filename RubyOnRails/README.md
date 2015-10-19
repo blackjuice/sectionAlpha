@@ -2,17 +2,17 @@
 
 Installing packages:
 
-	bundle install --without production
+`bundle install --without production`
 
 Setting up the database locally and add data:
 
-	bundle exec rake db:migrate
+`bundle exec rake db:migrate`
 
-	bundle exec rake db:seed
+`bundle exec rake db:seed`
 
 Running (personal IP: 177.153.13.70):
 
-	rails server --binding=<IP>
+`rails server --binding=<IP>`
 
 
 ### Getting started
