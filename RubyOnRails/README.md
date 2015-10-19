@@ -34,7 +34,9 @@ Here’s how to get rolling:
 # Heroku
 
 `ssh-keygen -t rsa`
+
 `heroku login`
+
 `heroku keys:add`
 
 Once you have your heroku keys set up correctly you can create a heroku instance from the rottenpotatoes directory
