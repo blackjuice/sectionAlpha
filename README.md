@@ -64,3 +64,5 @@ Even if you can't find a source of demonstrable bias, allow yourself some degree
 * [The Non-Designer's Design Book (4th Edition) by Robin Williams](http://www.amazon.com/gp/product/0133966151/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0133966151&linkCode=as2&tag=blenguru-20&linkId=OTQZY4VLAPKTWDP4) $23.71
 
 * [Picture Perfect Practice: A Self-Training Guide to Mastering the Challenges of Taking World-Class Photographs (Voices That Matter) 1st Edition by Roberto Valenzuela](http://www.amazon.com/gp/product/0321803531/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321803531&linkCode=as2&tag=blenguru-20&linkId=DQBANEQVNRJC6EMC) $27.54
+
+### Total: 232.46
