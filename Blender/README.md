@@ -13,7 +13,7 @@
 * [tf3dm.com](http://tf3dm.com/)
 * [cgtrader](http://www.cgtrader.com/)
 
-## Desperate times calls for help
+## desperate times call for desperate measures
 
 | hotkey | function | alternate | source |
 |:------:|:--------:|:---------:|:------:|
@@ -57,6 +57,9 @@ At **Blender Render**:
 * At ``Properties Editor > Render Context > Shading Panel/OpenGL Render``, choose ``Alpha Transparent type``.
 
 ![cycles](http://i.stack.imgur.com/4LRZk.png)
+
+## <a name="perspectiveImage"></a> How to set-up the perspective view based on a reference image? [(source)](http://blender.stackexchange.com/questions/9328/how-to-set-up-the-perspective-view-based-on-a-reference-image)
+
 
 ## <a name="cheatsheet"></a>Cheatsheet
 
