@@ -12,6 +12,7 @@
 
 * [tf3dm.com](http://tf3dm.com/)
 * [cgtrader](http://www.cgtrader.com/)
+* [BenSimonds basemesh body](http://bensimonds.com/2011/07/31/basemeshes/)
 
 ## Desperate times call for desperate measures
 
