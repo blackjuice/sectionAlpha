@@ -13,7 +13,7 @@
 * [tf3dm.com](http://tf3dm.com/)
 * [cgtrader](http://www.cgtrader.com/)
 
-## desperate times call for desperate measures
+## Desperate times call for desperate measures
 
 | hotkey | function | alternate | source |
 |:------:|:--------:|:---------:|:------:|
