@@ -35,13 +35,15 @@ Enable it in the ``User Preferences > Addons``, select all objects ``A``, hit ``
 
 Then use script:
 
+```python
     import bpy
     
     for ob in bpy.context.selected_editable_objects:
         ob.active_material_index = 0
         for i in range(len(ob.material_slots)):
             bpy.ops.object.material_slot_remove({'object': ob})
-            
+```
+
 ## <a name="pngalpha"></a> Can Blender render pngs with the background transparent? [(source)](http://blender.stackexchange.com/questions/1303/can-blender-render-pngs-with-the-background-transparent)
 
 At **CYCLES**:
