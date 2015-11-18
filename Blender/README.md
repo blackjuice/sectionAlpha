@@ -18,7 +18,8 @@
 
 | hotkey | function | alternate | source |
 |:------:|:--------:|:---------:|:------:|
-|``H``        | Delete face connected to specific vertices    | alternate | source |
+|``H`` | Hide | alternate | source |
+|``Alt + H`` | Unhide | alternate | source |
 |``Ctrl + J`` | Make multiple Blender objects into one        | alternate | source |
 | hotkey | Add background reference image                | Small PLUS sign at top right corner of the 3d view workspace | source |
 | hotkey | Change camera lens                            | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
