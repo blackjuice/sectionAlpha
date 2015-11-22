@@ -17,10 +17,10 @@
 
 * At main Blender folder, at Command prompt, enter:
 
-    $ set CYCLES_OPENCL_TEST=all
+        $ set CYCLES_OPENCL_TEST=all
 
 * (**HINT**) To enter Disk Local "X":
 
-    $ d:
+        $ d:
 
 * Then run Blender.
