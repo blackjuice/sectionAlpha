@@ -68,6 +68,10 @@ I gave up Lubuntu on my Netbook for the CrunchBang distro for some little annoyi
 
 All the reasons above has solutions, possibly, but it became highly incovenient
 
+## Upgrade Crunchbang to BunsenLabs?
+
+Check [this](http://crunchbang.org/forums/viewtopic.php?id=39730)
+
 ## Debug
 
 ###001) Issue:
