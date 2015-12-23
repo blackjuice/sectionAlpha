@@ -67,3 +67,24 @@ I gave up Lubuntu on my Netbook for the CrunchBang distro for some little annoyi
 * ugly interface;
 
 All the reasons above has solutions, possibly, but it became highly incovenient
+
+## Debug
+
+###001) Issue:
+
+On start, I receive the following warning box:
+
+``Failed to load pixbuf file: /usr/share/pnmixer/pixmaps/pnmixer-muted.png: Couldn't recognize the image file format for file '/usr/share/pnmixer/pixmaps/pnmixer-muted.png'``
+
+--------
+
+[Source](http://ubuntuforums.org/showthread.php?t=2111470)
+
+1) Install as root: ``apt-get install libgdk-pixbuf2.0-dev``
+
+2) Execute: ``gdk-pixbuf-query-loaders > /usr/lib/i386-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache``
+
+Failed attempts:
+
+* Locating: ``locate gdk-pixbuf-query-loaders``;
+* ``gdk-pixbuf-query-loaders > /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache``;
