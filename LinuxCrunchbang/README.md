@@ -74,15 +74,13 @@ Check [this](http://crunchbang.org/forums/viewtopic.php?id=39730)
 
 ## Debug
 
-###001) Issue:
+###001) No icon images on system:
 
 On start, I receive the following warning box:
 
 ``Failed to load pixbuf file: /usr/share/pnmixer/pixmaps/pnmixer-muted.png: Couldn't recognize the image file format for file '/usr/share/pnmixer/pixmaps/pnmixer-muted.png'``
 
---------
-
-[Source](http://ubuntuforums.org/showthread.php?t=2111470)
+Solving with [forum](http://ubuntuforums.org/showthread.php?t=2111470):
 
 1) Install as root: ``apt-get install libgdk-pixbuf2.0-dev``
 
@@ -92,3 +90,17 @@ Failed attempts:
 
 * Locating: ``locate gdk-pixbuf-query-loaders``;
 * ``gdk-pixbuf-query-loaders > /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache``;
+
+### 002) Error while apt-get update and upgrading tint2
+
+	Errors were encountered while processing:
+	 /var/cache/apt/archives/tint2_0.11+svn20111022-3_i386.deb
+	E: Sub-process /usr/bin/dpkg returned an error code (1)
+
+To solve it, first remove package tint2conf:
+
+	sudo apt-get remove tint2conf
+	
+Then complete the tint2 install with
+
+	sudo apt-get -f install
