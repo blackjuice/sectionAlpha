@@ -101,6 +101,6 @@ To solve it, first remove package tint2conf:
 
 	sudo apt-get remove tint2conf
 	
-Then complete the tint2 install with
+Then complete the tint2 install with 
 
 	sudo apt-get -f install
