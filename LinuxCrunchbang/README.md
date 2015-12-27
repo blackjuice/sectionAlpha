@@ -108,3 +108,9 @@ Then complete the tint2 install with
 ### 003) Err http://ppa.launchpad.net wheezy/main Sources (404  Not Found)
 
 	ls /etc/apt/sources.list.d/
+
+Comment the PPA ubuntu sources, then:
+
+	sudo apt-get update
+	sudo apt-get dist-upgrade
+	sudo apt-get -f install
