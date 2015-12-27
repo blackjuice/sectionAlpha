@@ -104,3 +104,7 @@ To solve it, first remove package tint2conf:
 Then complete the tint2 install with 
 
 	sudo apt-get -f install
+
+### 003) Err http://ppa.launchpad.net wheezy/main Sources (404  Not Found)
+
+	ls /etc/apt/sources.list.d/
