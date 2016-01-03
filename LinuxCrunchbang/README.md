@@ -24,6 +24,12 @@ Package installed using [UNetbootin](http://unetbootin.sourceforge.net/)
 
 ## Fast config
 
+### Check spec
+
+`sudo dmidecode`
+
+`cat /proc/cpuinfo`
+
 ### [Crunchbang Keyboard Layout](https://blogs.fsfe.org/t.kandler/2013/11/20/crunchbang-keyboard-layout/)
 
 The following shows steps I used to add brazilian-portuguese keyboard input:
