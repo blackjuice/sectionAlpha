@@ -82,7 +82,7 @@ Check [this](http://crunchbang.org/forums/viewtopic.php?id=39730)
 
 ## Debug
 
-###001) No icon images on system:
+###001) [Solved] No icon images on system:
 
 On start, I receive the following warning box:
 
@@ -99,7 +99,7 @@ Failed attempts:
 * Locating: ``locate gdk-pixbuf-query-loaders``;
 * ``gdk-pixbuf-query-loaders > /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache``;
 
-### 002) Error while apt-get update and upgrading tint2
+### 002) [Śolved] Error while apt-get update and upgrading tint2
 
 	Errors were encountered while processing:
 	 /var/cache/apt/archives/tint2_0.11+svn20111022-3_i386.deb
@@ -113,7 +113,7 @@ Then complete the tint2 install with
 
 	sudo apt-get -f install
 
-### 003) Err http://ppa.launchpad.net wheezy/main Sources (404  Not Found)
+### 003) [Solved] Err http://ppa.launchpad.net wheezy/main Sources (404  Not Found)
 
 	ls /etc/apt/sources.list.d/
 
@@ -122,3 +122,9 @@ Comment the PPA ubuntu sources, then:
 	sudo apt-get update
 	sudo apt-get dist-upgrade
 	sudo apt-get -f install
+
+### 004) [Solved] Linux Boots to terminal
+
+I tried to execute `startx` but it failed. What solved the problem was:
+
+	sudo apt-get install xorg
