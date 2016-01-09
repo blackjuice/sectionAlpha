@@ -21,6 +21,7 @@ Package installed using [UNetbootin](http://unetbootin.sourceforge.net/)
 * About [terminator](http://ubuntuforums.org/showthread.php?t=920717)
 * [Crunchbang Keyboard Layout](https://blogs.fsfe.org/t.kandler/2013/11/20/crunchbang-keyboard-layout/)
 * Add ll command: ``alias ll='ls -l'``
+* Set date/time manually: `date --set YYYY-MM-DD` and `date --set 00:00:00`
 
 ## Fast config
 
