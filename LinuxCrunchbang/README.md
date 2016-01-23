@@ -129,3 +129,11 @@ Comment the PPA ubuntu sources, then:
 I tried to execute `startx` but it failed. What solved the problem was:
 
 	sudo apt-get install xorg
+
+### 005) [Solved] Setting date/time
+
+Check BIOS clock with `sudo hwclock`. To correct it:
+
+	sudo hwclock --set --date="mm/dd/yy hh:mm:ss"
+
+Then correct system time to the BIOS with `sudo hwclock -s`
