@@ -88,7 +88,11 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # COLORS
+
+# for one line
 PS1='\[\033[1m\033[32m\]\u@\h \w\[\033[0m\]\$ '
+# for two lines
+PS1='\[\e[1;32m\]\H\[\e[0m\] :: \[\e[1;30m\]\d\[\e[0m\] \@ :: \[\e[1;33m\]\w\n\[\e[1;34m\]\u $ \[\033[0m\]'
 
 # some more ls aliases
 alias ll='ls -l'
