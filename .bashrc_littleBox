@@ -88,7 +88,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # COLORS
-
+# terminal background color = #160C1F
 # for one line
 PS1='\[\033[1m\033[32m\]\u@\h \w\[\033[0m\]\$ '
 # for two lines
