@@ -136,4 +136,15 @@ Check BIOS clock with `sudo hwclock`. To correct it:
 
 	sudo hwclock --set --date="mm/dd/yy hh:mm:ss"
 
-Then correct system time to the BIOS with `sudo hwclock -s`
+Then correct system time to the BIOS with `sudo hwclock -s
+
+### 006) [Solved] Change machine name`
+
+Change name to the desired one on:
+
+	/etc/hostname
+	/etc/hosts
+	  # below 127.0.0.1  localhost
+	  #       127.0.1.1  <insert new name here>
+
+Then apply change with: `/etc/init.d/hostname.sh start`
