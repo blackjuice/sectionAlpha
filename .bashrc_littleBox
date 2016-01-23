@@ -87,6 +87,9 @@ if [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
+# COLORS
+PS1='\[\033[1m\033[32m\]\u@\h \w\[\033[0m\]\$ '
+
 # some more ls aliases
 alias ll='ls -l'
 alias la='ls -A'
@@ -112,6 +115,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#---------------------------------------------------------------------
 # PATH for Princeton packages
 # algs4 package
 export PATH=.:/home/commander/algs4/bin:$PATH
@@ -140,6 +144,27 @@ export PATH=.:/home/commander/bin/scripts:$PATH
 # temporary command
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-#----------------------------------------------------------------------
-# alias for Debian version
+#---------------------------------------------------------------------
+# custom alias
+
+# Check for Debian version
 alias tellmedebianversion='lsb_release -a'
+
+# shutdown
+alias shutdown='sudo shutdown -h now'
+
+# exit terminal
+alias bye='exit'
+
+# .bashrc
+alias bashvi='cd && vi .bashrc'
+alias bashreload='cd && . ~/.bashrc'
+
+# go to favorite folders
+alias cddownloads='cd && cd downloads' # downloads
+alias cdbin='cd && cd bin' # bin
+
+# git add commands
+alias gitupload='git add -A && git commit -a && git push origin master'
+
+
