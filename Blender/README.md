@@ -20,6 +20,8 @@
 |:------:|:--------:|:---------:|:------:|
 |`H`            | Hide              | alternate | source |
 |`Alt + H`      | Unhide            | alternate | source |
+|`Alt + D`      | Duplicated Link   | awesome for tire model | source |
+|`Ctrl + M`     | Mirroring         | awesome for tire model | source |
 |`Ctrl + J`     | Make multiple Blender objects into one        | alternate | source |
 |`P`            | Opposite of `Ctrl + J`                        | alternate | source |
 | hotkey        | Add background reference image                | Small PLUS sign at top right corner of the 3d view workspace | source |
