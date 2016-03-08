@@ -4,6 +4,17 @@
 
 The following contains a collection of personal favorites topics and contents from [Blender Nation](http://www.blendernation.com/).
 
+## Take a good look, blackjuice
+
+* [Turning your blend file into a asset library](http://www.blendernation.com/2016/03/05/turning-blend-file-asset-library/)
+* [Blend Library - Asset manager for material, objects and nodes](http://www.blendernation.com/2014/11/17/blend-library-asset-manager-for-materials-objects-and-nodes/)
+* Alternatives for Substance Painter:(US$ 149) (note: thing is... This is the cheapest so far)
+    * Blacksmith 3D (http://blacksmith3d.com/)
+    * 3D coat (http://3dcoat.com/home/)
+    * MARI (http://www.thefoundry.co.uk/products/mari/)
+
+So far, the Substance Painter is the cheapest option here.
+
 ## Tutorials
 
 ### [►](http://www.blendernation.com/2016/01/09/create-muddy-landscape-blender/) Create a Muddy Landscape in Blender
