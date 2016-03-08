@@ -14,7 +14,7 @@
 * [cgtrader](http://www.cgtrader.com/)
 * [BenSimonds basemesh body](http://bensimonds.com/2011/07/31/basemeshes/)
 
-## Desperate times call for desperate measures
+## Desperate times calls for desperate measures
 
 | hotkey | function | alternate | source |
 |:------:|:--------:|:---------:|:------:|
