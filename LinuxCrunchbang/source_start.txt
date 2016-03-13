@@ -1,3 +1,6 @@
+/etc/apt/source.list
+160313:
+
 # deb cdrom:[Debian GNU/Linux 8 _Jessie_ - Official Snapshot i386 LIVE/INSTALL Binary 20150908-13:17]/ jessie contrib main non-free
 
 # deb cdrom:[Debian GNU/Linux 8 _Jessie_ - Official Snapshot i386 LIVE/INSTALL Binary 20150908-13:17]/ jessie contrib main non-free
