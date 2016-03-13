@@ -19,3 +19,5 @@ deb http://ftp.br.debian.org/debian/ jessie-updates main contrib non-free
 # Multimedia repository
 deb http://www.deb-multimedia.org jessie main non-free
 
+# currently not installed on LittleBox
+#deb http://httpredir.debian.org/debian jessie-backports main contrib non-free
