@@ -1,11 +1,14 @@
 # (Really!) Basic Blender Workshop!
 
+prep: Lucas Sung Jun Hong
+
 | date     | title                  |
 |:--------:|:----------------------:|
 | *1603XX* | Basic Blender workshop |
 
 Content:
 
+* [Intro](#intro)
 * [Activity](#activity)
 
 ## What are we exactly doing today?
@@ -40,7 +43,3 @@ So... How much basic?
     * masterxeon1001
 
 ## <a name="activity"></a> Activity
-
-* Let's model!
-    * Mug > Cup
-
