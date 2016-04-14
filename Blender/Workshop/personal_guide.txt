@@ -1,0 +1,100 @@
+Ray tracing:
+Rays saem da camera e colidem com as paredes ate acharem uma fonte de luz
+
+Lamp:
+Blender ja sabe onde chegar
+
+Environmental Lightning:
+Blender nao sabe onde chegar: Environmental lighting tem muito ruido
+Rays sao disparados em todos os lados
+
+
+SAVING METHOD:  filename_01.blend
+pressing + or - goes up or down on the filename
+
+
+Mug:
+    basic mirror
+    Simple connection, manual
+
+Cup of coffe:
+    Smooth
+    Cube Ctrl 2
+    UV sphere
+    Curves: apply curve
+
+    Solidify and Looptools
+        Circle
+        10 vertices
+        fill type: triangle fan
+        modifier: solidify
+        ADDON: LOOPTOOLS
+        W -> special window
+
+        Cup prato: bring solidify up from subdivision surface
+
+    Spoon:
+        K - key -cut
+        J - connection
+
+Tea bag holder:
+    Shift R
+    BoolTool
+
+    Holes techniques:
+        1. Alt Shift S:
+            subdivide 2
+            delete center vertice
+        2. Ctrl Shift B:
+            subdivide 1
+            at center vertice: Ctrl Shift B
+            subdivide
+            delete middle vertice
+            then Alt Shift S
+            Connect lefting with J
+        3. Bridge
+            Cut square hole
+            add circle in edit mode with same number of edges
+            then W to Bridge Edge Loops
+
+        4. Shift A to add Mesh circle
+            V to Vector
+            change to 2D
+            Shift A to add another circle
+            Alt C to finish
+
+Cell Fracture
+    Noise: break to smaller cubes - set to 1 is the highest
+    recursvie: smaller inside big - set to 1
+    Select random
+    Set margin below Apply Split Edge box to 0 - space between 2 different fractures
+
+    SET GROUP: ctrl G
+
+Noiseless render
+    Bigger lamp
+    Bigger shadow size: lamp > spot > up size do 0.3
+    For HDR, use Multiple importance Sample (tells Cycles to treat HDR as lamps) (at WORLD)
+    Use filter glossy at Light paths (0.5)
+    Use Clamp (up the Clamp indirect)
+    Up samples
+
+
+Freestyle Line art
+    Change output to png, RGBA (alpha)
+    Check freestyle
+    Samples and render to 1
+    Under Film, check TRANSPARENT
+    Check if Freestyle Line set is a layer
+    At layer section:
+        Exclude all the layers from EXclude. To exclude any other render
+
+At character development, show Sophie and start modeling her
+
+Rig -> use MGS XNA
+
+Sculpt -> Use on Cube and on Sophie
+
+Control camera movement -> 
+
+
