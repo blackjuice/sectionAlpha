@@ -26,7 +26,7 @@
 </table>
 
 
-<p>The Workshop will cover the following content.</p>
+<p>The Workshop will cover the following.</p>
 
 <div>
     <h1><span style="color: #99ccff;">Content:</span></h1>
@@ -34,41 +34,41 @@
     <ol>
         <li><a href="#setting">Setting up</a>
             <ul>
-                <li><a href="#theme">Changing theme</a></li>
-                <li><a href="#shortcut">Shortcuts</a></li>
-                <li><a href="#addons">Addons</a>
+                <li>Changing theme</li>
+                <li>Shortcuts</li>
+                <li>Addons</li>
             </ul>
         </li>
-        <li><a href="#bmodel">Basic modelling</a>
+        <li>Basic modeling
             <ul>
-                <li><a href="#tea">Mug, cup, tea bag, chair, basic houses</a></li>
+                <li>Mug, cup, tea bag, chair, basic houses</li>
             </ul>
         </li>
-        <li><a href="#setting">Physics for breaking blocks</a>
+        <li>Physics for breaking blocks
             <ul>
-                <li><a href="#theme">Cell fracture</a></li>
-                <li><a href="#shortcut">Breaking animation</a></li>
+                <li>Cell fracture</li>
+                <li>Breaking animation</li>
             </ul>
         </li>
-        <li><a href="#setting">Render</a>
+        <li>Render
             <ul>
-                <li><a href="#theme">Camera config</a></li>
-                <li><a href="#shortcut">Photo studio</a></li>
-                <li><a href="#addons">Noiseless render</a>
+                <li>Camera config</li>
+                <li>Photo studio</li>
+                <li>Noiseless render</li>
             </ul>
         </li>
-        <li><a href="#setting">Sneak peeks at</a>
+        <li>Sneak peeks at
             <ul>
-                <li><a href="#theme">Character modelling</a></li>
-                <li><a href="#theme">Rigging</a></li>
-                <li><a href="#shortcut">Sculpt tool</a></li>
-                <li><a href="#addons">Camera movement</a>
-                <li><a href="#addons">how the workshop promo poster was created</a>
+                <li>Character modelling</li>
+                <li>Rigging</li>
+                <li>Sculpt tool</li>
+                <li>Camera movement</li>
+                <li>how the workshop promo poster was created</li>
             </ul>
         </li>
-        <li><a href="#setting">Sources</a>
+        <li><a href="#source">Sources</a>
             <ul>
-                <li><a href="#theme">list of awesome sources that I use to make blender experience even better</a></li>
+                <li>list of awesome sources that I use to make blender experience even better</li>
             </ul>
         </li>
         <li><span style="color: #cc99ff;"><a style="color: #cc99ff;" href="#contact">For those present, please, fill the form!</a></span></li>
@@ -81,10 +81,10 @@
     <li>This workshop is a beginner's guide for Blender! This is definitely not for advanced users;</li>
 </ul>
 
-<section id="settings">
+<section id="setting">
     <h1><span style="color: #99ccff;">Setting up</span></h1>
     <h3>Changing theme</h3>
-    To <b>change</b> a theme, go to <kbd>Blender User Preferences</kbd> (or <kbd>'Ctrl + Alt + U'</kbd> on Windows, or <kbd>'⌘ Cmd + ,'</kbd> on Mac). At tab <kbd>Themes</kbd>, on top left corner of the window, on <kbd>Presets</kbd>, click the box and choose the one you like! <b>Elsyiun</b>> is my favorite.
+    To <b>change</b> a theme, go to <kbd>Blender User Preferences</kbd> (or <kbd>'Ctrl + Alt + U'</kbd> on Windows, or <kbd>'⌘ Cmd + ,'</kbd> on Mac). At tab <kbd>Themes</kbd>, on top left corner of the window, on <kbd>Presets</kbd>, click the box and choose the one you like! <b>Elsyiun</b> is my favorite.
 
     I recommend also changing the vertex size too! It's located on <kbd>3D View</kbd>, on the same window. Scroll down to find <kbd>Vertex Size</kbd> and choose something higher than 3. I usually go with 7.
 
@@ -92,27 +92,63 @@
 
     Don't forget to <b>save</b> the changes of the configuration at <kbd>Save User Settings</kbd> button!
 
+    <h3>Learn the shorcuts</h3>
+
+    You will eventually remember the shortcuts, if you keep playing with it. Check the <a href="http://www.giudansky.com/design/51-blender-map" target="_blank">infographic</a>, made by <a href="http://www.giudansky.com/" target="_blank">giudansky.com</a>.
 
     <h3>Installing addons</h3>
-    First things first: always save your addons into a folder you will easily find it later on. For example, I save them to <kbd>D:\BlenderPackage\Addon\</kbd>.
 
-    Let's use the <b>quick preferences addon (author: Sean Olson (LiquidApe))</b> and <b>measureit (author: Antonioya)</b> as examples. The first is "QuickPrefs, Access from side panel to Lighting Presets and often changed preferences" and the last is "designed for displaying measures in the viewport, making the process of design objects with exact measures, easier."
+    <ul>
+        <li>First things first: always save your addons into a folder you will easily find it later on. For example, I save them to <kbd>D:\BlenderPackage\Addon\</kbd>;</li>
+        <li>Don't forget to read thoroughly to know what you are getting from this addon, the recommendations etc;</li>
+        <li>There are cases which the author asks to unzip the file. In cases where there is no such step, don't unzip it. Just store it where you usually stores the addons;</li>
+        <li>Go to <kbd>Blender User Preferences</kbd> (or <kbd>'Ctrl + Alt + U'</kbd> on Windows, or <kbd>'⌘ Cmd + ,'</kbd> on Mac);</li>
+        <li>At the Addons tab, go to <kbd>Install from File...</kbd>;</li>
+        <li>Find the newly downloaded .zip file then open it;</li>
+        <li>Check the box of the new addon from the list;</li>
+        <li>Don't forget to <b>save</b> the changes of the configuration at <kbd>Save User Settings</kbd> button!</li>
+    </ul>
 
-    Aside from the fact that they are very useful tools, we'll using them as examples because one is a single python script and another is a .zip file. We'll be covering on how to install these two types of addons.
+    <h3>List of addons that will be used in the workshop</h3>
 
-    As mentioned, we'll run into single python scripts, like the <a href="https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/QuickPrefs" target="_blank">quick preferences addon</a>, or to a .zip file like <a href="https://github.com/Antonioya/blender/tree/master/measureit" target="_blank">measureit</a>.
-    <h3><span style="color: #99ccff;">Single script</span></h3>
-    When you get to a link, such as <a href="http://blenderartists.org/forum/showthread.php?223293-QuickPrefs-Access-from-side-panel-to-Lighting-Presets-amp-often-changed-preferences" target="_blank">this</a>, don't forget to read thoroughly to know what you are getting from this addon, the recommendations etc.
-
-    Now, after getting to the link where you can download the addon, we might get to pages like <a href="https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/QuickPrefs" target="_blank">this</a>. Download it to the folder where you usually store addons.
-
-    In Blender, go to <kbd>Blender User Preferences</kbd> (or <kbd>'Ctrl + Alt + U'</kbd> on Windows, or <kbd>'⌘ Cmd + ,'</kbd> on Mac)
+    <ul>
+        <li><a href="http://blenderartists.org/forum/showthread.php?371788-Add-on-v1-6-MeasureIt-measurement-tools" target="_blank">Measureit</a> (author: Antonioya)</li>
+        <li><a href="http://blenderartists.org/forum/showthread.php?223293-QuickPrefs-Access-from-side-panel-to-Lighting-Presets-amp-often-changed-preferences" target="_blank">Quick preferences</a> (author: Sean Olson (LiquidApe))</li>
+        <li><a href="http://blenderaddonlist.blogspot.com.br/2014/07/addon-auto-mirror.html" target="_blank">Auto mirror</a> (autor: Lapineige)</li>
+        <li><a href="http://www.blendernation.com/2014/05/14/add-on-booltool/" target="_blank">BoolTool</a> (author: Vitor Balbio)</li>
+        <li><a href="https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/Screencast_Key_Status_Tool" target="_blank">Screencast Key Status</a> (author(s): Paulo Gomes, Bart Crouch, John E. Herrenyo, Gaia Clary, Pablo Vazquez)</li>
+        <li>Cell Fracture</li>
+    </ul>
 </section>
 
-<section id="quickpref">
-    <h3><span style="color: #99ccff;">QuickPrefs</span></h3>
+<section id="source">
+    <h3><span style="color: #99ccff;">Sources</span></h3>
+    
+    Awesome artists:
+
+    <ul>
+        <li><a href="http://www.blenderguru.com/" target="_blank">Blender Guru</a></li>
+        <li><a href="http://www.blendernation.com/" target="_blank">Blender nation</a></li>
+        <li><a href="http://www.blenderhd.com/" target="_blank">Blender HD</a></li>
+        <li><a href="http://www.creativeshrimp.com/" target="_blank">Gleb Alexandrov</a></li>
+        <li><a href="http://masterxeon1001.com/" target="_blank">masterxeon1001</a></li>
+        <li><a href="http://www.reynantemartinez.com/" target="_blank">Reynante Martinez</a></li>
+    </ul>
+
+    And free models:
+
+    <ul>
+        <li><a href="http://tf3dm.com/" target="_blank">TF3DM</a></li>
+        <li><a href="https://www.cgtrader.com/" target="_blank">cgtrader</a></li>
+    </ul>
 </section>
+
 
 <section id="contact">
+<<<<<<< HEAD
     <a href="http://goo.gl/forms/3fpZ4rLq2j">The FORM is strong on this one.</a>
+=======
+    <h3><span style="color: #99ccff;">Form</span></h3>
+    <a href="http://goo.gl/forms/rPR3OefDOB">Click here to fill the form!</a>
+>>>>>>> 18568d13eb6025c0a99377a78350803f77b07213
 </section>
