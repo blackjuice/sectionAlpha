@@ -1,0 +1,11 @@
+What is Cycles?
+
+Brecht Van Lommel, primary developer of Cycles;
+Ray-tracing render engine built into Blender;
+Supports GPU rendering:
+    CUDA: preferred method for NVIDIA graphics cards
+    OpenCL: supports rendering on AMD graphics cards
+More rays -> less noise -> slow render
+
+
+Ambient Occlusion can make a big difference especially in the Blender Internal Render Engine. In cycles enabling Ambient Occlusion does not make a big difference in terms of realism because Cycles is already rendering with Global Illumination, which is physically correct Ambient Occlusion. So in cycles there often is no need for it whereas in the Blender Internal render engine it is very useful.
