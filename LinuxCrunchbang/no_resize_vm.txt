@@ -1,0 +1,3 @@
+command for fixing unavailable resize options on bunsen labs vm on windows 10:
+
+``sudo apt-get install virtualbox-guest-dkms``
