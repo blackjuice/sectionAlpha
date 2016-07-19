@@ -4,8 +4,16 @@ HardOps personal guide
 ======================
 *creation date: 160718*
 
+## Intro
+
+> Hard Ops is a hard surface toolkit aimed to assist in making hard surface operations more efficient
+*- from masterxeon1001's Hard Ops 006 Guide*
+
+This Markdown page contains blackjuice's experience with HardOps, focusing mainly on guides on how to use the addon.
+
+
 ## Quick note
 
-I'm currently searching for a Haroopad alternative, which is a Markdown preview editor software. Haroopad just doesn't work for me, it's not a pretty looking editor. The decisive factor is that on the left side of the screen, which is the Markdown text, without the preview look, when there is a tag, like a hyperlink for another piece of the page, the button for that text isn't at all clickable. I believe on the OSX, which I'm currently using the MacDown, this event works.
+So far, I've been using Haroopad for editing Markdown files, but I grew tired and searched for other alternatives. At [blackjuice/sectionAlpha/Markdown](https://github.com/blackjuice/sectionAlpha/tree/master/Markdown) contains the current (*160718*) editor that I'm using.
 
 ## Support packages (support addons)
