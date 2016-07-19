@@ -9,7 +9,7 @@ This Markdown page is available at:
 * [blackjuice's GitHub](https://github.com/blackjuice/sectionAlpha/tree/master/Blender)
 * [saguahollic's wordpress blog](https://saguahollic.wordpress.com/)
 
-[//]: <> (================================================================================)
+<!-- ================================================================================== -->
 # Contents
 
 * [Documentation](#documentation)
