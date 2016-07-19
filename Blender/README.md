@@ -16,6 +16,7 @@ This Markdown page is available at:
 * [Free library](#freelibrary)
 * [Hotkey table](#hotkeytable)
 * [Tips](#tips)
+* [Addons](#addons)
 * [Cheatsheet image](#cheatsheet)
 
 <!-- ================================================================================== -->
@@ -95,6 +96,7 @@ Category:
 |:------:|:--------:|:-------:|:------:|
 | `T` | Add background reference image | Activate `Properties Shelf` with the `T` key. At `Background Images`, click `Add Image` | |
 
+[back to HotkeyTable](#hotkeytable)
 <!-- ================================================================================== -->
 ## Tips
 
@@ -102,6 +104,8 @@ Category:
 * [PNG background transparency](#tip002);
 * [Set-up perspective view based on ref img](#tip003);
 * [11 tips for speeding up rendering cycles](#tip004);
+* [Selecting linked vertices](#tip005);
+* [Multiple addons using the same name](#tip006);
 
 [> back to main Contents](#contents)
 
@@ -170,7 +174,42 @@ What I always thought about doing it but never really did it was to use render l
 
 [Click here](https://boundlessblending.blogspot.com.br/2016/04/blender-fast-rendering.html) for the source content.
 
+<!-- ---------------------------------------------------------------------------------- -->
+### Tip005
+#### Selecting linked vertices
+
+At menu in Edit mode, go `Select > Edge Loops`.
+
+### Tip006
+#### Multiple addons using the same name
+
+To Toggle console when this message pops up:
+
+    Multiple addons using the same name found!
+    likely a problem with the script search path.
+    (see console details)
+
+Go `Window > Toggle System Console`.
+
 [> back to list of Tips](#tips)
+
+<!-- ================================================================================== -->
+## Addons
+
+The following table contains favorite addons.
+
+| name | author | comment |
+|:------:|:--------:|:-------:|
+| [Quick preferences](http://blenderartists.org/forum/showthread.php?223293-QuickPrefs-Access-from-side-panel-to-Lighting-Presets-amp-often-changed-preferences) | Sean Olson (LiquidApe) |  |
+| [Auto mirror](http://blenderaddonlist.blogspot.com.br/2014/07/addon-auto-mirror.html) |  Lapineige |  |
+| [BoolTool](http://www.blendernation.com/2014/05/14/add-on-booltool/) | Vitor Balbio |  |
+| [Screencast Key Status](https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/Screencast_Key_Status_Tool) | Paulo Gomes, Bart Crouch, John E. Herrenyo, Gaia Clary, Pablo Vazquez | |
+| [Mira Tools](https://github.com/mifth/mifthtools/tree/master/blender/addons/mira_tools) | mifth | |
+| [MeasureIt](https://github.com/Antonioya/blender/tree/master/measureit) | Antonioya | [youtube video for tutorial](https://www.youtube.com/watch?v=R0jCdCoaRvs&feature=youtu.be) |
+| [HardOps + BoxCutter](https://gumroad.com/masterxeon1001) | masterxeon1001 |  |
+| [Blender 2.7x XPS Tools 1.1](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690) | johnzero7 | XPS to Blender |
+
+[> back to main Contents](#contents)
 
 <!-- ================================================================================== -->
 ## Cheatsheet
