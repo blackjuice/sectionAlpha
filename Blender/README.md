@@ -66,7 +66,7 @@ Category:
 |`P`            | Opposite of `Ctrl + J`                        | | |
 |`Shift + Ctrl + Alt + C`| Recenter pivot point of an object  | and select **Origin to Geometry**. | [link](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin) |
 
-[> back to Hotkey_table](#hotkeytable)
+[> back to HotkeyTable](#hotkeytable)
 
 <!-- ---------------------------------------------------------------------------------- -->
 #### * *hints*
@@ -75,7 +75,7 @@ Category:
 |:------:|:--------:|:-------:|:------:|
 |  |  | Switch to **edit mode** after .obj import | [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
 
-[> back to Hotkey_table](#hotkeytable)
+[> back to HotkeyTable](#hotkeytable)
 
 
 <!-- ---------------------------------------------------------------------------------- -->
@@ -86,7 +86,7 @@ Category:
 |`Alt + D`      | Duplicated Link   | wheel design | |
 |`Ctrl + M`     | Mirroring         | wheel design | |
 
-[> back to Hotkey_table](#hotkeytable)
+[> back to HotkeyTable](#hotkeytable)
 
 
 <!-- ---------------------------------------------------------------------------------- -->
@@ -96,7 +96,7 @@ Category:
 |:------:|:--------:|:-------:|:------:|
 | | Change camera lens | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
 
-[> back to Hotkey_table](#hotkeytable)
+[> back to HotkeyTable](#hotkeytable)
 
 
 <!-- ---------------------------------------------------------------------------------- -->
@@ -106,7 +106,7 @@ Category:
 |:------:|:--------:|:-------:|:------:|
 | `T` | Add background reference image | Activate `Properties Shelf` with the `T` key. At `Background Images`, click `Add Image` | |
 
-[> back to Hotkey_table](#hotkeytable)
+[> back to HotkeyTable](#hotkeytable)
 
 <!-- ================================================================================== -->
 ## Tips
