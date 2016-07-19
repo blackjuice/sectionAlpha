@@ -11,7 +11,7 @@ HardOps personal guide
 > Hard Ops is a hard surface toolkit aimed to assist in making hard surface operations more efficient
 *- from masterxeon1001's Hard Ops 006 Guide*
 
-This Markdown page contains blackjuice's experience with HardOps, focusing mainly on guides on how to use the addon.
+This Markdown page contains blackjuice's experience with HardOps, created by [masterxeon1001](https://masterxeon1001.com/), focusing mainly on guides on how to use the addon.
 
 I'm mainly using Blender on Windows, from Steam. My path is:
 `C:\Users\USER\AppData\Roaming\Blender Foundation\Blender\2.77\scripts\addons`
@@ -27,4 +27,4 @@ So far, I've been using Haroopad for editing Markdown files, but I grew tired an
 
 ## Support packages (support addons) for HardOps
 
-Check at the [Addons section](https://github.com/blackjuice/sectionAlpha/tree/master/Blender), on blackjuice's sectionAlpha repository in GitHub. There will be a table of my favorite addons.
+Check at the [Addons section](https://github.com/blackjuice/sectionAlpha/tree/master/Blender#addons), on blackjuice's sectionAlpha repository in GitHub. There will be a table of my favorite addons.
