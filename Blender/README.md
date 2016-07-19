@@ -56,7 +56,7 @@ List:
 
 Category:
 
-#### * common
+##### common
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
@@ -67,14 +67,14 @@ Category:
 |`Shift + Ctrl + Alt + C`| Recenter pivot point of an object  | and select **Origin to Geometry**. | [link](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin) |
 
 <!-- ---------------------------------------------------------------------------------- -->
-#### * hints
+##### hints
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
 |  |  | Switch to **edit mode** after .obj import | [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
 
 <!-- ---------------------------------------------------------------------------------- -->
-#### * wheel_design
+##### wheel_design
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
@@ -82,14 +82,14 @@ Category:
 |`Ctrl + M`     | Mirroring         | wheel design | |
 
 <!-- ---------------------------------------------------------------------------------- -->
-#### * camera
+##### camera
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
 | | Change camera lens | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
 
 <!-- ---------------------------------------------------------------------------------- -->
-#### * background
+##### background
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
