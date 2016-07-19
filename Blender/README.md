@@ -200,14 +200,14 @@ The following table contains favorite addons.
 
 | name | author | comment |
 |:------:|:--------:|:-------:|
-| [Quick preferences](http://blenderartists.org/forum/showthread.php?223293-QuickPrefs-Access-from-side-panel-to-Lighting-Presets-amp-often-changed-preferences) | Sean Olson (LiquidApe) |  |
-| [Auto mirror](http://blenderaddonlist.blogspot.com.br/2014/07/addon-auto-mirror.html) |  Lapineige |  |
-| [BoolTool](http://www.blendernation.com/2014/05/14/add-on-booltool/) | Vitor Balbio |  |
-| [Screencast Key Status](https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/Screencast_Key_Status_Tool) | Paulo Gomes, Bart Crouch, John E. Herrenyo, Gaia Clary, Pablo Vazquez | |
-| [Mira Tools](https://github.com/mifth/mifthtools/tree/master/blender/addons/mira_tools) | mifth | |
+| [Quick preferences](http://blenderartists.org/forum/showthread.php?223293-QuickPrefs-Access-from-side-panel-to-Lighting-Presets-amp-often-changed-preferences) | Sean Olson (LiquidApe) | recommended by masterxeon1001 |
+| [Auto mirror](http://blenderaddonlist.blogspot.com.br/2014/07/addon-auto-mirror.html) |  Lapineige | recommended by masterxeon1001 |
+| [BoolTool](http://www.blendernation.com/2014/05/14/add-on-booltool/) | Vitor Balbio | main tool for cutting feature on HardOps |
+| [Screencast Key Status](https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/Screencast_Key_Status_Tool) | Paulo Gomes, Bart Crouch, John E. Herrenyo, Gaia Clary, Pablo Vazquez | display key pressed |
+| [Mira Tools](https://github.com/mifth/mifthtools/tree/master/blender/addons/mira_tools) | mifth | recommended by masterxeon1001 |
 | [MeasureIt](https://github.com/Antonioya/blender/tree/master/measureit) | Antonioya | [youtube video for tutorial](https://www.youtube.com/watch?v=R0jCdCoaRvs&feature=youtu.be) |
-| [HardOps + BoxCutter](https://gumroad.com/masterxeon1001) | masterxeon1001 |  |
-| [Blender 2.7x XPS Tools 1.1](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690) | johnzero7 | XPS to Blender |
+| [HardOps + BoxCutter](https://gumroad.com/masterxeon1001) | masterxeon1001 | ultimate tool |
+| [Blender 2.7x XPS Tools 1.1](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690) | johnzero7 | XPS to Blender, a XNA model import feature in Blender |
 
 [> back to main Contents](#contents)
 
