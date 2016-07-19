@@ -1,13 +1,24 @@
 blackjuice's Blender experience
 
-# Contents:
+version: **Blender 2.77**
+
+# Notes
+
+This Markdown page is available at:
+
+* [blackjuice's GitHub](https://github.com/blackjuice/sectionAlpha/tree/master/Blender)
+* [saguahollic's wordpress blog](https://saguahollic.wordpress.com/)
+
+[//]: <> (================================================================================)
+# Contents
 
 * [Documentation](#documentation)
-* [Free library](#free_library)
-* [Hotkey table](#hotkey_table)
+* [Free library](#freelibrary)
+* [Hotkey table](#hotkeytable)
 * [Tips](#tips)
 * [Cheatsheet image](#cheatsheet)
 
+[//]: <> (================================================================================)
 ## Documentation
 
 Official doc for Blender:
@@ -17,7 +28,8 @@ Official doc for Blender:
 
 [> back to main Contents](#contents)
 
-## Free_library
+[//]: <> (================================================================================)
+## FreeLibrary
 
 List of websites containing free models for reference:
 
@@ -27,7 +39,8 @@ List of websites containing free models for reference:
 
 [> back to main Contents](#contents)
 
-## Hotkey_table
+[//]: <> (================================================================================)
+## HotkeyTable
 
 Desperate times calls for desperate measures.
 
@@ -43,7 +56,7 @@ List:
 
 Category:
 
-* #### *common*
+#### * *common*
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
@@ -55,7 +68,8 @@ Category:
 
 [> back to Hotkey_table](#hotkey_table)
 
-* #### *hints*
+[//]: <> (--------------------------------------------------------------------------------)
+#### * *hints*
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
@@ -63,7 +77,9 @@ Category:
 
 [> back to Hotkey_table](#hotkey_table)
 
-* #### *wheel_design*
+
+[//]: <> (--------------------------------------------------------------------------------)
+#### * *wheel_design*
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
@@ -72,32 +88,38 @@ Category:
 
 [> back to Hotkey_table](#hotkey_table)
 
-* #### *camera*
+
+[//]: <> (--------------------------------------------------------------------------------)
+#### * *camera*
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
-| --- | Change camera lens | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
-| `Q`           | Delete multiple material              | alternate | [click me](#deletemat) |
-| hotkey        | PNG background transparency           | alternate | [click me](#pngalpha) |
+| | Change camera lens | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
 
 [> back to Hotkey_table](#hotkey_table)
 
-* #### *background*
+
+[//]: <> (--------------------------------------------------------------------------------)
+#### * *background*
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
-| --- | Add background reference image | Small PLUS sign at top right corner of the 3d view workspace | --- |
+| `T` | Add background reference image | Activate `Properties Shelf` with the `T` key. At `Background Images`, click `Add Image` | |
 
 [> back to Hotkey_table](#hotkey_table)
 
+[//]: <> (================================================================================)
 ## Tips
 
 * [Delete multiple material](#tip001);
 * [PNG background transparency](#tip002);
 * [Set-up perspective view based on ref img](#tip003);
+* [11 tips for speeding up rendering cycles](#tip004);
 
 [> back to main Contents](#contents)
 
+
+[//]: <> (--------------------------------------------------------------------------------)
 ### Tip001
 #### Can I delete all materials of all objects in a scene quickly?
 
@@ -119,8 +141,12 @@ python
 
 [> back to list of Tips](#tips)
 
+
+[//]: <> (--------------------------------------------------------------------------------)
 ### Tip002
-#### Can Blender render pngs with the background transparent? [(source)](http://blender.stackexchange.com/questions/1303/can-blender-render-pngs-with-the-background-transparent)
+#### Can Blender render pngs with the background transparent?
+
+[Click here](http://blender.stackexchange.com/questions/1303/can-blender-render-pngs-with-the-background-transparent) for the source content.
 
 At **CYCLES**:
 
@@ -138,11 +164,29 @@ At **Blender Render**:
 
 [> back to list of Tips](#tips)
 
+
+[//]: <> (--------------------------------------------------------------------------------)
 ### Tip003
-#### How to set-up the perspective view based on a reference image? [(source)](http://blender.stackexchange.com/questions/9328/how-to-set-up-the-perspective-view-based-on-a-reference-image)
+#### How to set-up the perspective view based on a reference image?
+
+[Click here](http://blender.stackexchange.com/questions/9328/how-to-set-up-the-perspective-view-based-on-a-reference-image) for the source content.
 
 [> back to list of Tips](#tips)
 
+
+[//]: <> (--------------------------------------------------------------------------------)
+### Tip004
+#### At boundlessblending: “11 crazy tweaks to speed up cycles”
+
+11 useful tips on speeding up your rendering on cycles!
+
+What I always thought about doing it but never really did it was to use render layers to distribute calculations. Is really logical to think that rendering all layers together is more expensive than rendering each one separately. But for some time, I thought it wasn’t.
+
+[Click here](https://boundlessblending.blogspot.com.br/2016/04/blender-fast-rendering.html) for the source content.
+
+[> back to list of Tips](#tips)
+
+[//]: <> (================================================================================)
 ## Cheatsheet
 
 From http://www.giudansky.com/

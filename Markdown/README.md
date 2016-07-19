@@ -7,7 +7,7 @@ blackjuice's Markdown experience
 
 Editors
 =======
-Currently using softwares are:
+Currently (*160718*) using softwares are:
 
 *OSX*: **MacDown**
 *Windows*: **Atom** with the **markdown-preview-enhanced** package installed
