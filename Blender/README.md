@@ -66,6 +66,8 @@ Category:
 |`Ctrl + J`     | Make multiple Blender objects into one        | | |
 |`P`            | Opposite of `Ctrl + J`                        | | |
 |`Shift + Ctrl + Alt + C`| Recenter pivot point of an object  | and select **Origin to Geometry**. | [link](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin) |
+| `Ctrl + U` | Save current settings as default startup | `File > Load Factory Settings` to reset | |
+| `X` | Dissolve Edges | Drop down "X" menu to select `Dissolve Edges`, which deletes extra edges without deleting faces | |
 
 <!-- ---------------------------------------------------------------------------------- -->
 ##### hints
@@ -81,6 +83,7 @@ Category:
 |:------:|:--------:|:-------:|:------:|
 |`Alt + D`      | Duplicated Link   | wheel design | |
 |`Ctrl + M`     | Mirroring         | wheel design | |
+|`Alt + R`      | Multiply object around cursor, on `Edit mode`| awesome at making wire design | [EnigmaToots](https://www.youtube.com/watch?v=SE_F76g1qB0) |
 
 <!-- ---------------------------------------------------------------------------------- -->
 ##### camera
@@ -97,6 +100,7 @@ Category:
 | `T` | Add background reference image | Activate `Properties Shelf` with the `T` key. At `Background Images`, click `Add Image` | |
 
 [back to HotkeyTable](#hotkeytable)
+
 <!-- ================================================================================== -->
 ## Tips
 
