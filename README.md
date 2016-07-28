@@ -26,14 +26,14 @@ Finally below, **sectionAlpha** contains blackjuice's book wishlist.
 ## RecommendedBooks
 
 List:
-* [v.151027](#v.151027):
-  * [Economics & General human life](#v.151027_Economics&General);
-  * [Art & Blender](#v.151027_Art&Blender).
+* [v151027](#v151027):
+  * [Economics & General human life](#v151027_economicsandgeneral);
+  * [Art & Blender](#v151027_artandblender).
 
 [> back to main Content](#content)
 
-# v.151027
-#### v.151027_Economics&General
+# v151027
+#### v151027_EconomicsAndGeneral
 
 ### Economics & General human life
 
@@ -76,7 +76,7 @@ List:
 [> back to main Content](#content)
 
 --------------------------------------------------------------------------------
-#### v.151027_Art&Blender
+#### v151027_ArtAndBlender
 ### Art & Blender
 
 * [The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change Paperback by Stephen R. Covey](http://www.amazon.com/gp/product/1451639619/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1451639619&linkCode=as2&tag=blenguru-20&linkId=LJYG4SQP3WDLPDSH) $9.39
