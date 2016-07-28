@@ -9,7 +9,7 @@ This Markdown page is available at:
 * [blackjuice's GitHub](https://github.com/blackjuice/sectionAlpha/tree/master/Blender)
 * [saguahollic's wordpress blog](https://saguahollic.wordpress.com/)
 
-# Contents
+# Content
 
 * [Documentation](#documentation): Official doc for Blender;
 * [Computer specs](#specs): shirobokusu;
@@ -29,7 +29,7 @@ Official doc for Blender:
 * [Blender Hotkey](http://wiki.blender.org/index.php/Doc:2.4/Reference/Hotkeys/All)
 * [Blender manual Sphinx](https://www.blender.org/manual/contents.html)
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## Specs
  Computer (shirobokusu) specs:
@@ -43,7 +43,7 @@ Official doc for Blender:
 | OS          | Windows 10 Home                               |
 | System      | 64-bit                                        |
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## Setup
 Setting up AMD GPU on Blender: OpenCL Cycles on Blender **2.7X** + AMD GPUs
@@ -59,7 +59,7 @@ Setting up AMD GPU on Blender: OpenCL Cycles on Blender **2.7X** + AMD GPUs
 
 * Then run Blender.
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## Library
 
@@ -82,7 +82,7 @@ List of addresses containing free models, textures, favorite artists etc for ref
 * **News**:
   * [Blender Nation](http://www.blendernation.com/);
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## HotkeyTable
 
@@ -96,7 +96,7 @@ List:
 * [wheel design](#wheel_design)
 * [background](#background)
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## Category:
 ##### common
@@ -148,7 +148,7 @@ List:
 * [Selecting linked vertices](#tip005);
 * [Multiple addons using the same name](#tip006);
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 
 ### Tip001
@@ -259,7 +259,7 @@ Reference
 
 ----------------------------------------------------------------------------------------------
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## Cheatsheet
 
@@ -267,7 +267,7 @@ From http://www.giudansky.com/
 
 ![cheatsheet](http://www.giudansky.com/images/downloads/blender/blender3d-shortcuts-infographic.png)
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## TopTutorials
 
@@ -296,7 +296,7 @@ List of top tutorials gathered during blackjuice's Blender experience.
 
 * [Blend Library - Asset manager for material, objects and nodes](http://www.blendernation.com/2014/11/17/blend-library-asset-manager-for-materials-objects-and-nodes/)
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
 
 ## ExtraSoftwares
 
@@ -307,4 +307,4 @@ List of top tutorials gathered during blackjuice's Blender experience.
 
 So far, the Substance Painter is the cheapest option here.
 
-[> back to main Contents](#contents)
+[> back to main Content](#content)
