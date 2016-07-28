@@ -9,17 +9,19 @@ This Markdown page is available at:
 * [blackjuice's GitHub](https://github.com/blackjuice/sectionAlpha/tree/master/Blender)
 * [saguahollic's wordpress blog](https://saguahollic.wordpress.com/)
 
-<!-- ================================================================================== -->
 # Contents
 
-* [Documentation](#documentation)
-* [Free library](#freelibrary)
-* [Hotkey table](#hotkeytable)
-* [Tips](#tips)
-* [Addons](#addons)
-* [Cheatsheet image](#cheatsheet)
+* [Documentation](#documentation): Official doc for Blender;
+* [Computer specs](#specs): shirobokusu;
+* [Setup](#setup): setting up AMD GPU on Blender;
+* [Library](#library): Free models, textures, favorite artists;
+* [Hotkey table](#hotkeytable): Frequently used hotkeys listed on table;
+* [Tips](#tips): Some list of tips learned during Blender experience;
+* [Top tutorials](#toptutorials): list of tutorials;
+* [Addons](#addons): Favorite addons and more info;
+* [Cheatsheet image](#cheatsheet);
+* [Extra Softwares](#extrasoftwares): such as Substance Painter;
 
-<!-- ================================================================================== -->
 ## Documentation
 
 Official doc for Blender:
@@ -29,18 +31,59 @@ Official doc for Blender:
 
 [> back to main Contents](#contents)
 
-<!-- ================================================================================== -->
-## FreeLibrary
+## Specs
+ Computer (shirobokusu) specs:
 
-List of websites containing free models for reference:
-
-* [tf3dm.com](http://tf3dm.com/)
-* [cgtrader](http://www.cgtrader.com/)
-* [BenSimonds basemesh body](http://bensimonds.com/2011/07/31/basemeshes/)
+| spec | info |
+|:----:|:----:|
+| Motherboard | Gigabyte Technology Co, Ltd. GA-970A-UD3      |
+| Processor   | AMD FX(tm)-8320 Eight-core Processor 3.50 GHz |
+| Video card  | AMD Radeon HD 7800 Series                     |
+| RAM         | 8GB                                           |
+| OS          | Windows 10 Home                               |
+| System      | 64-bit                                        |
 
 [> back to main Contents](#contents)
 
-<!-- ================================================================================== -->
+## Setup
+Setting up AMD GPU on Blender: OpenCL Cycles on Blender **2.7X** + AMD GPUs
+
+* Update OpenCL drivers [here](http://support.amd.com/en-us/kb-articles/Pages/OpenCL2-Driver.aspx)
+* At main Blender folder, at Command prompt, enter:
+
+      set CYCLES_OPENCL_TEST=all
+
+* (**HINT**) To enter Disk Local "X":
+
+        $ d:
+
+* Then run Blender.
+
+[> back to main Contents](#contents)
+
+## Library
+
+List of addresses containing free models, textures, favorite artists etc for reference:
+
+* **Free models**:
+  * [tf3dm.com](http://tf3dm.com/);
+  * [cgtrader](http://www.cgtrader.com/);
+  * [BenSimonds basemesh body](http://bensimonds.com/2011/07/31/basemeshes/).
+
+* **Textures**:
+  * [Blender Cloud: Textures Library](http://www.blendernation.com/2015/12/27/blender-cloud-textures-library/).
+
+* **Artists**:
+  * Reynante Martinez
+  [![](img/reynanteMartinez.JPG)](http://www.reynantemartinez.com/tutorials.html)
+  * Blender Guru
+  [![](img/blenderguru.JPG)](http://www.blenderguru.com/)
+
+* **News**:
+  * [Blender Nation](http://www.blendernation.com/);
+
+[> back to main Contents](#contents)
+
 ## HotkeyTable
 
 Desperate times calls for desperate measures.
@@ -55,8 +98,7 @@ List:
 
 [> back to main Contents](#contents)
 
-Category:
-
+## Category:
 ##### common
 
 | hotkey | function | comment | source |
@@ -69,14 +111,12 @@ Category:
 | `Ctrl + U` | Save current settings as default startup | `File > Load Factory Settings` to reset | |
 | `X` | Dissolve Edges | Drop down "X" menu to select `Dissolve Edges`, which deletes extra edges without deleting faces | |
 
-<!-- ---------------------------------------------------------------------------------- -->
 ##### hints
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
 |  |  | Switch to **edit mode** after .obj import | [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
 
-<!-- ---------------------------------------------------------------------------------- -->
 ##### wheel_design
 
 | hotkey | function | comment | source |
@@ -85,14 +125,12 @@ Category:
 |`Ctrl + M`     | Mirroring         | wheel design | |
 |`Alt + R`      | Multiply object around cursor, on `Edit mode`| awesome at making wire design | [EnigmaToots](https://www.youtube.com/watch?v=SE_F76g1qB0) |
 
-<!-- ---------------------------------------------------------------------------------- -->
 ##### camera
 
 | hotkey | function | comment | source |
 |:------:|:--------:|:-------:|:------:|
 | | Change camera lens | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
 
-<!-- ---------------------------------------------------------------------------------- -->
 ##### background
 
 | hotkey | function | comment | source |
@@ -101,7 +139,6 @@ Category:
 
 [back to HotkeyTable](#hotkeytable)
 
-<!-- ================================================================================== -->
 ## Tips
 
 * [Delete multiple material](#tip001);
@@ -114,7 +151,6 @@ Category:
 [> back to main Contents](#contents)
 
 
-<!-- ---------------------------------------------------------------------------------- -->
 ### Tip001
 #### Can I delete all materials of all objects in a scene quickly?
 
@@ -137,7 +173,6 @@ python
 [> back to list of Tips](#tips)
 
 
-<!-- ---------------------------------------------------------------------------------- -->
 ### Tip002
 #### Can Blender render pngs with the background transparent?
 
@@ -160,7 +195,6 @@ At **Blender Render**:
 [> back to list of Tips](#tips)
 
 
-<!-- ---------------------------------------------------------------------------------- -->
 ### Tip003
 #### How to set-up the perspective view based on a reference image?
 
@@ -168,7 +202,6 @@ At **Blender Render**:
 
 [> back to list of Tips](#tips)
 
-<!-- ---------------------------------------------------------------------------------- -->
 ### Tip004
 #### At boundlessblending: “11 crazy tweaks to speed up cycles”
 
@@ -178,7 +211,6 @@ What I always thought about doing it but never really did it was to use render l
 
 [Click here](https://boundlessblending.blogspot.com.br/2016/04/blender-fast-rendering.html) for the source content.
 
-<!-- ---------------------------------------------------------------------------------- -->
 ### Tip005
 #### Selecting linked vertices
 
@@ -197,7 +229,6 @@ Go `Window > Toggle System Console`.
 
 [> back to list of Tips](#tips)
 
-<!-- ================================================================================== -->
 ## Addons
 
 The following table contains favorite addons.
@@ -213,13 +244,67 @@ The following table contains favorite addons.
 | [HardOps + BoxCutter](https://gumroad.com/masterxeon1001) | masterxeon1001 | ultimate tool |
 | [Blender 2.7x XPS Tools 1.1](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690) | johnzero7 | XPS to Blender, a XNA model import feature in Blender |
 
+## More info on addons
+
+### XPS to Blender 2.7x [(source here)](http://johnzero7.deviantart.com/art/XPS-to-Blender-2-7x-Blender-internal-the-easy-way-489500171)
+
+* [Download XPS Tools for Blender 2.7x](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690)
+
+Reference
+
+| source | info |
+|:------:|:----:|
+| [johnzero7](http://johnzero7.deviantart.com/gallery/) | Blender/XPS guide |
+| [irokichigai01](http://irokichigai01.deviantart.com/) | xnalara/xna mesh ascii good models |
+
+----------------------------------------------------------------------------------------------
+
 [> back to main Contents](#contents)
 
-<!-- ================================================================================== -->
 ## Cheatsheet
 
 From http://www.giudansky.com/
 
 ![cheatsheet](http://www.giudansky.com/images/downloads/blender/blender3d-shortcuts-infographic.png)
+
+[> back to main Contents](#contents)
+
+## TopTutorials
+
+List of top tutorials gathered during blackjuice's Blender experience.
+
+* [Create a Muddy Landscape in Blender](http://www.blendernation.com/2016/01/09/create-muddy-landscape-blender/)
+  * [![](img/Blendernationmud-702x336.jpg)](https://www.youtube.com/watch?time_continue=469&v=ibLBRxBC498)
+
+
+* [Why and How to Use a Camera Rig](http://www.blenderhd.com/tutorial/why-and-how-to-use-a-camera-rig/)
+  * [![](img/cameraRig.JPG)](https://www.youtube.com/watch?v=H7CISQFl7kA)
+
+
+* [Blender Freestyle for Background Line Art](http://www.blendernation.com/2015/12/29/blender-freestyle-background-line-art/)
+  * [![](img/lineart.JPG)](https://www.youtube.com/watch?v=2PoElEZbdwk)
+
+* Motion
+  * [![](img/motioon.png)](http://www.matthewinglis.com/tutorials/lowpolyabstracttutorial.aspx)
+
+
+* Low-poly modeling for high-poly rendering
+  * [![](img/lowpowhigh.jpg)](http://www.bjobernis.fr/news/post/displace-and-groups-modeling-tip-en)
+
+* [Turning your blend file into a asset library](http://www.blendernation.com/2016/03/05/turning-blend-file-asset-library/)
+
+
+* [Blend Library - Asset manager for material, objects and nodes](http://www.blendernation.com/2014/11/17/blend-library-asset-manager-for-materials-objects-and-nodes/)
+
+[> back to main Contents](#contents)
+
+## ExtraSoftwares
+
+* Alternatives for **Substance Painter** (US$ 149):
+    * Blacksmith 3D (http://blacksmith3d.com/)
+    * 3D coat (http://3dcoat.com/home/)
+    * MARI (http://www.thefoundry.co.uk/products/mari/)
+
+So far, the Substance Painter is the cheapest option here.
 
 [> back to main Contents](#contents)
