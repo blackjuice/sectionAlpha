@@ -3,6 +3,7 @@
 * [Basic command lines](#commands);
 * [Issues encountered and countered](#issues);
 * [Extra fun commands](http://mylinuxbook.com/funny-side-of-linux-command-line).
+* [Dot_Files](#dotfiles): favorite configuration on dot files;
 
 ## Commands
 
@@ -117,4 +118,87 @@ We went for the (ii) option, but we still got the error.
 So we went to `install -f`, then again `sudo apt upgrade`, then `sudo apt update`. This solved the problem.
 
 [> back to Issues](#issues)
+[> back to Content](#content)
+
+
+## DotFiles
+
+## .bashrc
+
+Pretty colors on bash profile:
+
+    # COLORS
+    # terminal background color = #160C1F
+    # for one line
+    PS1='\[\033[1m\033[32m\]\u@\h \w\[\033[0m\]\$ '
+    # for two lines
+    PS1='\[\e[1;32m\]\H\[\e[0m\] :: \[\e[1;30m\]\d\[\e[0m\] \@ :: \[\e[1;33m\]\w\n\[\e[1;34m\]\u $ \[\033[0m\]'
+
+Some custom alias and specific path for custom scripts:
+
+    # Custom
+    #-----------------------------------------
+    # taking commands on custom created scripts
+    export PATH=.:/home/commander/bin/scripts:$PATH
+    export PATH=.:/usr/racket/bin:$PATH
+
+    # aliases
+    # Check for Debian version
+    alias tellmedebianversion='lsb_release -a'
+
+    # shutdown
+    alias shutdown='sudo shutdown -h now'
+
+    # reboot
+    alias restart='sudo reboot'
+
+    # exit terminal
+    alias bye='exit'
+
+    # backstep folder
+    alias back='cd ..'
+
+    # .bashrc
+    alias bashvi='cd && vi .bashrc'
+    alias bashreload='cd && . ~/.bashrc'
+
+    alias sourcevi='cd && sudo vi /etc/apt/sources.list'
+
+    # git
+    alias gitadd='git add -A && git commit -a && git push origin master'
+    alias gitpull='git pull origin master'
+
+    # apt-get
+    alias aptupdate='sudo apt-get update'
+    alias aptupgrade='sudo apt-get upgrade'
+    alias aptinstallf='sudo apt-get install -f'
+
+## .vimrc
+
+Enable colors for vim and converting tabs to 4 spaces.
+
+    " colors on
+    syntax on
+    " thanks to http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
+    filetype plugin indent on
+    " show existing tab with 4 spaces width
+    set tabstop = 4
+    " when indenting with '>', use 4 spaces width
+    set shiftwidth = 4
+    " On pressing tab, insert 4 spaces
+    set expandtab
+
+## .inputrc
+
+    $include /etc/inputrc
+
+    # for line seach
+    "\e[A": history-search-backward
+    "\e[B": history-search-forward
+    "\e[C": forward-char
+    "\e[D": backward-char
+
+    # stop line bell
+    set bell-style none
+
 [> back to Content](#content)
