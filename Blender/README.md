@@ -21,6 +21,7 @@ This Markdown page is available at:
 * [Addons](#addons): Favorite addons and more info;
 * [Cheatsheet image](#cheatsheet);
 * [Extra Softwares](#extrasoftwares): such as Substance Painter;
+* [Top arts](#topart): some really good art;
 
 ## Documentation
 
@@ -296,6 +297,10 @@ List of top tutorials gathered during blackjuice's Blender experience.
 
 * [Blend Library - Asset manager for material, objects and nodes](http://www.blendernation.com/2014/11/17/blend-library-asset-manager-for-materials-objects-and-nodes/)
 
+
+* [How to make a 3D model of the hedge](https://www.cgtrader.com/tutorials/256-how-to-make-a-3d-model-of-the-hedge): "creation of high-polygon model with further optimization and decrease the number of polygons, the example of the hedge"
+
+
 [> back to main Content](#content)
 
 ## ExtraSoftwares
@@ -306,5 +311,25 @@ List of top tutorials gathered during blackjuice's Blender experience.
     * MARI (http://www.thefoundry.co.uk/products/mari/)
 
 So far, the Substance Painter is the cheapest option here.
+
+[> back to main Content](#content)
+
+## TopArts
+
+* https://www.cgtrader.com/gallery/project/buggy-for-apocalypse
+![](https://img-new.cgtrader.com/galleries/6580/large_982178a0-5268-47c8-95aa-c3dd376e883c.jpg)
+
+
+* https://www.cgtrader.com/gallery/project/harley-davidson-xr1200x
+![](https://img-new.cgtrader.com/galleries/6972/large_3b450fbe-0e03-4eb0-a4d3-b64827f81cc4.jpg)
+
+
+* https://www.cgtrader.com/gallery/project/killer-barbie
+![](https://img-new.cgtrader.com/galleries/6417/large_e0b56c2e-e321-4a5d-93b2-ed314b000f92.jpg)
+
+
+* https://www.cgtrader.com/gallery/project/robot-series-105
+![](https://img-new.cgtrader.com/galleries/5269/large_ded2334f-7b54-45f2-80f6-420660d49649.jpg)
+
 
 [> back to main Content](#content)
