@@ -23,7 +23,7 @@ Description:
 # First course: HTML + CSS
 *lecture given by Gustavo Silva*
 
-The folder on this repository named `160804_html_css` contains files created through lecture as practical exercises.
+The folder on this repository named [`160804_html_css`](https://github.com/blackjuice/sectionAlpha/tree/master/Lecture/160804_html_css) contains files created through lecture as practical exercises.
 
 custom tags:
 
