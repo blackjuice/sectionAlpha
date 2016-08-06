@@ -23,9 +23,9 @@ Description:
 # First course: HTML + CSS
 *lecture given by Gustavo Silva*
 
-The folder on this repository named [`160804_html_css`](https://github.com/blackjuice/sectionAlpha/tree/master/Lecture/160804_html_css) contains files created throughout lecture as practical exercises.
+The folder on this repository named [`160804_html_css`](https://github.com/blackjuice/sectionAlpha/tree/master/Lecture/160804_html_css) contains files created throughout lecture as practical exercises. As for the slides, follow [`this link`](http://slides.com/imeworkshop/oficina-html-css#/) (material created with https://slides.com/).
 
-custom tags:
+### custom tags:
 
 * **class**: identify one or more elements. On HTML: `<tag class="classA"></tag>`. On CSS: `.classA`;
 * **id**: unique. On HTML: `<tag id="idA"></tag>`. On CSS: `#idA`;
@@ -45,7 +45,7 @@ All `<p>` inside `<li>` will be customized:
         li p {
             color: purple;
         }
-        
+
 `sel1 sel2`: separated by space. All `sel2` inside `sel1`.
 
 ### Tables
@@ -69,7 +69,7 @@ Display are blocks. Act as `inline`, having **width/height** though.
 
 ### Position
 
-Another similar property of *Display* is *Position*. 
+Another similar property of *Display* is *Position*.
 
 **Absolute** looks for the first non-static father.
 
