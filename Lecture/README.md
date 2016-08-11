@@ -5,10 +5,10 @@ This lecture consists on 4 parts:
 
 | date   | topic |
 |:-------|:------|
-| 160804 | HTML + CSS |
-| 1608XX | JavaScript + jQuery |
-| 1608XX | Forms + AJAX + JSON |
-| 1608XX | Bootstrap |
+| 160804 | [HTML + CSS](#lecture1) |
+| 160811 | [JavaScript + jQuery](#lecture2) |
+| 1608XX | [Forms + AJAX + JSON](#lecture3) |
+| 1608XX | [Bootstrap](#lecture4) |
 
 Description:
 > Na primeira oficina do ciclo de Introdução a Web, vamos ver os conceitos de HTML5 e CSS3 que nos permitem estruturar o layout da nossa aplicação Web e estilizá-la como quisermos.
@@ -20,6 +20,7 @@ Description:
 * It was recommended to learn AngularJS;
 * LAMP is a stack type.
 
+## Lecture1
 # First course: HTML + CSS
 *lecture given by Gustavo Silva*
 
@@ -78,3 +79,9 @@ Another similar property of *Display* is *Position*.
 Approximates a magazine design.
 
 `clear: both` solves overlapping design issues.
+
+
+## Lecture2
+# Second course: JavaScript + jQuery
+*lecture given by Gustavo Silva*
+The folder on this repository named [`160804_html_css`](https://github.com/blackjuice/sectionAlpha/tree/master/Lecture/160804_html_css) contains files created throughout lecture as practical exercises. As for the slides, follow [`this link`](http://slides.com/imeworkshop/oficina-html-css#/) (material created with https://slides.com/).
