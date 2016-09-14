@@ -15,7 +15,7 @@ This Markdown page is available at:
 * [Computer specs](#specs): shirobokusu;
 * [Setup](#setup): setting up AMD GPU on Blender;
 * [Library](#library): Free models, textures, favorite artists;
-* [Hotkey table](#hotkeytable): Frequently used hotkeys listed on table;
+* [Hotkey table](#hotkey-table): Frequently used hotkeys listed on table;
 * [Tips](#tips): Some list of tips learned during Blender experience;
 * [Top tutorials](#toptutorials): list of tutorials;
 * [Addons](#addons): Favorite addons and more info;
@@ -85,7 +85,7 @@ List of addresses containing free models, textures, favorite artists etc for ref
 
 [> back to main Content](#content)
 
-## HotkeyTable
+## Hotkey Table
 
 Desperate times calls for desperate measures.
 
