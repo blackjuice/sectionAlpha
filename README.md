@@ -23,61 +23,64 @@ Finally below, **sectionAlpha** contains blackjuice's book wishlist.
 # Content
 * [Recommended books](#recommendedbooks);
 
-## RecommendedBooks
+## <a name="recommendedbooks"></a> Recommended Books
 
 List:
 * [v151027](#v151027):
-  * [Economics & General human life](#v151027_economicsandgeneral);
-  * [Art & Blender](#v151027_artandblender).
+  * [Economics & General human life](#v151027_01);
+  * [Art & Blender](#v151027_02).
+* [v160923](#v160923):
+  * [Science Fiction & Fantasy](#v160923_01).
 
 [> back to main Content](#content)
 
 # v151027
-#### v151027_EconomicsAndGeneral
-
-### Economics & General human life
+## <a name="v151027_01"></a> Economics & General human life
 
 * [Business Adventures by John Brooks](http://www.amazon.com/Business-Adventures-Twelve-Classic-Street/dp/1497644895)
 
-    $9.73
+    `$9.73`
 
-      From Wall Street to Main Street, John Brooks, longtime contributor to the New Yorker, brings to life in vivid fashion twelve classic and timeless tales of corporate and financial life in America.
-      What do the $350 million Ford Motor Company disaster known as the Edsel, the fast and incredible rise of Xerox, and the unbelievable scandals at General Electric and Texas Gulf Sulphur have in common? Each is an example of how an iconic company was defined by a particular moment of fame or notoriety; these notable and fascinating accounts are as relevant today to understanding the intricacies of corporate life as they were when the events happened.
+    From Wall Street to Main Street, John Brooks, longtime contributor to the New Yorker, brings to life in vivid fashion twelve classic and timeless tales of corporate and financial life in America.
+    What do the $350 million Ford Motor Company disaster known as the Edsel, the fast and incredible rise of Xerox, and the unbelievable scandals at General Electric and Texas Gulf Sulphur have in common? Each is an example of how an iconic company was defined by a particular moment of fame or notoriety; these notable and fascinating accounts are as relevant today to understanding the intricacies of corporate life as they were when the events happened.
+
 
 * [On Immunity: An Inoculation by Eula Biss](http://www.amazon.com/On-Immunity-Inoculation-Eula-Biss/dp/1555976891)
 
-    $16.80
+    `$16.80`
 
-      Why do we fear vaccines? A provocative examination by Eula Biss, the author of Notes from No Man's Land, winner of the National Book Critics Circle Award
-      Upon becoming a new mother, Eula Biss addresses a chronic condition of fear-fear of the government, the medical establishment, and what is in your child's air, food, mattress, medicine, and vaccines. She finds that you cannot immunize your child, or yourself, from the world.
-      In this bold, fascinating book, Biss investigates the metaphors and myths surrounding our conception of immunity and its implications for the individual and the social body. As she hears more and more fears about vaccines, Biss researches what they mean for her own child, her immediate community, America, and the world, both historically and in the present moment. She extends a conversation with other mothers to meditations on Voltaire's Candide, Bram Stoker's Dracula, Rachel Carson's Silent Spring, Susan Sontag's AIDS and Its Metaphors, and beyond. On Immunity is a moving account of how we are all interconnected-our bodies and our fates.
+    Why do we fear vaccines? A provocative examination by Eula Biss, the author of Notes from No Man's Land, winner of the National Book Critics Circle Award
+    Upon becoming a new mother, Eula Biss addresses a chronic condition of fear-fear of the government, the medical establishment, and what is in your child's air, food, mattress, medicine, and vaccines. She finds that you cannot immunize your child, or yourself, from the world.
+    In this bold, fascinating book, Biss investigates the metaphors and myths surrounding our conception of immunity and its implications for the individual and the social body. As she hears more and more fears about vaccines, Biss researches what they mean for her own child, her immediate community, America, and the world, both historically and in the present moment. She extends a conversation with other mothers to meditations on Voltaire's Candide, Bram Stoker's Dracula, Rachel Carson's Silent Spring, Susan Sontag's AIDS and Its Metaphors, and beyond. On Immunity is a moving account of how we are all interconnected-our bodies and our fates.
+
 
 * [Making the Modern World: Materials and Dematerialization by Vaclav Smil](http://www.amazon.com/Making-Modern-World-Materials-Dematerialization/dp/1119942535)
 
-    $40.96
+    `$40.96`
 
-      How much further should the affluent world push its material consumption? Does relative dematerialization lead to absolute decline in demand for materials? These and many other questions are discussed and answered in Making the Modern World: Materials and Dematerialization. Over the course of time, the modern world has become dependent on unprecedented flows of materials. Now even the most efficient production processes and the highest practical rates of recycling may not be enough to result in dematerialization rates that would be high enough to negate the rising demand for materials generated by continuing population growth and rising standards of living. This book explores the costs of this dependence and the potential for substantial dematerialization of modern economies. Making the Modern World: Materials and Dematerialization considers the principal materials used throughout history, from wood and stone, through to metals, alloys, plastics and silicon, describing their extraction and production as well as their dominant applications. The evolving productivities of material extraction, processing, synthesis, finishing and distribution, and the energy costs and environmental impact of rising material consumption are examined in detail. The book concludes with an outlook for the future, discussing the prospects for dematerialization and potential constrains on materials. This interdisciplinary text provides useful perspectives for readers with backgrounds including resource economics, environmental studies, energy analysis, mineral geology, industrial organization, manufacturing and material science.
+    How much further should the affluent world push its material consumption? Does relative dematerialization lead to absolute decline in demand for materials? These and many other questions are discussed and answered in Making the Modern World: Materials and Dematerialization. Over the course of time, the modern world has become dependent on unprecedented flows of materials. Now even the most efficient production processes and the highest practical rates of recycling may not be enough to result in dematerialization rates that would be high enough to negate the rising demand for materials generated by continuing population growth and rising standards of living. This book explores the costs of this dependence and the potential for substantial dematerialization of modern economies. Making the Modern World: Materials and Dematerialization considers the principal materials used throughout history, from wood and stone, through to metals, alloys, plastics and silicon, describing their extraction and production as well as their dominant applications. The evolving productivities of material extraction, processing, synthesis, finishing and distribution, and the energy costs and environmental impact of rising material consumption are examined in detail. The book concludes with an outlook for the future, discussing the prospects for dematerialization and potential constrains on materials. This interdisciplinary text provides useful perspectives for readers with backgrounds including resource economics, environmental studies, energy analysis, mineral geology, industrial organization, manufacturing and material science.
+
 
 * [How Asia Works Paperback by Joe Studwell](http://www.amazon.com/How-Asia-Works-Joe-Studwell/dp/0802121322)
 
-    $14.23
+    `$14.23`
 
-      In the 1980s and 1990s many in the West came to believe in the myth of an East-Asian economic miracle, with countries seen as not just development prodigies but as a unified bloc, culturally and economically similar, and inexorably on the rise. In How Asia Works, Joe Studwell distills extensive research into the economics of nine countries—Japan, South Korea, Taiwan, Indonesia, Malaysia, Thailand, the Philippines, Vietnam, and China—into an accessible, readable narrative that debunks Western misconceptions, shows what really happened in Asia and why, and for once makes clear why some countries have boomed while others have languished. Impressive in scope, How Asia Works is essential reading for anyone interested in a region that will shape the future of the world.
+    In the 1980s and 1990s many in the West came to believe in the myth of an East-Asian economic miracle, with countries seen as not just development prodigies but as a unified bloc, culturally and economically similar, and inexorably on the rise. In How Asia Works, Joe Studwell distills extensive research into the economics of nine countries—Japan, South Korea, Taiwan, Indonesia, Malaysia, Thailand, the Philippines, Vietnam, and China—into an accessible, readable narrative that debunks Western misconceptions, shows what really happened in Asia and why, and for once makes clear why some countries have boomed while others have languished. Impressive in scope, How Asia Works is essential reading for anyone interested in a region that will shape the future of the world.
+
 
 * [How to Lie with Statistics by Darrell Huff](http://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728)
 
-    $10.26
+    `$10.26`
 
-      "There is terror in numbers," writes Darrell Huff in How to Lie with Statistics. And nowhere does this terror translate to blind acceptance of authority more than in the slippery world of averages, correlations, graphs, and trends. Huff sought to break through "the daze that follows the collision of statistics with the human mind" with this slim volume, first published in 1954. The book remains relevant as a wake-up call for people unaccustomed to examining the endless flow of numbers pouring from Wall Street, Madison Avenue, and everywhere else someone has an axe to grind, a point to prove, or a product to sell. "The secret language of statistics, so appealing in a fact-minded culture, is employed to sensationalize, inflate, confuse, and oversimplify," warns Huff.
-      Although many of the examples used in the book are charmingly dated, the cautions are timeless. Statistics are rife with opportunities for misuse, from "gee-whiz graphs" that add nonexistent drama to trends, to "results" detached from their method and meaning, to statistics' ultimate bugaboo--faulty cause-and-effect reasoning. Huff's tone is tolerant and amused, but no-nonsense. Like a lecturing father, he expects you to learn something useful from the book, and start applying it every day. Never be a sucker again, he cries!
-      Even if you can't find a source of demonstrable bias, allow yourself some degree of skepticism about the results as long as there is a possibility of bias somewhere. There always is.
-      Read How to Lie with Statistics. Whether you encounter statistics at work, at school, or in advertising, you'll remember its simple lessons. Don't be terrorized by numbers, Huff implores. "The fact is that, despite its mathematical base, statistics is as much an art as it is a science." --Therese Littleton
+    "There is terror in numbers," writes Darrell Huff in How to Lie with Statistics. And nowhere does this terror translate to blind acceptance of authority more than in the slippery world of averages, correlations, graphs, and trends. Huff sought to break through "the daze that follows the collision of statistics with the human mind" with this slim volume, first published in 1954. The book remains relevant as a wake-up call for people unaccustomed to examining the endless flow of numbers pouring from Wall Street, Madison Avenue, and everywhere else someone has an axe to grind, a point to prove, or a product to sell. "The secret language of statistics, so appealing in a fact-minded culture, is employed to sensationalize, inflate, confuse, and oversimplify," warns Huff.
+    Although many of the examples used in the book are charmingly dated, the cautions are timeless. Statistics are rife with opportunities for misuse, from "gee-whiz graphs" that add nonexistent drama to trends, to "results" detached from their method and meaning, to statistics' ultimate bugaboo--faulty cause-and-effect reasoning. Huff's tone is tolerant and amused, but no-nonsense. Like a lecturing father, he expects you to learn something useful from the book, and start applying it every day. Never be a sucker again, he cries!
+    Even if you can't find a source of demonstrable bias, allow yourself some degree of skepticism about the results as long as there is a possibility of bias somewhere. There always is.
+    Read How to Lie with Statistics. Whether you encounter statistics at work, at school, or in advertising, you'll remember its simple lessons. Don't be terrorized by numbers, Huff implores. "The fact is that, despite its mathematical base, statistics is as much an art as it is a science." --Therese Littleton
+
 
 [> back to main Content](#content)
 
---------------------------------------------------------------------------------
-#### v151027_ArtAndBlender
-### Art & Blender
+## <a name="v151027_02"> Art & Blender
 
 * [The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change Paperback by Stephen R. Covey](http://www.amazon.com/gp/product/1451639619/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1451639619&linkCode=as2&tag=blenguru-20&linkId=LJYG4SQP3WDLPDSH) $9.39
 
@@ -100,5 +103,16 @@ List:
 * [Picture Perfect Practice: A Self-Training Guide to Mastering the Challenges of Taking World-Class Photographs (Voices That Matter) 1st Edition by Roberto Valenzuela](http://www.amazon.com/gp/product/0321803531/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321803531&linkCode=as2&tag=blenguru-20&linkId=DQBANEQVNRJC6EMC) $27.54
 
 Art & Blender Total: 232.46
+
+[> back to main Content](#content)
+
+# v160923
+
+## <a name="v160923_01"></a> Science Fiction & Fantasy
+
+* [The Complete Malazan Book of the Fallen by Steven Erikson](https://www.amazon.com/Complete-Malazan-Book-Fallen-ebook/dp/B00HL0MA3W)
+
+    The Malazan Book of the Fallen is an epic fantasy series written by Canadian author Steven Erikson, published in ten volumes beginning with the novel Gardens of the Moon, published in 1999. The series was completed with the publication of The Crippled God in February 2011. Erikson's series is extremely complex with a wide scope, and presents the narratives of a large cast of characters spanning thousands of years across multiple continents. Erikson's plotting presents a complicated series of events in the world upon which the Malazan Empire is located. Each of the first five novels is relatively self-contained, in that it resolves its respective primary conflict; but many underlying characters and events are interwoven throughout the works of the series, binding it together.
+
 
 [> back to main Content](#content)
