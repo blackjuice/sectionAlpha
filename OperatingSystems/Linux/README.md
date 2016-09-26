@@ -156,7 +156,7 @@ Some custom alias and specific path for custom scripts:
     alias bye='exit'
 
     # backstep folder
-    alias back='cd ..'
+    alias back='cd .. && ll'
 
     # .bashrc
     alias bashvi='cd && vi .bashrc'
