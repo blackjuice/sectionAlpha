@@ -10,25 +10,25 @@
 | function                        | command line |
 |:--------------------------------|:-------------|
 | **TAR BALLS**                   | ------------ |
-| *COMPRESS*                      | |
+| *COMPRESS*                      |              |
 | Good compression with less CPU  | `tar -zcvf archive_name.tar.gz directory_to_compress` |
-| *DECOMPRESS*                    | |
+| *DECOMPRESS*                    |              |
 | Extract `.tar` balls            | `tar xf archive.tar` |
 | Extract alternative             | `tar -zxvf archive_name.tar.gz` |
 | Extract to different directory  | `tar -zxvf archive_name.tar.gz -C /tmp/extract_here/` |
-| **SSH**         | ------------ |
-| ssh access 			| `ssh [user]`                    |
-| ssh download  	| `scp -r [user]:~/[directory]`   |
-| ssh upload 			| `scp source user@host:dir`      |
-| **COPY / MOVE / REMOVE**  | ------------ |
-| copy file 			          | `cp [file] [destination]`     |
-| copy folder 		          | `cp -r [file] [destination]`  |
-| moving file 		          | `mv [foo] ~/file/`            |
-| moving folder 		        | `mv -r [foo] ~/file/`         |
-| remove file 		          | `rm [file]`                   |
-| remove folder 		        | `rm -r [folder]`              |
-| **SHUTDOWN**  | |
-| shutdown 			| `sudo shutdown -h now` |
+| **SSH**                   | ------------                    |
+| ssh access 			    | `ssh [user]`                    |
+| ssh download  	        | `scp -r [user]:~/[directory]`   |
+| ssh upload 			    | `scp source user@host:dir`      |
+| **COPY / MOVE / REMOVE**  | ------------                  |
+| copy file 			    | `cp [file] [destination]`     |
+| copy folder 		        | `cp -r [file] [destination]`  |
+| moving file 		        | `mv [foo] ~/file/`            |
+| moving folder 		    | `mv -r [foo] ~/file/`         |
+| remove file 		        | `rm [file]`                   |
+| remove folder 	        | `rm -r [folder]`              |
+| **SHUTDOWN**          | ------------           |
+| shutdown 			    | `sudo shutdown -h now` |
 | reboot 				| `sudo reboot`          |
 | **WGET**                                            | ------------ |
 | prevents downloading `foo*`, example `index.html`   | `wget -r --no-parent -nd --reject "index.html*" "http://link.com"` |
@@ -36,18 +36,22 @@
 | recursive                                           | `-r`   |
 | prevents creating folders                           | `-nd`  |
 | frequently used                                     | `wget -r --no-parent --reject "*.html*" "http://link.com"` |
-| **CREATE SHORCUT**    | ------------ |
-| create a shorcut      | `gnome-desktop-item-edit Desktop --create-new` |
+| **CREATE SHORCUT**    | ------------                                               |
+| create a shorcut      | `gnome-desktop-item-edit Desktop --create-new`             |
 | install if required   | `sudo apt-get install --no-install-recommends gnome-panel` |
-| example: creating a firefox shortcut | `command: /usr/bin/firefox` |
-| **.BASHRC**           | ------------ |
+| example: creating a firefox shortcut | `command: /usr/bin/firefox`                 |
+| **.BASHRC**           | ------------              |
 | updating .bashrc      | `. ~/.bashrc`             |
 | restore your .bashrc  | `cp /etc/skel/.bashrc ~/` |
-| **FIND**  | ------------ |
-| find file | `find ~/ -type f -name "filename"` |
-| **I/O**               | ------------ |
+| **FIND**              | ------------                       |
+| find file             | `find ~/ -type f -name "filename"` |
+| **I/O**               | ------------                            |
 | standard input/output | `compiler < input.file > output.file`   |
 | to append the results | `compiler < input.file >> output.file`  |
+| **MOUNT SDB**         | ------------                       |
+| list drives           | `sudo fdisk -l`                    |
+| mount                 | `sudo mount /dev/<sdb1> media/usb` |
+| unmount               | `sudo umount media/usb`            |
 
 [> back to Content](#content)
 
