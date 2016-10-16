@@ -300,6 +300,7 @@ List of top tutorials gathered during blackjuice's Blender experience.
 
 * [How to make a 3D model of the hedge](https://www.cgtrader.com/tutorials/256-how-to-make-a-3d-model-of-the-hedge): "creation of high-polygon model with further optimization and decrease the number of polygons, the example of the hedge"
 
+* [LEARNING MESH TOPOLOGY COLLECTION at cgcookie](https://cgcookie.com/archive/learning-mesh-topology-collection/) and a [speed scultp video](https://www.youtube.com/watch?v=cCC4tpzJNdc)
 
 [> back to main Content](#content)
 
