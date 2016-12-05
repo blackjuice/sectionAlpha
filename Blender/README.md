@@ -302,6 +302,8 @@ List of top tutorials gathered during blackjuice's Blender experience.
 
 * [LEARNING MESH TOPOLOGY COLLECTION at cgcookie](https://cgcookie.com/archive/learning-mesh-topology-collection/) and a [speed scultp video](https://www.youtube.com/watch?v=cCC4tpzJNdc)
 
+* [How to organize 3D Projects](https://www.youtube.com/watch?v=8WP2ch4AaWQ)
+
 [> back to main Content](#content)
 
 ## ExtraSoftwares
