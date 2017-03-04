@@ -37,14 +37,14 @@ Official doc for Blender:
 
 | spec | info |
 |:----:|:----:|
-| Motherboard | Gigabyte Technology Co, Ltd. GA-970A-UD3      |
-| Processor   | AMD FX(tm)-8320 Eight-core Processor 3.50 GHz |
-| Video card  | AMD Radeon HD 7800 Series                     |
-| RAM         | 8GB                                           |
-| OS          | Windows 10 Home                               |
-| System      | 64-bit                                        |
+| Motherboard | Gigabyte Technology Co, Ltd. GA-970A-UD3                  |
+| Processor   | AMD FX(tm)-8320 Eight-core Processor 3.50 GHz             |
+| Video card  | AMD Radeon HD 7800 Series (Club 3D HD 7870 XT jokerCard)  |
+| RAM         | 8GB                                                       |
+| OS          | Windows 10 Home                                           |
+| System      | 64-bit                                                    |
 
-GPU:
+GPU ([check me](https://www.techpowerup.com/gpudb/b762/club-3d-hd-7870-xt-jokercard)):
 
 ![](https://github.com/blackjuice/sectionAlpha/blob/master/Blender/img/gpu_z.JPG?raw=true)
 
