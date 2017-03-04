@@ -44,6 +44,10 @@ Official doc for Blender:
 | OS          | Windows 10 Home                               |
 | System      | 64-bit                                        |
 
+GPU:
+
+![](https://github.com/blackjuice/sectionAlpha/blob/master/Blender/img/gpu_z.JPG?raw=true)
+
 [> back to main Content](#content)
 
 ## Setup
