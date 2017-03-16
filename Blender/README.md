@@ -18,7 +18,7 @@ This Markdown page is available at:
 * [Hotkey table](#hotkey-table): Frequently used hotkeys listed on table;
 * [Tips](#tips): Some list of tips learned during Blender experience;
 * [Top tutorials](#toptutorials): list of tutorials;
-* [Addons](#addons): Favorite addons and more info;
+* [Addons](#addons): Interesting addons and more info;
 * [Cheatsheet image](#cheatsheet);
 * [Extra Softwares](#extrasoftwares): such as Substance Painter;
 * [Top arts](#topart): some really good art;
@@ -307,6 +307,8 @@ List of top tutorials gathered during blackjuice's Blender experience.
 * [LEARNING MESH TOPOLOGY COLLECTION at cgcookie](https://cgcookie.com/archive/learning-mesh-topology-collection/) and a [speed scultp video](https://www.youtube.com/watch?v=cCC4tpzJNdc)
 
 * [How to organize 3D Projects](https://www.youtube.com/watch?v=8WP2ch4AaWQ)
+
+* ['Mechanical Blender' fork adds CAD tools to Blender](https://www.blendernation.com/2017/01/16/mechanical-blender-fork-adds-cad-tools-blender/)
 
 [> back to main Content](#content)
 
