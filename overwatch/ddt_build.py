@@ -1,13 +1,9 @@
-#!/usr/bin/env 
-
 # import from default python libraries
-import csv
 import sys
 # import from custom
 from aux_print_py3 import *
 
-# auxilary functions
-
+# AUXILARY FUNCTIONS
 # jump commentary lines on .csv file
 def jmpComment(datafileString):
     i = 0
@@ -17,14 +13,7 @@ def jmpComment(datafileString):
             if not (line).startswith("//"):
                 infile.close(); return i;
 
-# dictionary
-# test101
-def test1():
-    with open('data.csv') as infile:
-        reader = csv.DictReader(infile)
-        for row in reader:
-            print(row, "\n")
-
+# DICTIONARY
 # imported from ddt_builder151231
 def csv2ddt (datafileString):
     i = jmpComment(datafileString)
@@ -42,7 +31,7 @@ def csv2ddt (datafileString):
     infile.close()
     return ddt
 
-# execution
+# EXECUTION
 datafileString = 'data.csv'
 ddt = {}
 ddt = csv2ddt(datafileString)
