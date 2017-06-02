@@ -1,10 +1,20 @@
-# import from default python libraries
-import sys
-# import from custom
-from aux_print_py3 import *
+# Coding by blackjuice, 2017
+#
+# About ddt_build.py
+#   It receives as input a .csv data
+#   and outputs dictionaries of interest
 
-# AUXILARY FUNCTIONS
-# jump commentary lines on .csv file
+# Libraries
+import sys
+import csv
+# Custom lib
+from ddt_print import * # print dictionary
+
+
+#----------------------------------#
+#--------AUXILARY FUNCTIONS--------#
+#----------------------------------#
+# jump commentary lines from .csv file
 def jmpComment(datafileString):
     i = 0
     with open(datafileString) as infile:
@@ -13,8 +23,12 @@ def jmpComment(datafileString):
             if not (line).startswith("//"):
                 infile.close(); return i;
 
-# DICTIONARY
+
+#----------------------------------#
+#------------DICTIONARY------------#
+#----------------------------------#
 # imported from ddt_builder151231
+# by blackjuice on pte-python project
 def csv2ddt (datafileString):
     i = jmpComment(datafileString)
     with open(datafileString) as infile:
@@ -30,14 +44,3 @@ def csv2ddt (datafileString):
             ddt.update({tmp_array[0]:tmp_value})
     infile.close()
     return ddt
-
-# EXECUTION
-datafileString = 'data.csv'
-ddt = {}
-ddt = csv2ddt(datafileString)
-# printing test
-print (ddt)
-print_ddt (ddt)
-print_ddt_sorted_key (ddt)
-print_ddt_keys_SCH (ddt)
-print_file (datafileString)

@@ -1,6 +1,6 @@
 // #date YYMMDD,#total,#victory,#defeat,#draw,v0..vn,d0..dm,dr0..drp,#group,members
 // 170514,25,12,11,2,route66,lijiang,eichenwalde,numbani,gibraltar,dorado,hollywood,kingsrow,ilios,anubis,eichenwalde,lijiang,kingsrow,oasis,ilios,anubis,volskaya,nepal,anubis,numbani,route66,dorado,nepal,hanamura,hollywood,1,bonecrusher#1561
-170514v,12,route66,lijiang,eichenwalde,numbani,gibraltar,dorado,hollywood,kingsrow,ilios,anubis,eichenwalde,lijiang
-170514d,11,kingsrow,oasis,ilios,anubis,volskaya,nepal,anubis,numbani,route66,dorado,nepal
-170514e,2,hanamura,hollywood
-170514p,1,bonecrusher#1561
+
+170514v,12,route66,2,0,1,lijiang,2,0,1,eichenwalde,2,0,1,numbani,2,0,1,gibraltar,2,0,1,dorado,2,0,1,hollywood,2,0,1,kingsrow,2,0,1,ilios,2,0,1,anubis,2,0,1,eichenwalde,2,0,1,lijiang,2,0,1
+170514d,11,kingsrow,2,0,1,oasis,2,0,1,ilios,2,0,1,anubis,2,0,1,volskaya,2,0,1,nepal,2,0,1,anubis,2,0,1,numbani,2,0,1,route66,2,0,1,dorado,2,0,1,nepal,2,0,1
+170514e,2,hanamura,2,0,1,hollywood,2,0,1
