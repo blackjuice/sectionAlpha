@@ -20,9 +20,12 @@ Map mode
 v : victory
 d : defeat
 e : draw
-p : players
 
 v, d, e, p
 170514d,11,kingsrow,oasis,ilios,anubis,volskaya,nepal,anubis,numbani,route66,dorado,nepal
 170514e,2,hanamura,hollywood
 170514p,1,bonecrusher#1561
+
+
+
+necropolis,Arena,Necropolis
