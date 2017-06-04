@@ -5,27 +5,35 @@
 # Libraries
 import sys
 import csv
+import os
 # Custom lib
-from ddt_build import * # build dictionary
+from ddt_build      import * # build dictionary
+from matches.lister import * # example of using library from subfolder
+                             # subfolder: matches
+                             # inside matches, there is an empty file
+                             # called __init__.py
 
 #----------------------------------#
 #------------EXECUTION-------------#
 #----------------------------------#
-# check default input file
-if len(sys.argv) == 1:
-    filename = 'data.csv'
-else:
-    filename = sys.argv[-1]
 
-# create empty dictionary
-ddt_main = {}
+# returns list of files from subfolder
+def files_lst():
+    r = []
+    for path, dirs, files in os.walk('matches/dummy'):
+        for filename in files:
+            r.append(os.path.join(path, filename))
+    return r
 
-def test1():
-
-    ddt_main = csv2ddt(filename)
-    # printing test
-    print (ddt)
-    print_ddt (ddt)
-    print_ddt_sorted_key (ddt)
-    print_ddt_keys_SCH (ddt)
-    print_file (filename)
+# 170603: opens each file from subfolder
+# read each line and extract info from there
+# then creates log
+def test0():
+    f_lst = files_lst()
+    nfiles = len(f_lst)
+    for filename in f_lst:
+        f = open(filename, 'r')
+        print(f.read())
+        f.close()
+#print(filename)
+test0()
