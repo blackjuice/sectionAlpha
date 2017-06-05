@@ -1,3 +1,12 @@
-100214,2,2,0,0
-m01,necropolis,e,5,2,0,4,1,3
-m02,route66,e,7,0,3,5,1,4,2,6
+100214,11,1,2,8
+0,blackforest,e,8,7,3,5,4,0,6,1,2
+1,eichenwalde,e,3,2,0,1
+2,blackforest,e,3,2,0,1
+3,nepal,d,6,3,4,2,1,0,5
+4,hollywood,e,9,7,0,5,1,6,2,4,3,8
+5,eichenwalde,e,10,0,6,1,5,3,2,8,9,4,7
+6,dorado,e,6,3,2,1,0,5,4
+7,numbani,v,1,0
+8,anubis,e,9,0,2,8,6,7,3,1,4,5
+9,antarctica,e,4,3,1,2,0
+10,lunar,d,3,1,2,0

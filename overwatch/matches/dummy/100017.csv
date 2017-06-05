@@ -1,11 +1,6 @@
-100017,10,9,0,1
-m01,gibraltar,v,2,1,0
-m02,eichenwalde,v,1,0
-m03,kingsrow,e,9,8,6,1,7,2,5,4,0,3
-m04,volskaya,v,8,3,6,5,2,0,4,7,1
-m05,lunar,v,8,4,6,2,1,3,0,5,7
-m06,antarctica,v,10,8,0,5,9,3,6,2,4,1,7
-m07,antarctica,v,7,5,2,4,0,3,1,6
-m08,eichenwalde,v,2,1,0
-m09,nepal,v,5,2,0,3,1,4
-m10,hollywood,v,8,6,4,1,0,5,3,7,2
+100017,5,2,1,2
+0,castillo,e,10,2,7,1,5,4,6,9,8,0,3
+1,lunar,v,10,1,2,8,6,7,5,9,3,0,4
+2,antarctica,d,2,1,0
+3,lijiang,v,7,5,3,1,4,6,0,2
+4,dorado,e,5,0,2,4,1,3

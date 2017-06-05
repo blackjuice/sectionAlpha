@@ -1,7 +1,5 @@
-100094,6,3,0,3
-m01,eichenwalde,v,2,0,1
-m02,antarctica,v,8,1,3,7,4,6,0,5,2
-m03,route66,e,5,0,4,2,1,3
-m04,nepal,e,6,2,3,0,5,1,4
-m05,kingsrow,v,4,1,3,2,0
-m06,hollywood,e,3,2,1,0
+100094,4,3,1,0
+0,lunar,e,9,7,5,2,8,6,1,4,3,0
+1,blackforest,e,3,2,0,1
+2,kingsrow,e,6,0,1,2,5,4,3
+3,necropolis,e,7,5,1,0,6,3,4,2

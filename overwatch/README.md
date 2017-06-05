@@ -18,3 +18,8 @@ Coding written in `Python`.
 - [X] 007. *-- 170603 --* [Issue] Each match might contain different number of players. This changes whole mapping and data structure
 - [ ] 008. Read each line from a day's match and extract info
 - [ ] 009. Create log from a day's match
+- [ ] 010. Questions of interest:
+    - [ ] 010.0. performance on different game modes
+    - [ ] 010.1. in A mode: performance on maps
+    - [ ] 010.2. performance with n players
+
