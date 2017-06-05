@@ -7,12 +7,9 @@ import sys
 import os # folders
 import re # regex
 # Custom lib
-from lib.ddt_build      import * # build dictionary
-from matches.lister import * # example of using library from subfolder
-                             # subfolder: matches
-                             # inside matches, there is an empty file
-                             # called __init__.py
-from lib.reader_match import *
+from lib.ddt_build  import * # builds dictionary
+from lib.ddt_print  import * # prints dictionary
+from lib.match_read import *
 
 #------------------------Auxilaries------------------------#
 # returns list of files from subfolder
@@ -77,6 +74,7 @@ def test1(filename, ddt_gmodes, ddt_maps, ddt_players):
 
     #which_map(2, ddt_maps)
     #print(ddt_gmodes[0])
+
 
 #---------------------------Main---------------------------#
 def main():

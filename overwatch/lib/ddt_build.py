@@ -6,32 +6,25 @@
 
 # Libraries
 import sys
-import csv
-# Custom lib
-from ddt_print import * # print dictionary
 
-
-#----------------------------------#
-#--------AUXILARY FUNCTIONS--------#
-#----------------------------------#
+#------------------------Auxilaries------------------------#
 # jump commentary lines from .csv file
-def jmpComment(datafileString):
+def jmpComment(filename):
     i = 0
-    with open(datafileString) as infile:
+    with open(filename) as infile:
         for line in infile:
             i += 1
             if not (line).startswith("//"):
-                infile.close(); return i;
+                infile.close()
+                return i
 
 
-#----------------------------------#
-#------------DICTIONARY------------#
-#----------------------------------#
+#------------------------Dictionary------------------------#
 # imported from ddt_builder151231
 # by blackjuice on pte-python project
-def csv2ddt (datafileString):
-    i = jmpComment(datafileString)
-    with open(datafileString) as infile:
+def csv2ddt (filename):
+    i = jmpComment(filename)
+    with open(filename) as infile:
     #with open('data.csv') as infile:
         for j in range(i - 1): #i-1 if whiteline
             line = infile.readline();

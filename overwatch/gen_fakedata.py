@@ -16,7 +16,8 @@ import numpy as np
 import random
 import array
 # Custom lib
-from lib.ddt_build import * # build dictionary
+from lib.ddt_build import * # builds dictionary
+from lib.ddt_print import * # prints dictionary
 
 #---------------------------argv---------------------------#
 # Data size handler
@@ -55,56 +56,11 @@ def handler_status(mAll, mV, mD, mE):
     lst[ mV:mV+mD ] = 1 # slicing
     lst[ -mE: ]     = 2
     np.random.shuffle(lst) # shuffles lst
-    return (lst)
+    return lst
 
 
 #---------------------------Main---------------------------#
 # generates day with generated matches
-#   matches ID has a format: mI, where I = 01..mAll
-def gen_day_old(days):
-    # dictionary of maps
-    ddt_maps = {}
-    ddt_maps = csv2ddt("csv/maps.csv")
-    # dictionary of players
-    ddt_players = {}
-    ddt_players = csv2ddt("csv/players.csv")
-    nplayers = len(ddt_players)
-    # array of days
-    dates_array = np.arange(100000,100000+days)
-
-    # single day of ranked generator
-    for i in dates_array:
-        filename = "matches/dummy/" + handler_filename(i)
-        f = open(filename, 'w')
-
-        # matches situation generator
-        mAll        = np.random.randint(1, 31)
-        mV          = np.random.randint(0, mAll + 1)
-        mD          = np.random.randint(0, mAll + 1 - mV)
-        mE          = mAll - mV - mD
-        statuslst   = handler_status(mAll, mV, mD, mE)
-
-        f.write(str(i)  + "," + str(mAll) + "," + str(mV) + "," +
-                str(mD) + "," + str(mE)   + "\n")
-
-        # single match generator
-        for d in range(0, mAll):
-            m_num   = match_num_format(d+1) # formats m_d
-            mapID   = random.choice(list(ddt_maps)) # chooses map
-
-            status  = statuslst[d] # gets match's status
-            if   (status == 0): status_c = 'v' # converts int to status
-            elif (status == 1): status_c = 'd'
-            else:               status_c = 'e'
-
-            str_players = handler_players(nplayers, ddt_players) # string of players in the match
-
-            f.write("m"         + m_num + "," +
-                    mapID       + ","   +
-                    status_c    +
-                    str_players + "\n")
-        f.close()
-
 #   matches ID are numbered: 0..mAll-1
 def gen_day(days):
     # dictionary of maps
