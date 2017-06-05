@@ -16,7 +16,7 @@ import numpy as np
 import random
 import array
 # Custom lib
-from ddt_build import * # build dictionary
+from lib.ddt_build import * # build dictionary
 
 #---------------------------argv---------------------------#
 # Data size handler
@@ -40,13 +40,12 @@ def match_num_format(m_num):
     return n
 
 # return string of nplayers and playerIDs
-def handler_players(nplayers, ddt_players):
-    nplayers_t  = np.random.randint(1, nplayers) # chooses nplayers
-    string      = "," + str(nplayers_t)
-    lst         = np.arange(0, nplayers_t)
+def handler_players(lst):
+    nplayers    = np.random.randint(1, 7) # chooses nplayers [1..6]
+    string      = "," + str(nplayers)
     np.random.shuffle(lst)
 
-    for k in range(0, nplayers_t):
+    for k in range(0, nplayers):
         string = string + "," + str(lst[k]) # key: ddt_players[ str(lst[k]) ]
     return string
 
@@ -111,10 +110,12 @@ def gen_day(days):
     # dictionary of maps
     ddt_maps = {}
     ddt_maps = csv2ddt("csv/maps.csv")
+    nmaps    = len(ddt_maps)
     # dictionary of players
     ddt_players = {}
     ddt_players = csv2ddt("csv/players.csv")
-    nplayers = len(ddt_players)
+    nplayers    = len(ddt_players)
+    lst_players = np.arange(0, nplayers)
     # array of days
     dates_array = np.arange(100000,100000+days)
 
@@ -135,18 +136,13 @@ def gen_day(days):
 
         # single match generator
         for d in range(0, mAll):
-            mapID   = random.choice(list(ddt_maps)) # chooses map
-
-            status  = statuslst[d] # gets match's status
-            if   (status == 0): status_c = 'v' # converts int to status
-            elif (status == 1): status_c = 'd'
-            else:               status_c = 'e'
-
-            str_players = handler_players(nplayers, ddt_players) # string of players in the match
+            mapID   = str(np.random.randint(0, nmaps)) # chooses map
+            status  = str(statuslst[d]) # gets match's status
+            str_players = handler_players(lst_players) # string of players in the match
 
             f.write(str(d)  + "," +
                     mapID       + "," +
-                    status_c    +
+                    status    +
                     str_players + "\n")
         f.close()
 

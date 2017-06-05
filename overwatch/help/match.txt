@@ -3,41 +3,43 @@ author:         blackjuice
 project:        sectionAlpha/overwatch
 info:           Overwatch stats progression
 
-About
+MATCH
 =====
-    maps_help.txt contains basic <maps.csv> structure description.
+
+About
+-----
+    match.txt contains basic *csv/match.csv* structure description.
 
 Structure
-=========
+---------
+    line 0:
+        date, total #matches (mAll), #victories (mV), #defeats (mD), #draws (mE)
+    
+    description:
+        date    | ddt[date]
+        mAll    | ddt[date][0]
+        mV      | ddt[date][1]
+        mD      | ddt[date][2]
+        mE      | ddt[date][3]
+
+    line 1 to mAll-1:
+        matchID, mapID, nplayers, nplayers_0 .. nplayers_nplayers-1
+
+    description:
+        matchID    | ddt[matchID]
+        mapID      | ddt[matchID][0]
+        nplayers   | ddt[matchID][1]
+        nplayers_i | ddt[matchID][2]
+        .
+        .
+        .
+        nplayers_i | ddt[matchID][nplayers-1]
 
 Example
-=======
-date+c      total games     maps
-170514v     12              route66,lijiang ...
-
-Map mode
-========
-v : victory
-d : defeat
-e : draw
-
-
-170514v,12,route66,2,0,1,lijiang,2,0,1,eichenwalde,2,0,1,numbani,2,0,1,gibraltar,2,0,1,dorado,2,0,1,hollywood,2,0,1,kingsrow,2,0,1,ilios,2,0,1,anubis,2,0,1,eichenwalde,2,0,1,lijiang,2,0,1
-170514d,11,kingsrow,2,0,1,oasis,2,0,1,ilios,2,0,1,anubis,2,0,1,volskaya,2,0,1,nepal,2,0,1,anubis,2,0,1,numbani,2,0,1,route66,2,0,1,dorado,2,0,1,nepal,2,0,1
-170514e,2,hanamura,2,0,1,hollywood,2,0,1
-
-
-
-
-
-v, d, e, p
-170514d,11,kingsrow,oasis,ilios,anubis,volskaya,nepal,anubis,numbani,route66,dorado,nepal
-170514e,2,hanamura,hollywood
-170514p,1,bonecrusher#1561
-
-
-
-
-170514v,12,route66,2,0,1,lijiang,2,0,1,eichenwalde,2,0,1,numbani,2,0,1,gibraltar,2,0,1,dorado,2,0,1,hollywood,2,0,1,kingsrow,2,0,1,ilios,2,0,1,anubis,2,0,1,eichenwalde,2,0,1,lijiang,2,0,1
-
-170514_
+-------
+    100000,5,0,4,1
+    0,7,1,2,4,8
+    1,3,1,4,8,1,0,7
+    2,13,1,4,9,0,6,7
+    3,0,1,2,7,6
+    4,18,2,2,6,0

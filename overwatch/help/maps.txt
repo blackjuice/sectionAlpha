@@ -3,29 +3,24 @@ author:         blackjuice
 project:        sectionAlpha/overwatch
 info:           Overwatch stats progression
 
+MAPS
+====
+
 About
-=====
-    maps_help.txt contains basic <maps.csv> structure description.
+-----
+    maps.txt contains basic *csv/maps.csv* structure description.
 
 Structure
-=========
+---------
+    mapID, short map name, game mode, complete map name
+
+    description:
+        mapID               | ddt[mapID]
+        short map name      | ddt[mapID][0]
+        game mode           | ddt[mapID][1]
+        complete map name   | ddt[mapID][2]
+
 
 Example
-=======
-date+c      total games     maps
-170514v     12              route66,lijiang ...
-
-Map mode
-========
-v : victory
-d : defeat
-e : draw
-
-v, d, e, p
-170514d,11,kingsrow,oasis,ilios,anubis,volskaya,nepal,anubis,numbani,route66,dorado,nepal
-170514e,2,hanamura,hollywood
-170514p,1,bonecrusher#1561
-
-
-
-necropolis,Arena,Necropolis
+-------
+    18,necropolis,Arena,Necropolis

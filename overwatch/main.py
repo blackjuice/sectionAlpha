@@ -7,11 +7,12 @@ import sys
 import os # folders
 import re # regex
 # Custom lib
-from ddt_build      import * # build dictionary
+from lib.ddt_build      import * # build dictionary
 from matches.lister import * # example of using library from subfolder
                              # subfolder: matches
                              # inside matches, there is an empty file
                              # called __init__.py
+from lib.reader_match import *
 
 #------------------------Auxilaries------------------------#
 # returns list of files from subfolder
@@ -53,8 +54,8 @@ def strip_filename(filename):
     return re.sub('matches/dummy/|.csv', '', filename)
 
 
-# EXTRACTING DATA FROM FILE
-def test1(filename):
+# EXTRACTING DATA FROM ONE FILE
+def test1(filename, ddt_gmodes, ddt_maps, ddt_players):
     # day analysis
     ddt = {}
     ddt = csv2ddt(filename)
@@ -71,13 +72,18 @@ def test1(filename):
 
     # runs through matches
     for i in range(0, mAll):
-        print(ddt[str(i)])
+        print(">> match:", i)
+        translate_all(ddt[str(i)], ddt_maps, ddt_gmodes, ddt_players)
 
+    #which_map(2, ddt_maps)
+    #print(ddt_gmodes[0])
 
 #---------------------------Main---------------------------#
 def main():
     all_files = files_lst() # get a list of all files
     nfiles = len(all_files) # total files
+
+
     # run through each file from the list
     for file_i in all_files:
         test1(file_i)
@@ -86,11 +92,21 @@ def main():
 
 #-------------------------Execution------------------------#
 # dictionary of maps
-ddt_maps = {}
-ddt_maps = csv2ddt("csv/maps.csv")
+ddt_maps    = {}
+ddt_maps    = csv2ddt("csv/maps.csv")
+nmaps       = len(ddt_maps)
 
-filename = "matches/dummy/100249.csv"
-test1(filename)
+ddt_gmodes  = {}
+ddt_gmodes  = csv2ddt("csv/game_mode.csv")
+ngmodes     = len(ddt_gmodes)
+
+ddt_players = {}
+ddt_players = csv2ddt("csv/players.csv")
+nplayers    = len(ddt_players)
+
+filename = "matches/dummy/100000.csv"
+test1(filename, ddt_gmodes, ddt_maps, ddt_players)
+#print(ddt_gmodes['0'])
 #print(strip_filename(filename))
 #test0()
 #test_one()
