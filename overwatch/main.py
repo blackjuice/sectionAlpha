@@ -25,31 +25,32 @@ def strip_filename(filename):
     return re.sub('matches/dummy/|.csv', '', filename)
 
 # EXTRACTING DATA FROM ONE FILE
-def read_file(filename, ddt_gmodes, ddt_maps, ddt_players):
+def read_file(file_i, ddt_gmodes, ddt_maps, ddt_players):
     # day analysis
-    ddt = {}
-    ddt = csv2ddt(filename)
+    ddt_file = {}
+    ddt_file = csv2ddt(file_i)
 
     # gets mAll, mV, mD, mE
-    key0 = strip_filename(filename)
-    mAll = int(ddt[key0][0])
-    mV   = int(ddt[key0][1])
-    mD   = int(ddt[key0][2])
-    mE   = int(ddt[key0][3])
+    key0 = strip_filename(file_i)
+    mAll = int(ddt_file[key0][0])
+    mV   = int(ddt_file[key0][1])
+    mD   = int(ddt_file[key0][2])
+    mE   = int(ddt_file[key0][3])
 
-    # runs through matches
-    #for i in range(0, mAll):
+    lst_gmodes = np.zeros(ngmodes, dtype=int) 
+    # runs through each match
+    for i in range(0, mAll):
         #print(" match:", i)
-        #translate_all(ddt[str(i)], ddt_maps, ddt_gmodes, ddt_players)
-
+        lst = ddt_file[str(i)
+        format_match(lst, ddt_maps, ddt_gmodes, ddt_players)
     #return (tAll, tV, tD, tE)
     return (mAll, mV, mD, mE)
     #which_map(2, ddt_maps)
     #print(ddt_gmodes[0])
 
 
-#---------------------------read_files---------------------------#
-def read_files(ddt_gmodes, ddt_maps, ddt_players):
+#---------------------------read_folder---------------------------#
+def read_folder(ddt_gmodes, ddt_maps, ddt_players):
     all_files = files_lst() # get a list of all files
     nfiles = len(all_files) # total files
 
@@ -91,4 +92,4 @@ nplayers    = len(ddt_players)
 
 filename = "matches/dummy/170000.csv"
 #read_file(filename, ddt_gmodes, ddt_maps, ddt_players)
-read_files(ddt_gmodes, ddt_maps, ddt_players)
+read_folder(ddt_gmodes, ddt_maps, ddt_players)

@@ -7,7 +7,7 @@
 # Libraries
 import sys
 
-def translate_all(lst, ddt_maps, ddt_gmodes, ddt_players):
+def format_match(lst, ddt_maps, ddt_gmodes, ddt_players):
     if   (lst[1] == '0'): status = 'Victory' # converts int to status
     elif (lst[1] == '1'): status = 'Defeat'
     else:                 status = 'Draw'
@@ -23,3 +23,5 @@ def which_map(i, ddt):
 
 def which_mode(i, ddt):
     print(ddt[str(i)][0])
+
+#def get_info_match(lst, ddt_maps, ddt_gmodes, ddt_players):
