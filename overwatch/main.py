@@ -20,43 +20,15 @@ def files_lst():
             r.append(os.path.join(path, filename))
     return r
 
-# 170603: opens each file from subfolder
-# read each line and extract info from there
-# then creates log
-def test0():
-    all_files = files_lst() # get a list of all files
-    nfiles = len(all_files) # total files
-    # run through each file from the list
-    for file_i in all_files:
-        f = open(file_i, 'r')
-        print(f.read())
-        f.close()
-
-# read one file and print each line
-def test_one():
-    filename = "matches/dummy/100249.csv"
-    f = open(filename, 'r')
-    
-    with open(filename) as f:
-        line = f.readlines()
-        line = [x.strip() for x in line] # remove \n
-        #print(line[0])
-        print(line[0][1])
-    f.close()
-
 # removes file's path and extension
 def strip_filename(filename):
-    #cp = re.sub('matches/dummy/|.csv', '', filename)
-    #return cp
     return re.sub('matches/dummy/|.csv', '', filename)
 
-
 # EXTRACTING DATA FROM ONE FILE
-def test1(filename, ddt_gmodes, ddt_maps, ddt_players):
+def read_file(filename, ddt_gmodes, ddt_maps, ddt_players):
     # day analysis
     ddt = {}
     ddt = csv2ddt(filename)
-    #print_ddt(ddt)
 
     # gets mAll, mV, mD, mE
     key0 = strip_filename(filename)
@@ -64,28 +36,43 @@ def test1(filename, ddt_gmodes, ddt_maps, ddt_players):
     mV   = int(ddt[key0][1])
     mD   = int(ddt[key0][2])
     mE   = int(ddt[key0][3])
-    print(mAll, mV, mD, mE)
-    #print(len(ddt[key0]))
 
     # runs through matches
-    for i in range(0, mAll):
-        print(">> match:", i)
-        translate_all(ddt[str(i)], ddt_maps, ddt_gmodes, ddt_players)
+    #for i in range(0, mAll):
+        #print(" match:", i)
+        #translate_all(ddt[str(i)], ddt_maps, ddt_gmodes, ddt_players)
 
+    #return (tAll, tV, tD, tE)
+    return (mAll, mV, mD, mE)
     #which_map(2, ddt_maps)
     #print(ddt_gmodes[0])
 
 
-#---------------------------Main---------------------------#
-def main():
+#---------------------------read_files---------------------------#
+def read_files(ddt_gmodes, ddt_maps, ddt_players):
     all_files = files_lst() # get a list of all files
     nfiles = len(all_files) # total files
 
+    tAll, tV, tD, tE = 0, 0, 0, 0
 
     # run through each file from the list
     for file_i in all_files:
-        test1(file_i)
-    print(">>>", nfiles)
+        #print(">> DATE:", strip_filename(file_i))
+        mAll, mV, mD, mE = read_file(file_i, ddt_gmodes, ddt_maps, ddt_players)
+        #print(tAll, tV, tD, tE)
+
+        tAll += mAll
+        tV   += mV
+        tD   += mD
+        tE   += mE
+        #print(tAll, tV, tD, tE)
+
+    pV = '{:.1%}'.format(tV/tAll)
+    pD = '{:.1%}'.format(tD/tAll)
+    pE = '{:.1%}'.format(tE/tAll)
+
+    print("Total matches read:", nfiles)
+    print(pV, pD, pE)
 
 
 #-------------------------Execution------------------------#
@@ -102,10 +89,6 @@ ddt_players = {}
 ddt_players = csv2ddt("csv/players.csv")
 nplayers    = len(ddt_players)
 
-filename = "matches/dummy/100000.csv"
-test1(filename, ddt_gmodes, ddt_maps, ddt_players)
-#print(ddt_gmodes['0'])
-#print(strip_filename(filename))
-#test0()
-#test_one()
-#main()
+filename = "matches/dummy/170000.csv"
+#read_file(filename, ddt_gmodes, ddt_maps, ddt_players)
+read_files(ddt_gmodes, ddt_maps, ddt_players)
