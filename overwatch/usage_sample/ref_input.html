@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://code.jquery.com/jquery.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "js/bootstrap.min.js"></script>
+
+    <div class="test_php"><?php include ('php/test.php');?></div>
+
+    <h2>
+        <?php
+            echo "php is working";
+        ?>
+    </h2>
+
+  <!--**********************************************************************-->
+    <div class="container">
+      <!-- Dropdown example -->
+      <div class="row text-center">
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <div class="form-group">
+                  <label for="sel1">Select list:</label>
+                  <select class="form-control" id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Radio example -->
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+            </div>
+        </div>
+
+        <!-- Get date -->
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <p>Get Date</p>
+                <p id="getDate"></p>
+                <script src="js/s1.js"></script>
+            </div>
+        </div>
+
+        <!-- Create csv file -->
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <p>Create CSV</p>
+                <button id="exportcsv">export to CSV</button>
+                <script src="js/s1.js"></script>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--**********************************************************************-->
+    <!-- works: YES -->
+    <div class="container">
+      <h2>Basic add operator</h2>
+      <p id="demo_basic_add"></p>
+      <script src="js/s1.js"></script>
+    </div>
+
+    <!--**********************************************************************-->
+    <!-- works: YES -->
+    <div class="container">
+      <h2>Temperature example</h2>
+      <p id="temp"></p>
+      <script src="js/s1.js"></script>
+    </div>
+
+  </body>
+</html>

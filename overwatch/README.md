@@ -88,3 +88,5 @@ Possible available platforms:
     * [-] too many requirements to be installed
     * [-] no interface
     * [-] must send data manually
+
+[HTML examples](https://startbootstrap.com/template-categories/all/)
