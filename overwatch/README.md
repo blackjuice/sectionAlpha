@@ -9,8 +9,8 @@ Coding written in `Python`.
 <a name="content"></a>
 Content:
 * [Todo list](#todo);
-* [](#)
-* [](#)
+* [Instance](#instance);
+* [Platforms](#platforms);
 
 <a name="todo"></a>
 ## Todo list
@@ -30,6 +30,8 @@ Content:
     - [ ] 010.1. in A mode: performance on maps
     - [ ] 010.2. performance with n players
 - [ ] 011. Write a `.html` UI example for the demo
+
+<a name="instance"></a>
 ## Instances
 
 The program should have 3 instances:
@@ -59,23 +61,25 @@ The user, `bonecrusher`, will open the main program through a certain [platform]
 * current date with the `YYMMDD` format, i.e.: if today is 1th of December, 2017, the date format required must be: `171201`;
 * 
 
-<a name="platform"></a>
+<a name="platforms"></a>
+## Platforms
 Possible available platforms:
 
 1. Web-offline;
     * [+] easy usage
     * [+] decent UI (User Interface)
     * [+] will take little time to develop
+    * [-] needs php
     * [-] must send data manually
+    * [-] will take some time to develop
 2. Web-online:
     * [+] easy access
     * [+] decent UI (User Interface)
     * [+] sends emails automatically
-    * [-] developer must find a server
+    * [-] must have a server
     * [-] will take some time to develop
 3. Python standalone program:
     * [+] easy access
-    * [-] ugly UI
     * [-] will take some time to develop
     * [-] must send data manually
 4. Android:
@@ -89,4 +93,13 @@ Possible available platforms:
     * [-] no interface
     * [-] must send data manually
 
-[HTML examples](https://startbootstrap.com/template-categories/all/)
+### 1-2) Web application
+
+[Download bootstrap templates.](https://startbootstrap.com/template-categories/all/)
+
+We need `.php` for the `.csv` file creation, which is a bummer since the developer doesn't seems to know anything about it. So the might need to change our approach from a `.html` to a GUI application, which leads us to [[3]](#gui_python).
+
+<a name="gui_python"></a>
+### 3) Python standalone program
+
+We have some options here as GUI framework: **Tkinter**, which the developer has some experience; [**PyQT**](https://wiki.python.org/moin/PyQt/Tutorials), with no experience; [**Kivy**](https://kivy.org/#home), with no experience.
