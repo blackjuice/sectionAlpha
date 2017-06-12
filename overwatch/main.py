@@ -6,6 +6,7 @@
 import sys
 import os # folders
 import re # regex
+import numpy as np
 # Custom lib
 from lib.ddt_build  import * # builds dictionary
 from lib.ddt_print  import * # prints dictionary
@@ -39,10 +40,10 @@ def read_file(file_i, ddt_gmodes, ddt_maps, ddt_players):
 
     lst_gmodes = np.zeros(ngmodes, dtype=int) 
     # runs through each match
-    for i in range(0, mAll):
-        #print(" match:", i)
-        lst = ddt_file[str(i)
-        format_match(lst, ddt_maps, ddt_gmodes, ddt_players)
+    #for i in range(0, mAll):
+    #   print(" match:", i)
+    #    lst = ddt_file[str(i)]
+    #    format_match(lst, ddt_maps, ddt_gmodes, ddt_players)
     #return (tAll, tV, tD, tE)
     return (mAll, mV, mD, mE)
     #which_map(2, ddt_maps)
@@ -72,9 +73,17 @@ def read_folder(ddt_gmodes, ddt_maps, ddt_players):
     pD = '{:.1%}'.format(tD/tAll)
     pE = '{:.1%}'.format(tE/tAll)
 
-    print("Total matches read:", nfiles)
-    print(pV, pD, pE)
+    winRate = '{:.1%}'.format( tV / ( tV + tD ) )
 
+    rankpoints = ( tV * 10 ) + ( tE * 3 )
+
+
+    print("Total matches read:  ", nfiles)
+    print("Victory:             ", pV, 
+        "\nDefeat:              ", pD, 
+        "\nDraw:                ",pE)
+    print("Win rate:            ", winRate)
+    print("Total competitive points earned:", rankpoints)
 
 #-------------------------Execution------------------------#
 # dictionary of maps

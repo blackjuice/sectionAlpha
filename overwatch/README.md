@@ -57,7 +57,7 @@ This is a common user level instance. The client will be inserting data through 
 <a name="usage"></a>
 ## Usage example
 
-The user, `bonecrusher`, will open the main program through a certain [platform](#platform). On this program, the user will enter with the following inputs:
+The user, `bonecrusher`, will open the main program through a certain [platform](#platforms). On this program, the user will enter with the following inputs:
 * current date with the `YYMMDD` format, i.e.: if today is 1th of December, 2017, the date format required must be: `171201`;
 * 
 
@@ -65,27 +65,27 @@ The user, `bonecrusher`, will open the main program through a certain [platform]
 ## Platforms
 Possible available platforms:
 
-1. Web-offline;
+1. Web-offline; [[1]](#plat12)
     * [+] easy usage
     * [+] decent UI (User Interface)
     * [+] will take little time to develop
     * [-] needs php
     * [-] must send data manually
     * [-] will take some time to develop
-2. Web-online:
+2. Web-online: [[2]](#plat12)
     * [+] easy access
     * [+] decent UI (User Interface)
     * [+] sends emails automatically
     * [-] must have a server
     * [-] will take some time to develop
-3. Python standalone program:
+3. Python standalone program: [[3]](#plat3)
     * [+] easy access
     * [-] will take some time to develop
     * [-] must send data manually
-4. Android:
+4. Android: [[4]](#plat4)
     * [+] easy and fast portable access point
     * [-] will take more time to develop
-5. Script:
+5. Script:[[5]](#plat5)
     * [+] will take little time to develop
     * [-] hard access
     * [-] too low-level for a normal user
@@ -93,13 +93,47 @@ Possible available platforms:
     * [-] no interface
     * [-] must send data manually
 
+<a name="plat12"></a>
 ### 1-2) Web application
 
 [Download bootstrap templates.](https://startbootstrap.com/template-categories/all/)
 
-We need `.php` for the `.csv` file creation, which is a bummer since the developer doesn't seems to know anything about it. So the might need to change our approach from a `.html` to a GUI application, which leads us to [[3]](#gui_python).
+We need `.php` for the `.csv` file creation, which is a bummer since the developer doesn't seems to know anything about it. So the might need to change our approach from a `.html` to a GUI application, which leads us to [[3]](#plat3).
 
-<a name="gui_python"></a>
+<a name="plat3"></a>
 ### 3) Python standalone program
 
 We have some options here as GUI framework: **Tkinter**, which the developer has some experience; [**PyQT**](https://wiki.python.org/moin/PyQt/Tutorials), with no experience; [**Kivy**](https://kivy.org/#home), with no experience.
+
+References for PyQt:
+* [How to start everything](https://www.metachris.com/2016/03/how-to-install-qt56-pyqt5-virtualenv-python3/);
+* [Tutorialspoint](https://www.tutorialspoint.com/pyqt/pyqt_hello_world.htm);
+* [Saltycrane](https://www.saltycrane.com/blog/2007/12/pyqt-example-how-to-run-command-and/): how to display stdout;
+* [GitHub examples](https://github.com/baoboa/pyqt5/tree/master/examples);
+* [PythonSpot](https://pythonspot.com/en/pyqt5/): tutorials;
+Issue:
+
+Execute `sudo /usr/bin/xcode-select -switch /Applications/Xcode.app/Contents/Developer ` to fix if Xcode is not installed in /Developer/Xcode.app/Contents/Developer.
+
+Examples to be checked from [baoboa](https://github.com/baoboa/pyqt5):
+* designer (calculator);
+* draganddrop;
+* itemviews/basicsortfiltermodel.py: regex;
+* itemviews/customsortfiltermodel.py: regex;
+* itemviews/dirview.py: view directories;
+* itemviews/fetchmore.py: fetch folders from current directory;
+* itemviews/simplewidgetmapper.py: to check each date and jump to next;
+* itemviews/spinboxdelegate.py: table with optional input;
+* mainwindows/menus.py: invoking menus by right-click;
+* mainwindows/application/application.py: menu with save file, cut, paste window;
+* tutorials/addressbook/part6.py: add, remove, load and save. Part 7 has export button;
+
+<a name="plat4"></a>
+### 4) Android
+
+Should this option be used, the tookit available for us would be Android Studio plus Genymotion as a simulator.
+
+<a name="plat5"></a>
+### 5) Script
+
+This option should not be choosen since is a low-level interaction. 

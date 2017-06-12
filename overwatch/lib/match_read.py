@@ -12,9 +12,9 @@ def format_match(lst, ddt_maps, ddt_gmodes, ddt_players):
     elif (lst[1] == '1'): status = 'Defeat'
     else:                 status = 'Draw'
 
-    print("     map:", ddt_maps[lst[0]][2])
-    print("     status:", status)
-    print("     nplayers: ", lst[2])
+    print("     map:",          ddt_maps[lst[0]][2])
+    print("     status:",       status)
+    print("     nplayers: ",    lst[2])
     for i in range(3, 3 + int(lst[2])):
         print("     ", ddt_players[str(lst[i])])
 
