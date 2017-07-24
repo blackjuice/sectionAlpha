@@ -1,6 +1,6 @@
 blackjuice's Blender experience
 
-version: **Blender 2.77**
+version: **Blender 2.78**
 
 # Notes
 
@@ -9,20 +9,26 @@ This Markdown page is available at:
 * [blackjuice's GitHub](https://github.com/blackjuice/sectionAlpha/tree/master/Blender)
 * [saguahollic's wordpress blog](https://saguahollic.wordpress.com/)
 
+<a name="content"></a>
 # Content
 
-* [Documentation](#documentation): Official doc for Blender;
-* [Computer specs](#specs): shirobokusu;
-* [Setup](#setup): setting up AMD GPU on Blender;
-* [Library](#library): Free models, textures, favorite artists;
-* [Hotkey table](#hotkey-table): Frequently used hotkeys listed on table;
-* [Tips](#tips): Some list of tips learned during Blender experience;
-* [Top tutorials](#toptutorials): list of tutorials;
-* [Addons](#addons): Interesting addons and more info;
-* [Cheatsheet image](#cheatsheet);
-* [Extra Softwares](#extrasoftwares): such as Substance Painter;
-* [Top arts](#topart): some really good art;
+* [Documentation](#documentation):    Official doc for Blender;
+* [Computer specs](#specs):           Blackjuice's desktop specs;
+* [Setup](#setup):                    setting up AMD GPU on Blender;
+* [Library](#library):                Links for free models, textures, favorite artists;
+* [Help table](#help-table):          Frequently used hotkeys listed on table;
+* [Addons](#addons):                  Interesting addons and more info;
+* [Other Softwares](#extrasoftwares): Such as Substance Painter;
+* [Top arts](#topart):                Pro arts out there;
+* [PDM](#pdm):                        Learned material for project development;
 
+
+
+
+
+
+
+<a name="documentation"></a>
 ## Documentation
 
 Official doc for Blender:
@@ -30,10 +36,23 @@ Official doc for Blender:
 * [Blender Hotkey](http://wiki.blender.org/index.php/Doc:2.4/Reference/Hotkeys/All)
 * [Blender manual Sphinx](https://www.blender.org/manual/contents.html)
 
+Cheatsheet
+
+* From http://www.giudansky.com/
+
+![cheatsheet](http://www.giudansky.com/images/downloads/blender/blender3d-shortcuts-infographic.png)
+
 [> back to main Content](#content)
 
-## Specs
- Computer (shirobokusu) specs:
+
+
+
+
+
+<a name="specs"></a>
+## Computer specs
+
+Blackjuice's desktop specs:
 
 | spec | info |
 |:----:|:----:|
@@ -50,22 +69,35 @@ GPU ([check me](https://www.techpowerup.com/gpudb/b762/club-3d-hd-7870-xt-jokerc
 
 [> back to main Content](#content)
 
+
+
+
+
+
+<a name="setup"></a>
 ## Setup
+
 Setting up AMD GPU on Blender: OpenCL Cycles on Blender **2.7X** + AMD GPUs
 
 * Update OpenCL drivers [here](http://support.amd.com/en-us/kb-articles/Pages/OpenCL2-Driver.aspx)
 * At main Blender folder, at Command prompt, enter:
 
-      set CYCLES_OPENCL_TEST=all
+    set CYCLES_OPENCL_TEST=all
 
 * (**HINT**) To enter Disk Local "X":
 
-        $ d:
+    $ d:
 
 * Then run Blender.
 
 [> back to main Content](#content)
 
+
+
+
+
+
+<a name="library"></a>
 ## Library
 
 List of addresses containing free models, textures, favorite artists etc for reference:
@@ -89,7 +121,13 @@ List of addresses containing free models, textures, favorite artists etc for ref
 
 [> back to main Content](#content)
 
-## Hotkey Table
+
+
+
+
+
+<a name="help-table"></a>
+## Help table
 
 Desperate times calls for desperate measures.
 
@@ -103,61 +141,135 @@ List:
 
 [> back to main Content](#content)
 
-## Category:
-##### common
+| tag | hotkey | function | comment | source |
+|:---:|:-------|:---------|:-------:|:------:|
+| -   | `H`         | Hide   | - | - |
+| -   | `Alt + H`   | Unhide | - | - |
+| -   | `Ctrl + J`  | Join   | - | - |
+| -   | `P`         | Unjoin | - | - |
+| -   | `Shift + Ctrl + Alt + C`| Recenter pivot | Select **Origin to Geometry**. | [LL](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin) |
+| -   | `Ctrl + U`  | Save startup | `File > Load Factory Settings` to reset | - |
+| -   | `X`         | Dissolve Edges | Drop down "X" menu to select `Dissolve Edges`, which deletes extra edges without deleting faces | - |
+| hint | -        | - | Switch to **edit mode** after .obj import | [LL](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import) |
+| -     | `Shift + D` | Duplicated        | - | - |
+| wheel | `Alt + D`   | Duplicated Link   | - | - |
+| wheel | `Ctrl + M`  | Mirroring         | - | - |
+| wire  | `Alt + R`   | Multiply object around cursor, on `Edit mode`| awesome at making wire design | [EnigmaToots](https://www.youtube.com/watch?v=SE_F76g1qB0) |
+| camera      | - | Change camera lens | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [LL](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
+| background  | - | `T` | Add background reference image | Activate `Properties Shelf` with the `T` key. At `Background Images`, click `Add Image` | - |
 
-| hotkey | function | comment | source |
-|:------:|:--------:|:-------:|:------:|
-|`H`            | Hide              | | |
-|`Alt + H`      | Unhide            | | |
-|`Ctrl + J`     | Make multiple Blender objects into one        | | |
-|`P`            | Opposite of `Ctrl + J`                        | | |
-|`Shift + Ctrl + Alt + C`| Recenter pivot point of an object  | and select **Origin to Geometry**. | [link](http://blender.stackexchange.com/questions/14294/how-to-recenter-an-objects-origin) |
-| `Ctrl + U` | Save current settings as default startup | `File > Load Factory Settings` to reset | |
-| `X` | Dissolve Edges | Drop down "X" menu to select `Dissolve Edges`, which deletes extra edges without deleting faces | |
+[back to Help Table](#help-table)
 
-##### hints
 
-| hotkey | function | comment | source |
-|:------:|:--------:|:-------:|:------:|
-|  |  | Switch to **edit mode** after .obj import | [link](http://blenderartists.org/forum/showthread.php?127550-newbie-can-t-switch-to-edit-mode-after-obj-import)
 
-##### wheel_design
 
-| hotkey | function | comment | source |
-|:------:|:--------:|:-------:|:------:|
-|`Alt + D`      | Duplicated Link   | wheel design | |
-|`Ctrl + M`     | Mirroring         | wheel design | |
-|`Alt + R`      | Multiply object around cursor, on `Edit mode`| awesome at making wire design | [EnigmaToots](https://www.youtube.com/watch?v=SE_F76g1qB0) |
 
-##### camera
 
-| hotkey | function | comment | source |
-|:------:|:--------:|:-------:|:------:|
-| | Change camera lens | Select 1st the camera, then at the editor menu, there is an filming device icon called Object Data. | [link](http://wiki.blender.org/index.php/Doc:2.4/Manual/Render/Camera/Depth_Of_Field)|
 
-##### background
+<a name="addons"></a>
+## Addons
 
-| hotkey | function | comment | source |
-|:------:|:--------:|:-------:|:------:|
-| `T` | Add background reference image | Activate `Properties Shelf` with the `T` key. At `Background Images`, click `Add Image` | |
+The following table contains favorite addons.
 
-[back to HotkeyTable](#hotkeytable)
+| name | author | comment |
+|:------:|:--------:|:-------:|
+| [Quick preferences](http://blenderartists.org/forum/showthread.php?223293-QuickPrefs-Access-from-side-panel-to-Lighting-Presets-amp-often-changed-preferences) | Sean Olson (LiquidApe) | recommended by masterxeon1001 |
+| [Auto mirror](http://blenderaddonlist.blogspot.com.br/2014/07/addon-auto-mirror.html) |  Lapineige | recommended by masterxeon1001 |
+| [BoolTool](http://www.blendernation.com/2014/05/14/add-on-booltool/) | Vitor Balbio | main tool for cutting feature on HardOps |
+| [Screencast Key Status](https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/Screencast_Key_Status_Tool) | Paulo Gomes, Bart Crouch, John E. Herrenyo, Gaia Clary, Pablo Vazquez | display key pressed |
+| [Mira Tools](https://github.com/mifth/mifthtools/tree/master/blender/addons/mira_tools) | mifth | recommended by masterxeon1001 |
+| [MeasureIt](https://github.com/Antonioya/blender/tree/master/measureit) | Antonioya | [youtube video for tutorial](https://www.youtube.com/watch?v=R0jCdCoaRvs&feature=youtu.be) |
+| [HardOps + BoxCutter](https://gumroad.com/masterxeon1001) | masterxeon1001 | ultimate tool |
+| [Blender 2.7x XPS Tools 1.1](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690) | johnzero7 | XPS to Blender, a XNA model import feature in Blender |
 
-## Tips
+More info on addons
 
-* [Delete multiple material](#tip001);
-* [PNG background transparency](#tip002);
-* [Set-up perspective view based on ref img](#tip003);
-* [11 tips for speeding up rendering cycles](#tip004);
-* [Selecting linked vertices](#tip005);
-* [Multiple addons using the same name](#tip006);
+### XPS to Blender 2.7x [(source here)](http://johnzero7.deviantart.com/art/XPS-to-Blender-2-7x-Blender-internal-the-easy-way-489500171)
+
+* [Download XPS Tools for Blender 2.7x](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690)
+
+Reference
+
+| source | info |
+|:------:|:----:|
+| [johnzero7](http://johnzero7.deviantart.com/gallery/) | Blender/XPS guide |
+| [irokichigai01](http://irokichigai01.deviantart.com/) | xnalara/xna mesh ascii good models |
+
+----------------------------------------------------------------------------------------------
 
 [> back to main Content](#content)
 
 
-### Tip001
-#### Can I delete all materials of all objects in a scene quickly?
+
+
+
+
+<a name="extrasoftwares"></a>
+## Other softwares
+
+* Alternatives for **Substance Painter** (US$ 149):
+    * Blacksmith 3D (http://blacksmith3d.com/)
+    * 3D coat (http://3dcoat.com/home/)
+    * MARI (http://www.thefoundry.co.uk/products/mari/)
+
+So far, the Substance Painter is the cheapest option here.
+
+[> back to main Content](#content)
+
+
+
+
+
+
+<a name="topart"></a>
+## Top Arts
+
+* https://www.cgtrader.com/gallery/project/buggy-for-apocalypse
+![](https://img-new.cgtrader.com/galleries/6580/large_982178a0-5268-47c8-95aa-c3dd376e883c.jpg)
+
+
+* https://www.cgtrader.com/gallery/project/harley-davidson-xr1200x
+![](https://img-new.cgtrader.com/galleries/6972/large_3b450fbe-0e03-4eb0-a4d3-b64827f81cc4.jpg)
+
+* https://www.cgtrader.com/gallery/project/robot-series-105
+![](https://img-new.cgtrader.com/galleries/5269/large_ded2334f-7b54-45f2-80f6-420660d49649.jpg)
+
+
+[> back to main Content](#content)
+
+
+
+
+
+
+<a name="pdm"></a>
+## PDM
+
+Project Development Materials.
+
+* PDM001: [Delete multiple material](#PDM001);
+* PDM002: [PNG background transparency](#PDM002);
+* PDM003: [Set-up perspective view based on ref img](#PDM003);
+* PDM004: [11 tips for speeding up rendering cycles](#PDM004);
+* PDM005: [Selecting linked vertices](#PDM005);
+* PDM006: [Multiple addons using the same name](#PDM006);
+* PDM007: [Create a Muddy Landscape in Blender](#PDM007);
+* PDM008: [Why and How to Use a Camera Rig](#PDM008);
+* PDM009: [Blender Freestyle for Background Line Art](#PDM009);
+* PDM010: [Motion](#PDM010);
+* PDM011: [Low-poly modeling for high-poly rendering](#PDM011);
+* PDM012: [Turning your blend file into a asset library](#PDM012);
+* PDM013: [Blend Library](#PDM013);
+* PDM014: [How to make a 3D model of the hedge](#PDM014);
+* PDM015: [LEARNING MESH TOPOLOGY COLLECTION and SPEED SCULP](#PDM015);
+* PDM016: [How to organize 3D Projects](#PDM016);
+* PDM017: [Heightmap Terrain](#PDM017);
+
+[> back to main Content](#content)
+
+
+<a name="PDM001"></a>
+### PDM001: Can I delete all materials of all objects in a scene quickly?
 
 Enable it in the `User Preferences > Addons`, select all objects `A`, hit `Q` over 3D View and chose **Remove Material Slots**:
 
@@ -175,11 +287,11 @@ python
             bpy.ops.object.material_slot_remove({'object': ob})
 ```
 
-[> back to list of Tips](#tips)
+[> back to PDM](#pdm)
 
 
-### Tip002
-#### Can Blender render pngs with the background transparent?
+<a name="PDM002"></a>
+### PDM002: Can Blender render pngs with the background transparent?
 
 [Click here](http://blender.stackexchange.com/questions/1303/can-blender-render-pngs-with-the-background-transparent) for the source content.
 
@@ -197,18 +309,19 @@ At **Blender Render**:
 
 ![cycles](http://i.stack.imgur.com/4LRZk.png)
 
-[> back to list of Tips](#tips)
+[> back to PDM](#pdm)
 
 
-### Tip003
-#### How to set-up the perspective view based on a reference image?
+<a name="PDM003"></a>
+### PDM003: How to set-up the perspective view based on a reference image?
 
 [Click here](http://blender.stackexchange.com/questions/9328/how-to-set-up-the-perspective-view-based-on-a-reference-image) for the source content.
 
-[> back to list of Tips](#tips)
+[> back to PDM](#pdm)
 
-### Tip004
-#### At boundlessblending: “11 crazy tweaks to speed up cycles”
+
+<a name="PDM004"></a>
+### PDM004: At boundlessblending: “11 crazy tweaks to speed up cycles”
 
 11 useful tips on speeding up your rendering on cycles!
 
@@ -216,13 +329,15 @@ What I always thought about doing it but never really did it was to use render l
 
 [Click here](https://boundlessblending.blogspot.com.br/2016/04/blender-fast-rendering.html) for the source content.
 
-### Tip005
-#### Selecting linked vertices
+
+<a name="PDM005"></a>
+### PDM005: Selecting linked vertices
 
 At menu in Edit mode, go `Select > Edge Loops`.
 
-### Tip006
-#### Multiple addons using the same name
+
+<a name="PDM006"></a>
+### PDM006: Multiple addons using the same name
 
 To Toggle console when this message pops up:
 
@@ -232,113 +347,97 @@ To Toggle console when this message pops up:
 
 Go `Window > Toggle System Console`.
 
-[> back to list of Tips](#tips)
-
-## Addons
-
-The following table contains favorite addons.
-
-| name | author | comment |
-|:------:|:--------:|:-------:|
-| [Quick preferences](http://blenderartists.org/forum/showthread.php?223293-QuickPrefs-Access-from-side-panel-to-Lighting-Presets-amp-often-changed-preferences) | Sean Olson (LiquidApe) | recommended by masterxeon1001 |
-| [Auto mirror](http://blenderaddonlist.blogspot.com.br/2014/07/addon-auto-mirror.html) |  Lapineige | recommended by masterxeon1001 |
-| [BoolTool](http://www.blendernation.com/2014/05/14/add-on-booltool/) | Vitor Balbio | main tool for cutting feature on HardOps |
-| [Screencast Key Status](https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/3D_interaction/Screencast_Key_Status_Tool) | Paulo Gomes, Bart Crouch, John E. Herrenyo, Gaia Clary, Pablo Vazquez | display key pressed |
-| [Mira Tools](https://github.com/mifth/mifthtools/tree/master/blender/addons/mira_tools) | mifth | recommended by masterxeon1001 |
-| [MeasureIt](https://github.com/Antonioya/blender/tree/master/measureit) | Antonioya | [youtube video for tutorial](https://www.youtube.com/watch?v=R0jCdCoaRvs&feature=youtu.be) |
-| [HardOps + BoxCutter](https://gumroad.com/masterxeon1001) | masterxeon1001 | ultimate tool |
-| [Blender 2.7x XPS Tools 1.1](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690) | johnzero7 | XPS to Blender, a XNA model import feature in Blender |
-
-## More info on addons
-
-### XPS to Blender 2.7x [(source here)](http://johnzero7.deviantart.com/art/XPS-to-Blender-2-7x-Blender-internal-the-easy-way-489500171)
-
-* [Download XPS Tools for Blender 2.7x](http://johnzero7.deviantart.com/journal/Blender-2-7x-XPS-Tools-1-1-485668690)
-
-Reference
-
-| source | info |
-|:------:|:----:|
-| [johnzero7](http://johnzero7.deviantart.com/gallery/) | Blender/XPS guide |
-| [irokichigai01](http://irokichigai01.deviantart.com/) | xnalara/xna mesh ascii good models |
-
-----------------------------------------------------------------------------------------------
-
-[> back to main Content](#content)
-
-## Cheatsheet
-
-From http://www.giudansky.com/
-
-![cheatsheet](http://www.giudansky.com/images/downloads/blender/blender3d-shortcuts-infographic.png)
-
-[> back to main Content](#content)
-
-## TopTutorials
-
-List of top tutorials gathered during blackjuice's Blender experience.
-
-* [Create a Muddy Landscape in Blender](http://www.blendernation.com/2016/01/09/create-muddy-landscape-blender/)
-  * [![](img/Blendernationmud-702x336.jpg)](https://www.youtube.com/watch?time_continue=469&v=ibLBRxBC498)
+[> back to PDM](#pdm)
 
 
-* [Why and How to Use a Camera Rig](http://www.blenderhd.com/tutorial/why-and-how-to-use-a-camera-rig/)
-  * [![](img/cameraRig.JPG)](https://www.youtube.com/watch?v=H7CISQFl7kA)
+<a name="PDM007"></a>
+### PDM007: [Create a Muddy Landscape in Blender](http://www.blendernation.com/2016/01/09/create-muddy-landscape-blender/)
+
+[![](img/Blendernationmud-702x336.jpg)](https://www.youtube.com/watch?time_continue=469&v=ibLBRxBC498)
+
+[> back to PDM](#pdm)
 
 
-* [Blender Freestyle for Background Line Art](http://www.blendernation.com/2015/12/29/blender-freestyle-background-line-art/)
-  * [![](img/lineart.JPG)](https://www.youtube.com/watch?v=2PoElEZbdwk)
+<a name="PDM008"></a>
+### PDM008: [Why and How to Use a Camera Rig](http://www.blenderhd.com/tutorial/why-and-how-to-use-a-camera-rig/)
 
-* Motion
-  * [![](img/motioon.png)](http://www.matthewinglis.com/tutorials/lowpolyabstracttutorial.aspx)
+[![](img/cameraRig.JPG)](https://www.youtube.com/watch?v=H7CISQFl7kA)
 
-
-* Low-poly modeling for high-poly rendering
-  * [![](img/lowpowhigh.jpg)](http://www.bjobernis.fr/news/post/displace-and-groups-modeling-tip-en)
-
-* [Turning your blend file into a asset library](http://www.blendernation.com/2016/03/05/turning-blend-file-asset-library/)
+[> back to PDM](#pdm)
 
 
-* [Blend Library - Asset manager for material, objects and nodes](http://www.blendernation.com/2014/11/17/blend-library-asset-manager-for-materials-objects-and-nodes/)
+<a name="PDM009"></a>
+### PDM009: [Blender Freestyle for Background Line Art](http://www.blendernation.com/2015/12/29/blender-freestyle-background-line-art/)
+
+[![](img/lineart.JPG)](https://www.youtube.com/watch?v=2PoElEZbdwk)
+
+[> back to PDM](#pdm)
 
 
-* [How to make a 3D model of the hedge](https://www.cgtrader.com/tutorials/256-how-to-make-a-3d-model-of-the-hedge): "creation of high-polygon model with further optimization and decrease the number of polygons, the example of the hedge"
+<a name="PDM010"></a>
+### PDM010: Motion
 
-* [LEARNING MESH TOPOLOGY COLLECTION at cgcookie](https://cgcookie.com/archive/learning-mesh-topology-collection/) and a [speed scultp video](https://www.youtube.com/watch?v=cCC4tpzJNdc)
+[![](img/motioon.png)](http://www.matthewinglis.com/tutorials/lowpolyabstracttutorial.aspx)
 
-* [How to organize 3D Projects](https://www.youtube.com/watch?v=8WP2ch4AaWQ)
-
-* ['Mechanical Blender' fork adds CAD tools to Blender](https://www.blendernation.com/2017/01/16/mechanical-blender-fork-adds-cad-tools-blender/)
-
-[> back to main Content](#content)
-
-## ExtraSoftwares
-
-* Alternatives for **Substance Painter** (US$ 149):
-    * Blacksmith 3D (http://blacksmith3d.com/)
-    * 3D coat (http://3dcoat.com/home/)
-    * MARI (http://www.thefoundry.co.uk/products/mari/)
-
-So far, the Substance Painter is the cheapest option here.
-
-[> back to main Content](#content)
-
-## TopArts
-
-* https://www.cgtrader.com/gallery/project/buggy-for-apocalypse
-![](https://img-new.cgtrader.com/galleries/6580/large_982178a0-5268-47c8-95aa-c3dd376e883c.jpg)
+[> back to PDM](#pdm)
 
 
-* https://www.cgtrader.com/gallery/project/harley-davidson-xr1200x
-![](https://img-new.cgtrader.com/galleries/6972/large_3b450fbe-0e03-4eb0-a4d3-b64827f81cc4.jpg)
+<a name="PDM011"></a>
+### PDM011: Low-poly modeling for high-poly rendering
+
+[![](img/lowpowhigh.jpg)](http://www.bjobernis.fr/news/post/displace-and-groups-modeling-tip-en)
+
+[> back to PDM](#pdm)
 
 
-* https://www.cgtrader.com/gallery/project/killer-barbie
-![](https://img-new.cgtrader.com/galleries/6417/large_e0b56c2e-e321-4a5d-93b2-ed314b000f92.jpg)
+<a name="PDM012"></a>
+### PDM012: Turning your blend file into a asset library
+
+Follow [link](http://www.blendernation.com/2016/03/05/turning-blend-file-asset-library/)
+
+[> back to PDM](#pdm)
 
 
-* https://www.cgtrader.com/gallery/project/robot-series-105
-![](https://img-new.cgtrader.com/galleries/5269/large_ded2334f-7b54-45f2-80f6-420660d49649.jpg)
+<a name="PDM013"></a>
+### PDM013: Blend Library - Asset manager for material, objects and nodes
+
+Follow [link](http://www.blendernation.com/2014/11/17/blend-library-asset-manager-for-materials-objects-and-nodes/)
+
+[> back to PDM](#pdm)
 
 
+<a name="PDM014"></a>
+### PDM014: How to make a 3D model of the hedge
+
+> "creation of high-polygon model with further optimization and decrease the number of polygons, the example of the hedge"
+
+Follow [link](https://www.cgtrader.com/tutorials/256-how-to-make-a-3d-model-of-the-hedge)
+
+[> back to PDM](#pdm)
+
+
+<a name="PDM015"></a>
+### PDM015: LEARNING MESH TOPOLOGY COLLECTION and SPEED SCULP
+
+Follow [MESH TOPOLOGY COLLECTION at cgcookie](https://cgcookie.com/archive/learning-mesh-topology-collection/) and a check [speed scultp video](https://www.youtube.com/watch?v=cCC4tpzJNdc).
+
+[> back to PDM](#pdm)
+
+
+<a name="PDM016"></a>
+### PDM016: [How to organize 3D Projects](https://www.youtube.com/watch?v=8WP2ch4AaWQ)
+
+['Mechanical Blender' fork adds CAD tools to Blender](https://www.blendernation.com/2017/01/16/mechanical-blender-fork-adds-cad-tools-blender/)
+
+
+<a name="PDM017"></a>
+### PDM017: Heightmap Terrain
+
+Here we can generate terrain plains using heightmaps. Use [Terrain Party](http://terrain.party/) to get real world heightmaps.
+
+For implementation, follow [Real World Terrain In Blender by CynicatPro](https://www.youtube.com/watch?v=cZxyN7esQkY) and [Micropolygon Displacement Basics by Gleb Alexandrov](https://www.youtube.com/watch?v=hlh9rrjG29k).
+
+Might be interesting to generate your own heightmaps. Follow [PLANET TERRAIN HEIGHTMAP GENERATOR (PYTHON RECIPE)](http://code.activestate.com/recipes/576929-planet-terrain-heightmap-generator/).
+
+[> back to PDM](#pdm)
 [> back to main Content](#content)
