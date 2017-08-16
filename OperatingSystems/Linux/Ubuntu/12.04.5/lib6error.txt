@@ -1,0 +1,33 @@
+error
+=====
+commander $ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+You might want to run 'apt-get -f install' to correct these.
+The following packages have unmet dependencies:
+ libc-dev-bin : Depends: libc6 (< 2.16) but 2.17-0ubuntu5 is installed
+ libc6-dev : Depends: libc6 (= 2.15-0ubuntu10.18) but 2.17-0ubuntu5 is installed
+ libnih1 : PreDepends: libc6 (< 2.16) but 2.17-0ubuntu5 is installed
+E: Unmet dependencies. Try using -f.
+
+solving...
+==========
+
+1st try:
+--------
+sudo apt-get install --reinstall libc6=2.15-0ubuntu10.12 libc6-dev=2.15-0ubuntu10.12
+
+returns:
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Version '2.15-0ubuntu10.12' for 'libc6' was not found
+E: Version '2.15-0ubuntu10.12' for 'libc6-dev' was not found
+
+2nd try:
+--------
+sudo apt-get install libc6=2.13-20ubuntu5.1
+echo "libc6 hold"|sudo dpkg --set-selections
+
+here we are trying to downgrade libc6 version
