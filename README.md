@@ -31,6 +31,8 @@ List:
   * [Art & Blender](#v151027_02).
 * [v160923](#v160923):
   * [Science Fiction & Fantasy](#v160923_01).
+* [v170822](#v170822):
+  * [SWOT](#v170822_01).
 
 [> back to main Content](#content)
 
@@ -114,5 +116,13 @@ Art & Blender Total: 232.46
 
     The Malazan Book of the Fallen is an epic fantasy series written by Canadian author Steven Erikson, published in ten volumes beginning with the novel Gardens of the Moon, published in 1999. The series was completed with the publication of The Crippled God in February 2011. Erikson's series is extremely complex with a wide scope, and presents the narratives of a large cast of characters spanning thousands of years across multiple continents. Erikson's plotting presents a complicated series of events in the world upon which the Malazan Empire is located. Each of the first five novels is relatively self-contained, in that it resolves its respective primary conflict; but many underlying characters and events are interwoven throughout the works of the series, binding it together.
 
+
+[> back to main Content](#content)
+
+# v170822
+
+## <a name="v170822_01"></a> SWOT
+
+* In [The Programming Butler - SWOT Analysis](http://theprogrammingbutler.com/blog/archives/2014/11/17/swot-analysis/), we get this [link](https://formswift.com/business-plan#swotanalysis).
 
 [> back to main Content](#content)
