@@ -1,0 +1,26 @@
+creation date:  170602
+author:         blackjuice
+project:        sectionAlpha/overwatch
+info:           Overwatch stats progression
+
+MAPS
+====
+
+About
+-----
+    maps.txt contains basic *csv/maps.csv* structure description.
+
+Structure
+---------
+    mapID, short map name, game mode, complete map name
+
+    description:
+        mapID               | ddt[mapID]
+        short map name      | ddt[mapID][0]
+        game mode           | ddt[mapID][1]
+        complete map name   | ddt[mapID][2]
+
+
+Example
+-------
+    18,necropolis,Arena,Necropolis

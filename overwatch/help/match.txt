@@ -1,0 +1,45 @@
+creation date:  170602
+author:         blackjuice
+project:        sectionAlpha/overwatch
+info:           Overwatch stats progression
+
+MATCH
+=====
+
+About
+-----
+    match.txt contains basic *csv/match.csv* structure description.
+
+Structure
+---------
+    line 0:
+        date, total #matches (mAll), #victories (mV), #defeats (mD), #draws (mE)
+    
+    description:
+        date    | ddt[date]
+        mAll    | ddt[date][0]
+        mV      | ddt[date][1]
+        mD      | ddt[date][2]
+        mE      | ddt[date][3]
+
+    line 1 to mAll-1:
+        matchID, mapID, nplayers, nplayers_0 .. nplayers_nplayers-1
+
+    description:
+        matchID    | ddt[matchID]
+        mapID      | ddt[matchID][0]
+        nplayers   | ddt[matchID][1]
+        nplayers_i | ddt[matchID][2]
+        .
+        .
+        .
+        nplayers_i | ddt[matchID][nplayers-1]
+
+Example
+-------
+    100000,5,0,4,1
+    0,7,1,2,4,8
+    1,3,1,4,8,1,0,7
+    2,13,1,4,9,0,6,7
+    3,0,1,2,7,6
+    4,18,2,2,6,0
