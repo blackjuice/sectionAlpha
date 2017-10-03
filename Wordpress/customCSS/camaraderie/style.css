@@ -1,0 +1,1946 @@
+/*
+Theme Name:  Camaraderie
+Theme URI: https://www.benjaminlu.net/portfolio/camaraderie/
+Author: Benjamin Lu
+Author URI: https://www.benjaminlu.net/
+Description: Camaraderie is a fully functional mobile friendly WordPress theme that allows you to create amazing things such as photography portfolio or just a regular portfolio to your needs. It also includes theme options that allows you to create a home page with a template that allows you to set as static page to show your amazing work.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, sticky-post, theme-options, threaded-comments, translation-ready, blog, photography, portfolio
+Version: 0.0.4
+Text Domain: camaraderie
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+================================================================================================
+Table of Content
+================================================================================================
+ 1.0 - Typography
+ 2.0 - Elements
+ 3.0 - Forms
+ 4.0 - Alignments
+ 5.0 - Accessibility
+ 6.0 - Clearings
+ 7.0 - Basic Structure
+ 8.0 - Navigation (Links)
+ 9.0 - Navigation (Primary Navigation)
+10.0 - Navigation (Secondary Navigation)
+11.0 - Navigation (Pagination Navigation)
+12.0 - Navigation (Social Navigation)
+13.0 - Header Area (Header Image)
+14.0 - Header Area (Custom Image)
+15.0 - Content Area (Posts and Pages)
+16.0 - Content Area (Archives)
+17.0 - Content Area (Comments)
+18.0 - Content Area (Error 404)
+19.0 - Content Area (Search)
+20.0 - Content Area (Post Formats)
+21.0 - Section Area (Jetpack Portfolio)
+22.0 - Section Area (Blog Section)
+23.0 - Section Area (Jetpack Testimonials)
+24.0 - Section Area (Jetpack Contact Form)
+25.0 - Widget Area
+26.0 - Footer Area
+27.0 - Media Area (Captions)
+28.0 - Media Area (Galleries)
+29.0 - Media Queries (Mobile Small 30em (480px))
+30.0 - Media Queries (Mobile Medium 37.50em (600px))
+31.0 - Media Queries (Mobile Large 41.688em (667px))
+32.0 - Media Queries (Mobile Extra Large 46em (736px))
+33.0 - Media Queries (Tablet Small 48em (768px))
+34.0 - Media Queries (Tablet Medium 64em (1024px))
+35.0 - Media Queries (Table Large 64.063em (1025px))
+================================================================================================
+*/
+
+/*
+================================================================================================
+ 1.0 - Typography
+================================================================================================
+*/
+body {
+    background: #eeeeee;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+h1 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0.67em 0;
+}
+
+h2 {
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0.83em 0;
+}
+
+h3 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1.17em;
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+h4 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 1.33em 0;
+}
+
+h5 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: .83em;
+    font-weight: 700;
+    margin: 1.67em 0;
+}
+
+h6 { 
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: .67em;
+    font-weight: 700;
+    margin: 2.33em 0;
+}
+
+/*
+================================================================================================
+ 2.0 - Elements
+================================================================================================
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { 
+    box-sizing: inherit;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+figure {
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*
+================================================================================================
+ 3.0 - Forms
+================================================================================================
+*/
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    border: 0.063em solid #cccccc;
+    padding: 0.6em;
+    width: 25em;
+}
+
+textarea {
+    border: 0.063em solid #cccccc;
+    padding: 0.6em;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    display: inline-block;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6em;
+    padding: 0.5em 1em;
+}
+
+input[type="submit"]:hover {
+    color: #666666;
+}
+
+/*
+================================================================================================
+ 4.0 - Alignments
+================================================================================================
+*/
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+================================================================================================
+ 5.0 - Accessibility
+================================================================================================
+*/
+.screen-reader-text {
+    clip: rect(0.063em, 0.063em, 0.063em, 0.063em);
+    height: 0.063em;
+    overflow: hidden;
+    position: absolute !important;
+    width: 0.063em;
+}
+
+.screen-reader-text:focus {
+    background: #f1f1f1;
+    border-radius: 0.188em;
+    box-shadow: 0 0 0.125em 0.125em;
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 0.875em;
+    font-weight: 700;
+    height: auto;
+    left: 0.313em;
+    line-height: normal;
+    padding: 0.938em 1.438em 0.875em;
+    text-decoration: none;
+    top: 0.313em;
+    width: auto;
+    z-index: 100000; 
+}
+
+/*
+================================================================================================
+ 6.0 - Clearings
+================================================================================================
+*/
+.main-navigation:before,
+.main-navigation:after,
+.site-content:before,
+.site-content:after,
+.site-main:before,
+.site-main:after,
+.content-area:before,
+.content-area:after,
+.entry-content:before,
+.entry-content:after,
+.grid-column-two:before,
+.grid-column-two:after,
+.section-portfolio:before,
+.section-portfolio:after,
+.section-blog:before,
+.section-blog:after,
+.section-testimonial:before,
+.section-testimonial:after,
+.section-contact:before,
+.section-contact:after, 
+.site-footer:before,
+.site-footer:after,
+.post-navigation:before,
+.post-navigation:after,
+.posts-navigation:before,
+.posts-navigation:after {
+    clear: both;
+    content: "";
+    display: table;:
+}
+
+/*
+================================================================================================
+ 7.0 - Basic Structure
+================================================================================================
+*/
+.site-content {
+
+}
+
+.site-main {
+    margin: 0 auto;
+    padding: 1.125em; /* 18px */
+    max-width: 75.375em; /* 1206px */
+    /* 1206px - 36px = 1170px */
+}
+
+/*
+================================================================================================
+ 8.0 - Navigation (Links)
+================================================================================================
+*/
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666666;
+}
+
+/*
+================================================================================================
+ 9.0 - Navigation (Primary Navigation)
+================================================================================================
+*/
+.main-navigation {
+    background: #000000;
+}
+
+.primary-navigation {
+    display: block;
+    width: 100%;
+}
+
+.primary-navigation ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+}
+
+.primary-navigation li {
+    border-top: 0.063em solid #eaeaea;
+    border-top: 0.063em solid rgba(51, 51, 51, 0.1);
+    position: relative;
+}
+
+.primary-navigation ul ul {
+    display: none;
+    margin-left: 0.5em;
+}
+
+.primary-navigation a {
+    color: #ffffff;
+    display: block;
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    position: relative;
+    text-decoration: none;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus {
+    background: #ffffff;
+    color: #000000;
+}
+
+.primary navigation a,
+.primary-navigation ul ul li:lastchild a {
+    border-bottom: 0.063em solid #ffffff;
+}
+
+.primary-navigation ul li:last-child a {
+    border-bottom: none;
+}
+
+.primary-navigation ul .toggled-on {
+    display: block;
+}
+
+.primary-navigation .current-menu-item > a,
+.primary-navigation .current-menu-ancestor > a,
+.primary-navigation .current_page_item > a,
+.primary-navigation .current_page_ancestor > a {
+    font-weight: 700;
+}
+
+.primary-navigation .nav-menu > ul > li:first-child,
+.primary-navigation .nav-menu > li:first-child {
+    border-top: 0;
+}
+
+.primary-navigation .menu-item-has-children > a,
+.primary-navigation .page_item_has_children > a{
+    padding-right: 3em;
+}
+
+.no-js .primary-navigation ul ul {
+    display: block;
+}
+
+.dropdown-toggle {
+    background: #000000;
+    border: 0.063em solid #ffffff;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #ffffff;
+    font-family: 'fontawesome';
+    height: 2.125em;
+    padding: 0;
+    position: absolute;
+    right: 0.313em;
+    top: 0.313em;
+    width: 2.125em;
+}
+
+.dropdown-toggle:after {
+    font-size: 1.125em;
+    content: "\f078";
+    left: 0;
+    line-height: 1.875em;
+    position: relative;
+    top: 0.063em;
+    width: 1.875em;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background: #ffffff;
+    color: #000000;
+}
+
+.dropdown-toggle.toggle-on:after {
+    content: "\f077";
+}
+
+.primary-navigation.toggled {
+    bottom: 0;
+    padding: 1em;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-menu {
+    background: #000000;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.primary-navigation.toggled ul {
+    max-height: calc(100vh - 8em);
+    overflow-y: auto;
+}
+
+.primary-navigation.toggled ul ul {
+    display: none;
+}
+
+.primary-navigation.toggled ul ul.toggled-on,
+.primary-navigation.toggled ul ul.toggled-on > ul {
+    display: block;
+}
+
+.menu-toggle {
+    background-color: #000;
+    border: solid 2px #fff;
+    bottom: 1em;
+    color: #fff;
+    display: none;
+    font-family: 'Sanchez', serif;
+    font-size: 1em;
+    left: 1em;
+    padding: 0.4em;
+    position: fixed;
+    transition: all ease-out 400ms;
+    z-index: 100;
+}
+
+.menu-toggle.hide {
+    bottom: -2.5em;
+}
+
+.toggled .menu-toggle.hide {
+    bottom: 1em;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    text-decoration: underline;
+}
+
+/*
+================================================================================================
+10.0 - Navigation (Secondary Navigation)
+================================================================================================
+*/
+
+/*
+================================================================================================
+11.0 - Navigation (Pagination Navigation)
+================================================================================================
+*/
+.pagination {
+    text-align: center;
+}
+
+.page-numbers {
+    background: #ffffff;
+    border: 0.063em solid #c3c3c3;
+    color: #333333;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.page-numbers:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.page-number:hover a {
+    color: #ffffff;
+}
+
+.page-numbers.current {
+    background: #000000;
+    color: #ffffff;
+}
+
+.page-links > a {
+    border: 0.063em solid #999999;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.page-links > a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.page-links > span {
+    background: #000000;
+    border: 0.063em solid #666666;
+    color: #ffffff;
+    padding: 0.5em 1em;
+}
+
+.posts-navigation,
+.post-navigation {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    clear: both;
+    padding: 0.938em;
+}
+
+.posts-navigation .nav-links .nav-previous,
+.post-navigation .nav-links .nav-previous {
+    float: left;
+    margin: 0.5em 0;
+}
+
+.posts-navigation .nav-links .nav-next,
+.post-navigation .nav-links .nav-next {
+    float: right;
+    margin: 0.5em 0;
+}
+
+.posts-navigation .nav-links .nav-previous .post-previous,
+.post-navigation .nav-links .nav-previous .post-previous {
+    color: #000000;
+    display: block;
+    font-size: 0.9375em;
+    font-weight: 700;
+    text-align: left;
+}
+
+.posts-navigation .nav-links .nav-next .post-next,
+.post-navigation .nav-links .nav-next .post-next {
+    color: #000000;
+    display: block;
+    font-size: 0.9375em;
+    font-weight: 700;
+    text-align: right
+}
+
+.posts-navigation .nav-links .nav-previous .post-title,
+.post-navigation .nav-links .nav-previous .post-title {
+    font-size: 0.813em;
+}
+
+.posts-navigation .nav-links .nav-next .post-title,
+.post-navigation .nav-links .nav-next .post-title {
+    font-size: 0.813em;
+}
+
+.link-pages {
+    text-align: center; 
+}
+
+/*
+================================================================================================
+12.0 - Navigation (Social Navigation)
+================================================================================================
+*/
+.site-social {
+    background: #474747;
+    padding: 0.5em;
+}
+
+.menu-social ul {
+    text-align: center;
+    list-style: none;
+}
+
+.menu-social ul li {
+    position: relative;
+    display:  inline-block;
+}
+
+.menu-social li a:before {
+    color: #ffffff;
+    content: '\f08e';
+    display: inline-block;
+    font-family: 'fontawesome';
+    font-size: 1.625em;
+    padding: 0 0.375em;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+}
+
+.menu-social li a[href*="dribbble.com"]::before { content: '\f17d'; }
+.menu-social li a[href*="facebook.com"]::before { content: '\f230'; }
+.menu-social li a[href*="flickr.com"]::before { content: '\f16e'; }
+.menu-social li a[href*="foursquare.com"]::before { content: '\f180'; }
+.menu-social li a[href*="github.com"]::before { content: '\f09b'; }
+.menu-social li a[href*="plus.google.com"]::before { content: '\f0d5'; }
+.menu-social li a[href*="instagram.com"]::before { content: '\f16d'; }
+.menu-social li a[href*="jsfiddle.com"]::before { content: '\f1cc'; }
+.menu-social li a[href*="linkedin.com"]::before { content: '\f0e1'; }
+.menu-social li a[href*="pinterest.com"]::before { content: '\f0d2'; }
+.menu-social li a[href*="reddit.com"]::before { content: '\f1a1'; }
+.menu-social li a[href*="soundcloud.com"]::before { content: '\f1be'; }
+.menu-social li a[href*="stackoverflow.com"]::before { content: '\f16c'; }
+.menu-social li a[href*="tumblr.com"]::before { content: '\f173'; }
+.menu-social li a[href*="twitter.com"]::before { content: '\f099'; }
+.menu-social li a[href*="vimeo.com"]::before { content: '\f194'; }
+.menu-social li a[href*="vine.co"]::before { content: '\f1ca'; }
+.menu-social li a[href*="yelp.com"]::before { content: '\f1e9'; }
+.menu-social li a[href*="youtube.com"]::before { content: '\f167'; }
+.menu-social li a[href*="wordpress.org"]::before { content: '\f19a'; }
+
+/*
+================================================================================================
+13.0 - Header Area (Header Image)
+================================================================================================
+*/
+.site-header {
+    background: #000000;
+    padding: 10em 0;
+}
+
+.site-branding {
+    text-align: center;
+}
+
+.site-title,
+.site-description {
+    margin: 0;
+    padding: 0;
+}
+
+.site-title a {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.site-description {
+    color: #ffffff;
+}
+
+/*
+================================================================================================
+14.0 - Header Area (Custom Image)
+================================================================================================
+*/
+
+/*
+================================================================================================
+15.0 - Content Area (Posts and Pages)
+================================================================================================
+*/
+.right-sidebar .content-area {
+    float: left;
+    width: 71.28205128205128%;
+}
+
+.left-sidebar .content-area {
+    float: right;
+    width: 71.28205128205128%;
+}
+
+.content-area .post,
+.content-area .page,
+.content-area .jetpack-portfolio,
+.content-area .jetpack-testimonial,
+.recent-posts {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    margin-bottom: 1.125em; /* 18px */
+    min-height: 18.813em;
+    padding: 1.125em; /* 18px */
+}
+
+.content-area .post .entry-header,
+.content-area .page .entry-header,
+.content-area .jetpack-portfolio .entry-header,
+.content-area .jetpack-testimonial .entry-header {
+    text-align: center;
+}
+
+.content-area .post .entry-header .entry-title,
+.content-area .page .entry-header .entry-title,
+.content-area .jetpack-portfolio .entry-header .entry-title,
+.content-area .jetpack-testimonial .entry-header .entry-title {
+    margin: 0;
+    padding: 0;
+}
+
+.content-area .has-post-thumbnail {
+    position: relative;
+    padding-left: 19.938em;
+}
+
+.content-area .has-post-thumbnail .post-thumbnail {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.recent-posts,
+.content-area .post .entry-excerpt,
+.content-area .post .entry-content,
+.content-area .page .entry-content,
+.section-blog .entry-content {
+    line-height: 1.6em;
+}
+
+.recent-posts .continue-reading,
+.content-area .post .entry-excerpt .continue-reading,
+.section-blog .entry-content .continue-reading {
+    text-align: center;
+}
+
+.recent-posts .continue-reading a, 
+.content-area .post .entry-excerpt .continue-reading a,
+.section-blog .entry-content .continue-reading a {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    display: inline-block;
+    line-height: 1.6em;
+    padding: 0.5em 1em;
+}
+
+.content-area .post .entry-metadata {
+    background: #eeeeee;
+    margin: 1.250em 0;
+    padding: 1em;
+    text-align: center;
+}
+
+.content-area .post .entry-metadata .avatar {
+    border: 0.500em solid #cccccc;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.content-area .post .entry-metadata .by-author {
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1.250em;
+}
+
+.content-area .post .entry-metadata .published,
+.content-area .post .entry-metadata .entry-comments {
+    display: block;
+    font-size: 12px;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.content-area .sticky {
+    border: 0.063em solid #666666;
+}
+
+.recent-header {
+    text-align: center;
+}
+
+.recent-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.grid-column-two {
+    margin: 1.125em 0;
+    padding: 0;
+}
+
+.grid-column-two ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-column-two li:nth-of-type(1) {
+    float: left;
+    list-style: none;
+    margin: 0 0.563em 1.125em 0;
+    width: 49%;
+}
+
+.grid-column-two li:nth-of-type(2) {
+    float: right;
+    list-style: none;
+    margin: 0 0 1.125em 0.563em;
+    width: 49%;
+}
+
+/*
+================================================================================================
+16.0 - Content Area (Archives)
+================================================================================================
+*/
+.archive-header {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    margin-bottom: 1.125em;
+    text-align: center;
+}
+
+/*
+================================================================================================
+17.0 - Content Area (Comments)
+================================================================================================
+*/
+.comments-area {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    margin: 0.938em 0;
+    padding: 1.125em;    
+}
+
+.comments-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-list {
+    margin: 0;
+    padding: 0;
+}
+
+.comment-body {
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.comments-area > ol  {
+    list-style-type: none;
+}
+
+.comment-author .avatar {
+    border: 4px solid #cccccc;
+    border-radius: 50%;
+    float: left; 
+    display: block;
+    margin-right: 10px;
+}
+
+.comment-author .fn {
+    font-size: 1.3125em;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+}
+
+.comment-meta {
+    font-size: 12px;
+}
+
+.comment-content {
+    display: block;
+    margin: 2em 0.5em 0 0.5em;
+}
+
+
+.comments-area .says {
+    display: none;
+}
+
+.reply {
+    margin-bottom: 1.5em;
+    text-align: right;
+}
+
+.reply a {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    color: #373737;
+    display: inline-block;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+}
+
+.reply a:hover,
+.reply a:focus {
+    color: #373737;
+    text-decoration: underline;
+}
+
+.comment-list ol {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+ol.children {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.content-meta {
+    margin-left: 70px;
+}
+
+.comment-navigation {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.comment-navigation i {
+    padding: 10px;
+}
+
+.comment-previous {
+    float: left;
+}
+.comment-next {
+    float: right;
+}
+
+.bypostauthor > .comment-body {
+    background: #f0f0f0; 
+    padding: 10px;
+    position: relative;
+}
+
+.comment-reply-title {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.comment-form p {
+    margin-left: 0;
+}
+
+.required {
+    color: #FF0000;
+    font-size: 10px;
+}
+
+.comment-awaiting-moderation {
+    background: #84BD68;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 3px 4px;
+}
+
+.form-allowed-tags {
+    font-size: 13px;
+    width: 600px;
+}
+
+.comment-form .comment-form-comment label,
+.comment-form .comment-form-author label,
+.comment-form .comment-form-email label,
+.comment-form .comment-form-url label {
+    display: block;
+    font-weight: 700;
+}
+
+.comment-form .comment-form-comment textarea {
+    border: 0.063em solid #cccccc;
+    min-height: 12.375em;
+    width: 100%;
+}
+
+.comment-form .comment-form-author input[type="text"],
+.comment-form .comment-form-email input[type="email"],
+.comment-form .comment-form-url input[type="url"] {
+    border: 0.063em solid #cccccc;
+    padding: 0.6em;
+    width: 20em;
+}
+
+.comment-form .comment-notes {
+    font-size: 0.875em;
+}
+
+p.comment-awaiting-moderation {
+    margin: 2px 0 0 65px;
+    padding: 3px 5px;
+}
+
+.comment-subscription-form .subscribe-label {
+    display: inline !important;
+    font-size: 14px;
+}
+
+
+/*
+================================================================================================
+18.0 - Content Area (Error 404)
+================================================================================================
+*/
+.content-area .search-form:before,
+.content-area .search-form:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.content-area  .post .search-form {
+    padding: 0.938em;
+    background: #555;
+    max-width: 100%;
+}
+
+.content-area .search-field {
+    border: none;
+    float: left;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.content-area .search-submit {
+    border: none;
+    background: #d88f3c;
+    color: #ffffff;
+    float: right;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    display: none;
+    padding: 0.4em;
+    position: relative;
+    width: 10%;
+}
+
+/*
+================================================================================================
+19.0 - Content Area (Search)
+================================================================================================
+*/
+
+/*
+================================================================================================
+20.0 - Content Area (Post Formats)
+================================================================================================
+*/
+
+/*
+================================================================================================
+21.0 - Section Area (Jetpack Portfolio)
+================================================================================================
+*/
+.jetpack-portfolio-grid {
+    margin: 1.250em 0;
+    padding: 0;
+}
+
+.jetpack-portfolio-grid ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.jetpack-portfolio-grid li {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0.5em;
+    width: 33.33333333333333%;
+}
+
+.jetpack-portfolio-grid .jetpack-portfolio-caption {
+    background: #eeeeee;
+    font-size: 0.875em;
+    margin: 0 0 1.125em 0;;
+    padding: 0.313em;
+    text-align: center;
+}
+
+.jetpack-portfolio-grid .jetpack-portfolio-caption-title {
+    margin: 0 0 0.2em 0;
+    padding: 0;
+}
+
+.featured-portfolio {
+    margin: 1.125em 0;
+}
+
+.section-portfolio {
+    background: #ffffff;
+}
+
+.section-portfolio .entry-header {
+    margin-bottom: 1.125em;
+    text-align: center;
+}
+
+.section-portfolio .entry-header .entry-title {
+    font-size: 2.250em;
+    margin: 0;
+    padding: 0;
+}
+
+.section-portfolio .entry-header .entry-description {
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+================================================================================================
+22.0 - Section Area (Blog Section)
+================================================================================================
+*/
+.section-blog {
+    background: #eeeeee;
+}
+
+.section-blog .entry-header {
+    margin-bottom: 1.125em;
+    text-align: center;
+}
+
+.section-blog .entry-header .entry-title {
+    font-size: 2.250em;
+    margin: 0;
+    padding: 0;
+}
+
+.section-blog .entry-header .entry-description {
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-grid {
+    margin: 1.250em 0;
+    padding: 0;
+}
+
+.blog-grid ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.blog-grid li {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0.5em;
+    width: 50%;
+}
+
+
+/*
+================================================================================================
+23.0 - Section Area (Jetpack Testimonials)
+================================================================================================
+*/
+.section-testimonial {
+    background: #eeeeee;
+}
+
+.section-testimonial .entry-header {
+    margin-bottom: 1.125em;
+    text-align: center;
+}
+
+.section-testimonial .entry-header .entry-title {
+    font-size: 2.250em;
+    margin: 0;
+    padding: 0;
+}
+
+.section-testimonial .entry-header .entry-description {
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+.jetpack-testimonial-grid {
+    margin: 1.250em 0;
+    padding: 0;
+}
+
+.jetpack-testimonial-grid ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.jetpack-testimonial-grid li {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0.5em;
+    width: 33.33333333333333%;
+}
+
+.jetpack-testimonial-grid .jetpack-testimonial-caption {
+    font-size: 0.875em;
+    margin: 0;
+    padding: 0.313em;
+    text-align: center;
+}
+
+.jetpack-testimonial-grid .jetpack-testimonial-caption-title {
+    margin: 0 0 0.2em 0;
+    padding: 0;
+}
+
+.featured-testimonials {
+    text-align: center;
+}
+
+.featured-testimonials img {
+    border-radius: 50%;
+    border: 0.500em solid #cccccc;
+}
+
+/*
+================================================================================================
+24.0 - Section Area (Jetpack Contact Form)
+================================================================================================
+*/
+.section-contact {
+    background: #000000;
+}
+
+.section-contact .entry-header {
+    margin-bottom: 1.125em;
+    text-align: center;
+}
+
+.section-contact .entry-header .entry-title {
+    color: #ffffff;
+    font-size: 2.250em;
+    margin: 0;
+    padding: 0;
+}
+
+.section-contact .entry-header .entry-description {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.section-contact .wpcf7 label {
+    color: #ffffff;
+}
+
+.section-contact input[type="text"],
+.section-contact input[type="email"],
+.section-contact input[type="url"] {
+    border: 0.063em solid #cccccc;
+    padding: 0.6em;
+    width: 25em;
+}
+
+.section-contact textarea {
+    padding: 0.6em;
+    width: 50%;
+}
+
+/*
+================================================================================================
+25.0 - Widget Area
+================================================================================================
+*/
+.left-sidebar .widget-area {
+    float: left;
+    width: 27.17948717948718%;
+}
+
+.right-sidebar .widget-area {
+    float: right;
+    width: 27.17948717948718%;
+}
+
+.widget-area .search-form:before,
+.widget-area .search-form:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.widget-area .search-form {
+    padding: 0.938em;
+    background: #555;
+    max-width: 100%;
+}
+
+.widget-area .search-field {
+    border: none;
+    float: left;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    padding: 0.563em;
+    width: 100%;
+}
+
+.widget-area .search-submit {
+    border: none;
+    background: #d88f3c;
+    color: #ffffff;
+    float: right;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    display: none;
+    padding: 0.5em;
+    position: relative;
+    width: 30%;
+}
+
+.widget-area .widget {
+    background: #ffffff;
+    border: 0.063em solid #cccccc;
+    margin-bottom: 1.125em;
+    padding: 1.125em;
+}
+
+.widget ul,
+.widget ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget li {
+    margin: 0.4em 0 0 0;
+}
+
+.widget li li {
+    margin-left: 1.125em;
+}
+
+.widget select {
+    margin: 0.625em 0;
+    padding: 0.313em 0.313em;
+    max-width: 100%;
+}
+
+.widget-title {
+    margin: 0 0 0.5em 0;
+}
+
+.rss-widget-icon {
+    display: none;
+}
+
+.rsswidget {
+    display: block;
+}
+
+.widget_rss cite {
+    display: block;
+    font-size: 0.875em;
+    font-weight: 700;
+    margin-bottom: 1.125em;
+}
+
+.rss-date {
+    font-size: 0.875em;
+}
+
+.rssSummary {
+    margin-top: 10px;
+}
+
+#wp-calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#wp-calendar tr:nth-of-type(odd) {
+    background: #eeeeee;
+}
+
+#wp-calendar th {
+    background: #999999;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+#wp-calendar th,
+#wp-calendar td {
+    border: 0.063em solid #cccccc;
+    padding: 0.438em;
+}
+
+#wp-calendar {
+    border: 0.063em solid #cccccc;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#wp-calendar a {
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
+#wp-calendar caption {
+    font-weight: 700;
+    margin: 5px 0;
+    text-align: center;
+}
+
+#wp-calendar #today {
+    background: #cccccc;
+    font-weight: 700;
+}
+
+/*
+================================================================================================
+26.0 - Footer Area
+================================================================================================
+*/
+.site-footer {
+    background: #373737;
+    padding: 1.125em;
+    text-align: center;
+}
+
+.site-footer,
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-title {
+    display: block;
+    font-family: 'Sanchez', serif;
+    font-size: 1.125em;
+}
+
+/*
+================================================================================================
+27.0 - Media Area (Captions)
+================================================================================================
+*/
+.wp-caption {
+    max-width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wp-caption-text { 
+    text-align: center; 
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    background: #eeeeee;
+    color: #000000;
+    font-style: italic;
+    margin-top: 0.063em;
+    padding: 8px;`
+}
+
+.wp-caption p {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+================================================================================================
+28.0 - Media Area (Galleries)
+================================================================================================
+*/
+
+/*
+================================================================================================
+29.0 - Media Queries (Mobile Small 30em (480px))
+================================================================================================
+*/
+
+/*
+================================================================================================
+30.0 - Media Queries (Mobile Medium 37.50em (600px))
+================================================================================================
+*/
+@media screen and (min-height: 30.063em) and (max-width: 37.50em) {
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+    .primary-navigation ul {
+        display: none;
+    }
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+    
+    .left-sidebar .content-area,
+    .right-sidebar .content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    .right-sidebar .widget-area {
+        float: none;
+        margin-top: 1.125em;
+        width: 100%;
+    }
+}
+
+/*
+================================================================================================
+31.0 - Media Queries (Mobile Large 41.688em (667px))
+================================================================================================
+*/
+
+/*
+================================================================================================
+32.0 - Media Queries (Mobile Extra Large 46em (736px))
+================================================================================================
+*/
+
+
+/*
+================================================================================================
+33.0 - Media Queries (Tablet Small 48em (768px))
+================================================================================================
+*/
+@media screen and (min-width: 37.563em) and (max-width: 48em) {
+    .menu-toggle,
+    .primary-navigation.toggled ul {
+        display: block;
+    }
+    
+    .primary-navigation ul {
+        display: none;
+    }
+    
+    .primary-navigation.toggled {
+        padding: 0.1em;
+    }
+    
+    .nav-menu {
+        margin-bottom: 3.6em;
+    }
+    
+    .primary-navigation .nav-menu {
+        display: none;
+    }
+    
+    .primary-navigation.toggled .nav-menu {
+        display: block;
+        margin: 1em 1em 3.6em 1em;
+    }
+    
+    .right-sidebar .content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    .right-sidebar .widget-area {
+        float: none;
+        margin-top: 1.125em;
+        width: 100%;
+    }
+}
+
+/*
+================================================================================================
+29.0 - Media Queries (Tablet Large 64em (1024px))
+================================================================================================
+*/
+@media screen and (min-width: 48.063em) and (max-width: 64em) {
+    .primary-navigation {
+        clear: none;
+    }
+    
+    /* Position the menu in the header */
+    .primary-navigation,
+    .primary-navigation.toggled {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .primary-navigation ul,
+    .primary-navigation.toggled ul {
+        max-height: none;
+        padding-left: 0;
+        text-align: center;
+        
+    }
+    
+    .primary-navigation.toggled ul {
+        overflow-y: visible;
+    }
+    
+    /* Display the menu items in a horizontal order */
+    .primary-navigation li {
+        display: inline-block;
+        border: none;
+    }
+    
+    /* Add an outline to the drop-down menus */
+    .primary-navigation ul ul {
+        outline: 1px solid #333;
+    }
+    
+    /* Left-align drop-down menu items */
+    .primary-navigation li li {
+        display: block;
+        text-align: left;
+    }
+    
+    .primary-navigation a {
+        padding: 0.5em 1em;
+    }
+    
+    .primary-navigation a,
+    .primary-navigation ul ul li:last-child a {
+        border-bottom: none;
+    }
+    
+    .primary-navigation ul ul li a {
+        color: #ffffff;
+    }
+    
+    /* Add an outline on hovered and focused menu items */
+    .primary-navigation a:hover,
+    .primary-navigation a:focus {
+        background: transparent;
+        color: #ffffff;
+        text-decoration: underline;
+        outline: solid 1px #b3b3b3;
+    }
+    
+    /* Create hover and focus contrast on drop-down items */
+    .primary-navigation li li a:hover,
+    .primary-navigation li li a:focus {
+        background: #eee;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    /* Position drop-down menus absolutely */
+    .primary-navigation ul ul.toggled-on {
+        position: absolute;
+        width: 17em;
+        display: block;
+        z-index: 10;
+        right: 0.6em;
+        margin-left: 0;
+        background: #000;
+    }
+    
+    .primary-navigation ul ul ul.toggled-on {
+        right: 0;
+        padding-left: 1em;
+        position: relative;
+    }
+    
+    /* Indent 3rd level drop-down menus */
+    .primary-navigation ul ul ul a {
+        padding-left: 2em;
+    }
+    
+    .nav-menu {
+        padding: 0.4em;
+    }
+    
+    .site-main {
+        max-width: 64em;
+    }
+    
+    .right-sidebar .content-area {
+        float: left;
+        width: 66.6015625%;
+    }
+    
+    .right-sidebar .widget-area {
+        float: right;
+        width: 31.640625%;
+    }
+    
+    .dropdown-toggle {
+        right: 0.4em;
+        top: 0.3em;
+    }
+}
+
+/*
+================================================================================================
+34.0 - Media Queries (Tablet Medium 64em (1024px))
+================================================================================================
+*/
+@media screen and (min-width: 64em) {
+    .primary-navigation {
+        clear: none;
+    }
+    
+    /* Position the menu in the header */
+    .primary-navigation,
+    .primary-navigation.toggled {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .primary-navigation ul,
+    .primary-navigation.toggled ul {
+        max-height: none;
+        padding-left: 0;
+        text-align: center;
+        
+    }
+    
+    .primary-navigation.toggled ul {
+        overflow-y: visible;
+    }
+    
+    /* Display the menu items in a horizontal order */
+    .primary-navigation li {
+        display: inline-block;
+        border: none;
+    }
+    
+    /* Add an outline to the drop-down menus */
+    .primary-navigation ul ul {
+        outline: 1px solid #333;
+    }
+    
+    /* Left-align drop-down menu items */
+    .primary-navigation li li {
+        display: block;
+        text-align: left;
+    }
+    
+    .primary-navigation a {
+        padding: 0.5em 1em;
+    }
+    
+    .primary-navigation a,
+    .primary-navigation ul ul li:last-child a {
+        border-bottom: none;
+    }
+    
+    .primary-navigation ul ul li a {
+        color: #ffffff;
+    }
+    
+    /* Add an outline on hovered and focused menu items */
+    .primary-navigation a:hover,
+    .primary-navigation a:focus {
+        background: transparent;
+        color: #ffffff;
+        text-decoration: underline;
+        outline: solid 1px #b3b3b3;
+    }
+    
+    /* Create hover and focus contrast on drop-down items */
+    .primary-navigation li li a:hover,
+    .primary-navigation li li a:focus {
+        background: #eee;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    /* Position drop-down menus absolutely */
+    .primary-navigation ul ul.toggled-on {
+        position: absolute;
+        width: 17em;
+        display: block;
+        z-index: 10;
+        right: 0;
+        margin-left: 0;
+        background: #000;
+    }
+    
+    .primary-navigation ul ul ul.toggled-on {
+        right: 0;
+        padding-left: 1em;
+        position: relative;
+    }
+    
+    /* Indent 3rd level drop-down menus */
+    .primary-navigation ul ul ul a {
+        padding-left: 2em;
+    }
+    
+    .nav-menu {
+        padding: 0.4em;
+    }
+    
+    .dropdown-toggle {
+        right: 0.313em;
+        top: 0.313em;
+    }
+}
+
+/*
+================================================================================================
+35.0 - Media Queries (Table Large 64.063em (1025px))
+================================================================================================
+*/
+@media screen and (min-width: 64.063em) {
+    .primary-navigation {
+        clear: none;
+    }
+    
+    /* Position the menu in the header */
+    .primary-navigation,
+    .primary-navigation.toggled {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .primary-navigation ul,
+    .primary-navigation.toggled ul {
+        max-height: none;
+        padding-left: 0;
+        text-align: center;
+        
+    }
+    
+    .primary-navigation.toggled ul {
+        overflow-y: visible;
+    }
+    
+    /* Display the menu items in a horizontal order */
+    .primary-navigation li {
+        display: inline-block;
+        border: none;
+    }
+    
+    /* Add an outline to the drop-down menus */
+    .primary-navigation ul ul {
+        outline: 1px solid #333;
+    }
+    
+    /* Left-align drop-down menu items */
+    .primary-navigation li li {
+        display: block;
+        text-align: left;
+    }
+    
+    .primary-navigation a {
+        padding: 0.5em 1em;
+    }
+    
+    .primary-navigation a,
+    .primary-navigation ul ul li:last-child a {
+        border-bottom: none;
+    }
+    
+    .primary-navigation ul ul li a {
+        color: #ffffff;
+    }
+    
+    /* Add an outline on hovered and focused menu items */
+    .primary-navigation a:hover,
+    .primary-navigation a:focus {
+        background: transparent;
+        color: #ffffff;
+        text-decoration: underline;
+        outline: solid 1px #b3b3b3;
+    }
+    
+    /* Create hover and focus contrast on drop-down items */
+    .primary-navigation li li a:hover,
+    .primary-navigation li li a:focus {
+        background: #eee;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    /* Position drop-down menus absolutely */
+    .primary-navigation ul ul.toggled-on {
+        position: absolute;
+        width: 17em;
+        display: block;
+        z-index: 10;
+        right: 0;
+        margin-left: 0;
+        background: #000;
+    }
+    
+    .primary-navigation ul ul ul.toggled-on {
+        right: 0;
+        padding-left: 1em;
+        position: relative;
+    }
+    
+    /* Indent 3rd level drop-down menus */
+    .primary-navigation ul ul ul a {
+        padding-left: 2em;
+    }
+    
+    .nav-menu {
+        padding: 0.4em;
+    }
+    
+    .dropdown-toggle {
+        right: 0.313em;
+        top: 0.313em;
+    }
+}

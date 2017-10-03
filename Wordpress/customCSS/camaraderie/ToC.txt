@@ -1,0 +1,39 @@
+========================================================================================
+Table of Content
+========================================================================================
+
+ 1.0 - Typography
+ 2.0 - Elements
+ 3.0 - Forms
+ 4.0 - Alignments
+ 5.0 - Accessibility
+ 6.0 - Clearings
+ 7.0 - Basic Structure
+ 8.0 - Navigation (Links)
+ 9.0 - Navigation (Primary Navigation)
+10.0 - Navigation (Secondary Navigation)
+11.0 - Navigation (Pagination Navigation)
+12.0 - Navigation (Social Navigation)
+13.0 - Header Area (Header Image)
+14.0 - Header Area (Custom Image)
+15.0 - Content Area (Posts and Pages)
+16.0 - Content Area (Archives)
+17.0 - Content Area (Comments)
+18.0 - Content Area (Error 404)
+19.0 - Content Area (Search)
+20.0 - Content Area (Post Formats)
+21.0 - Section Area (Jetpack Portfolio)
+22.0 - Section Area (Blog Section)
+23.0 - Section Area (Jetpack Testimonials)
+24.0 - Section Area (Jetpack Contact Form)
+25.0 - Widget Area
+26.0 - Footer Area
+27.0 - Media Area (Captions)
+28.0 - Media Area (Galleries)
+29.0 - Media Queries (Mobile Small 30em (480px))
+30.0 - Media Queries (Mobile Medium 37.50em (600px))
+31.0 - Media Queries (Mobile Large 41.688em (667px))
+32.0 - Media Queries (Mobile Extra Large 46em (736px))
+33.0 - Media Queries (Tablet Small 48em (768px))
+34.0 - Media Queries (Tablet Medium 64em (1024px))
+35.0 - Media Queries (Table Large 64.063em (1025px))
