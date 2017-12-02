@@ -264,6 +264,7 @@ Project Development Materials.
 * PDM015: [LEARNING MESH TOPOLOGY COLLECTION and SPEED SCULP](#PDM015);
 * PDM016: [How to organize 3D Projects](#PDM016);
 * PDM017: [Heightmap Terrain](#PDM017);
+* PDM018: [Compositing](#PDM018);
 
 [> back to main Content](#content)
 
@@ -438,6 +439,18 @@ Here we can generate terrain plains using heightmaps. Use [Terrain Party](http:/
 For implementation, follow [Real World Terrain In Blender by CynicatPro](https://www.youtube.com/watch?v=cZxyN7esQkY) and [Micropolygon Displacement Basics by Gleb Alexandrov](https://www.youtube.com/watch?v=hlh9rrjG29k).
 
 Might be interesting to generate your own heightmaps. Follow [PLANET TERRAIN HEIGHTMAP GENERATOR (PYTHON RECIPE)](http://code.activestate.com/recipes/576929-planet-terrain-heightmap-generator/).
+
+[> back to PDM](#pdm)
+
+
+
+
+<a name="PDM018"></a>
+### PDM018: Compositing
+
+Blur out Environment: https://blender.stackexchange.com/questions/34023/how-to-blur-background-image
+
+Saving composited image: https://blender.stackexchange.com/questions/55897/how-to-save-a-rendered-image-that-i-have-added-a-vignette-to-in-compositing
 
 [> back to PDM](#pdm)
 [> back to main Content](#content)
