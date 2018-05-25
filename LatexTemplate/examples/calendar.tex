@@ -1,0 +1,58 @@
+% source from: https://tex.stackexchange.com/questions/843/latex-classes-or-styles-for-schedules-and-or-calendars
+
+\documentclass{article}
+\usepackage{termcal}
+
+% Few useful commands (our classes always meet either on Monday and Wednesday 
+% or on Tuesday and Thursday)
+
+\newcommand{\MWClass}{%
+\calday[Monday]{\classday} % Monday
+\skipday % Tuesday (no class)
+\calday[Wednesday]{\classday} % Wednesday
+\skipday % Thursday (no class)
+\skipday % Friday 
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\TRClass}{%
+\skipday % Monday (no class)
+\calday[Tuesday]{\classday} % Tuesday
+\skipday % Wednesday (no class)
+\calday[Thursday]{\classday} % Thursday
+\skipday % Friday 
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\Holiday}[2]{%
+\options{#1}{\noclassday}
+\caltext{#1}{#2}
+}
+
+\begin{document}
+\paragraph*{Tentative Schedule:}
+\begin{center}
+\begin{calendar}{1/11/2010}{16} % Semester starts on 1/11/2010 and last for 16
+                    % weeks, including finals week
+\setlength{\calboxdepth}{.3in}
+\TRClass
+% schedule
+\caltexton{1}{1.1, 1.2 Review}
+\caltextnext{1.3, 1.4 Review}
+\caltextnext{2.1, 2.2 Linear Equations}
+% ... and so on
+
+% Holidays
+\Holiday{1/18/2010}{Martin Luther King Day}
+\Holiday{3/8/2010}{Spring Break}
+% ... and so on
+
+\options{4/26/2010}{\noclassday} % finals week
+\options{4/27/2010}{\noclassday} % finals week
+\options{4/28/2010}{\noclassday} % finals week
+\options{4/29/2010}{\noclassday} % finals week
+\options{4/30/2010}{\noclassday} % finals week
+\caltext{4/27/2010}{\textbf{Final Exam}}
+\end{calendar}
+\end{center}
+\end{document}

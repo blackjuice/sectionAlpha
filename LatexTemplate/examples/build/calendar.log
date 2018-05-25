@@ -1,0 +1,186 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.25)  25 MAY 2018 16:22
+entering extended mode
+**./calendar.tex
+(calendar.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\Users\LucasHong\AppData\Roaming\MiKTeX\2.9\tex\latex\termcal\termcal.sty
+Package: termcal 1997/01/11 1.8 Latex2e package to print a Term calendar
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count87
+\LTcapwidth=\dimen103
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count88
+\LT@rows=\count89
+\c@LT@tables=\count90
+\c@LT@chunks=\count91
+\LT@p@ftn=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\calboxdepth=\skip47
+\calwidth=\skip48
+\ca@boxwidth=\skip49
+\c@ca@dpw=\count92
+\c@ca@numwks=\count93
+\c@ca@wknum=\count94
+\ca@doaweek=\toks15
+\ca@doweeks=\toks16
+\ca@colhead=\toks17
+\c@classnum=\count95
+\weeklytext=\toks18
+\c@textdaycount=\count96
+\c@date=\count97
+\c@month=\count98
+\c@year=\count99
+)
+No file calendar.aux.
+\openout1 = `calendar.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Overfull \hbox (4.44443pt too wide) in paragraph at lines 56--56
+[]|  []
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 56
+ []
+
+[1
+
+{C:/Users/LucasHong/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2] (D:\GitHub\sectionAlpha\LatexTemplate\examples\build\calendar.aux) ) 
+Here is how much of TeX's memory you used:
+ 578 strings out of 493305
+ 6700 string characters out of 3138862
+ 74775 words of memory out of 3000000
+ 4201 multiletter control sequences out of 15000+200000
+ 4557 words of font info for 17 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,13n,19p,149b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on D:\GitHub\sectionAlpha\LatexTemplate\examples\build\calendar.
+pdf (2 pages, 51117 bytes).
+PDF statistics:
+ 25 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
