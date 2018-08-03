@@ -11,3 +11,15 @@ It contains:
 * error encountered and countered;
 * favorite configurations on certain systems;
 * softwares and hardwares experienced and its reviews;
+
+## Connect Windows - Mac
+
+### Access Windows from Mac
+
+* `Finder > Go > Connect to server`;
+* Enter standard hotmail account;
+
+### Access Mac from Windows
+
+* `WindowsKey + R` > `\\limbo`;
+* Enter standard macbook account;
